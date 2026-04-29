@@ -1,1 +1,1 @@
-# TwoWayDataExchangeStd
+# Двусторонний обмен между Windows Forms и консолью
