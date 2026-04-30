@@ -37,7 +37,7 @@
          // lblResult
          // 
          lblResult.AutoSize = true;
-         lblResult.Location = new System.Drawing.Point(62, 137);
+         lblResult.Location = new System.Drawing.Point(12, 67);
          lblResult.Name = "lblResult";
          lblResult.Size = new System.Drawing.Size(63, 15);
          lblResult.TabIndex = 11;
