@@ -44,5 +44,7 @@ namespace WinFormsAppOne
          // Опционально: принудительно вызываем немедленную перерисовку
          txtInput.PerformLayout();
       }
+
+
    }
 }
