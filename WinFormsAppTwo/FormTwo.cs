@@ -41,5 +41,34 @@ namespace WinFormsAppTwo
          // Освобождаем консоль после завершения расчетов и передачи данных в форму
          //FreeConsole();
       }
+
+      // Вычисляет факториал и выводит промежуточные шаги в консоль
+      private long FactorialWithConsole(int n)
+      {
+         if (n == 0 || n == 1)
+         {
+            Console.WriteLine(@"Факториал {0}! = 1", n);
+            return 1;
+         }
+
+         long fact = 1;
+         Console.WriteLine(@"Вычисляем {0}! :", n);
+         int i = 2;
+         while (i <= n)
+         {
+            fact *= i;
+            Console.WriteLine(@"Шаг {0}: умножаем на {1} -> текущий результат = {2}", i - 1, i, fact);
+            i++;
+         }
+
+         Console.WriteLine(@"Результат: {0}! = {1}", n, fact);
+         return fact;
+      }
+
+      private void FormOne_FormClosing(object sender, FormClosingEventArgs e)
+      {
+         // Освобождаем консоль при закрытии формы
+         FreeConsole();
+      }
    }
 }
