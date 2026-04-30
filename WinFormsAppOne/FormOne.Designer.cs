@@ -67,7 +67,7 @@
          txtInput.Size = new System.Drawing.Size(260, 23);
          txtInput.TabIndex = 8;
          // 
-         // Form1
+         // FormOne
          // 
          AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
          AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -78,9 +78,9 @@
          Controls.Add(txtInput);
          MaximizeBox = false;
          MinimizeBox = false;
-         Name = "Form1";
+         Name = "FormOne";
          StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-         Text = "Form1";
+         Text = "WinForms с консольными расчётами";
          ResumeLayout(false);
          PerformLayout();
       }
