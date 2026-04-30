@@ -61,7 +61,7 @@
          // 
          // txtInput
          // 
-         txtInput.Location = new System.Drawing.Point(62, 82);
+         txtInput.Location = new System.Drawing.Point(12, 12);
          txtInput.Name = "txtInput";
          txtInput.PlaceholderText = "Введите число...";
          txtInput.Size = new System.Drawing.Size(260, 23);
