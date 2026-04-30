@@ -1,4 +1,6 @@
-﻿using System.Runtime.InteropServices;
+﻿using System.Globalization;
+using System;
+using System.Runtime.InteropServices;
 using System.Windows.Forms;
 
 namespace WinFormsAppOne
@@ -45,6 +47,34 @@ namespace WinFormsAppOne
          txtInput.PerformLayout();
       }
 
+      private void CalculateConsole(double input)
+      {
+         // Выделяем консоль
+         AllocConsole();
 
+         // Счётчик итераций
+         // Используем long, чтобы избежать переполнения int
+         long iteration = 0;
+         double result = 0;
+
+         // Бесконечный цикл
+         while (iteration < 1000)
+         {
+            try
+            {
+               iteration++;
+               result = (input + iteration) * iteration;
+               Console.WriteLine(@"Итерация: {0}, Результат: {1};", iteration, result);
+            }
+            catch (Exception ex)
+            {
+               Console.WriteLine(@"Ошибка: {0}", ex.Message);
+            }
+         }
+
+         txtResult.Text = result.ToString(CultureInfo.InvariantCulture);
+         // Освобождаем консоль
+         FreeConsole();
+      }
    }
 }
