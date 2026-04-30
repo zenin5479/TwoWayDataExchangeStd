@@ -9,5 +9,9 @@ namespace WinFormsAppTwo
          InitializeComponent();
       }
 
+      private void ButtonCalculator_Click(object sender, System.EventArgs e)
+      {
+
+      }
    }
 }

@@ -51,6 +51,7 @@
          ButtonCalculator.TabIndex = 6;
          ButtonCalculator.Text = "Вычислить факториал";
          ButtonCalculator.UseVisualStyleBackColor = true;
+         ButtonCalculator.Click += ButtonCalculator_Click;
          // 
          // LabelResult
          // 
