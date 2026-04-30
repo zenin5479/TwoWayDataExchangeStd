@@ -28,21 +28,68 @@
       /// </summary>
       private void InitializeComponent()
       {
+         lblResult = new System.Windows.Forms.Label();
+         btnCalculate = new System.Windows.Forms.Button();
+         txtResult = new System.Windows.Forms.TextBox();
+         txtInput = new System.Windows.Forms.TextBox();
          SuspendLayout();
+         // 
+         // lblResult
+         // 
+         lblResult.AutoSize = true;
+         lblResult.Location = new System.Drawing.Point(62, 137);
+         lblResult.Name = "lblResult";
+         lblResult.Size = new System.Drawing.Size(63, 15);
+         lblResult.TabIndex = 11;
+         lblResult.Text = "Результат:";
+         // 
+         // btnCalculate
+         // 
+         btnCalculate.Location = new System.Drawing.Point(62, 111);
+         btnCalculate.Name = "btnCalculate";
+         btnCalculate.Size = new System.Drawing.Size(100, 23);
+         btnCalculate.TabIndex = 10;
+         btnCalculate.Text = "Рассчитать";
+         btnCalculate.UseVisualStyleBackColor = true;
+         // 
+         // txtResult
+         // 
+         txtResult.Location = new System.Drawing.Point(62, 155);
+         txtResult.Name = "txtResult";
+         txtResult.Size = new System.Drawing.Size(260, 23);
+         txtResult.TabIndex = 9;
+         // 
+         // txtInput
+         // 
+         txtInput.Location = new System.Drawing.Point(62, 82);
+         txtInput.Name = "txtInput";
+         txtInput.PlaceholderText = "Введите число...";
+         txtInput.Size = new System.Drawing.Size(260, 23);
+         txtInput.TabIndex = 8;
          // 
          // Form1
          // 
          AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
          AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
          ClientSize = new System.Drawing.Size(384, 261);
+         Controls.Add(lblResult);
+         Controls.Add(btnCalculate);
+         Controls.Add(txtResult);
+         Controls.Add(txtInput);
          MaximizeBox = false;
          MinimizeBox = false;
          Name = "Form1";
          StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
          Text = "Form1";
          ResumeLayout(false);
+         PerformLayout();
       }
 
       #endregion
+
+      private System.Windows.Forms.Label lblResult;
+      private System.Windows.Forms.Button btnCalculate;
+      private System.Windows.Forms.TextBox txtResult;
+      private System.Windows.Forms.TextBox txtInput;
    }
 }
