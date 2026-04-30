@@ -18,7 +18,31 @@ namespace WinFormsAppOne
 
       private void btnCalculate_Click(object sender, System.EventArgs e)
       {
+         // Поддерживает производительность при добавлении позиций в ListBox по одной,
+         // запрещая рисование в элементе управления вплоть до вызова метода EndUpdate().
+         //ListBoxBalances.BeginUpdate();
+         //ListBoxBalances.EndUpdate();
 
+         // Проверка ввода
+         if (!double.TryParse(txtInput.Text, out double inputValue))
+         {
+            MessageBox.Show(@"Пожалуйста, введите корректное число!", @"Ошибка",
+               MessageBoxButtons.OK, MessageBoxIcon.Error);
+            return;
+         }
+
+         // Приостанавливаем обновление компоновки для TextBox
+         txtInput.SuspendLayout();
+
+         // Выполняем расчёт с использованием консоли
+         // Выполняем множество операций, которые обычно вызывают перерисовку
+         CalculateConsole(inputValue);
+
+         // Возобновляем работу и принудительно применяем все изменения
+         txtInput.ResumeLayout();
+
+         // Опционально: принудительно вызываем немедленную перерисовку
+         txtInput.PerformLayout();
       }
    }
 }
