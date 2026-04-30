@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace WinFormsAppTwo
 {
-   public partial class Form1 : Form
+   public partial class FormTwo : Form
    {
-      public Form1()
+      public FormTwo()
       {
          InitializeComponent();
       }
