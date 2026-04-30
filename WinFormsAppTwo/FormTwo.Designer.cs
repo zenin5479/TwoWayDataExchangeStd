@@ -37,7 +37,7 @@
          ClientSize = new System.Drawing.Size(800, 450);
          Name = "FormTwo";
          StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-         Text = "Form1";
+         Text = "Факториал через консоль";
          ResumeLayout(false);
       }
 
