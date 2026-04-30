@@ -3,9 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33530.505
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "TwoWayDataExchangeStd", "TwoWayDataExchangeStd.shproj", "{23E40BC7-CAF7-48F5-BEAB-1873E48955FC}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinFormsAppOne", "WinFormsAppOne\WinFormsAppOne.csproj", "{B2FCA3D6-8EF8-428E-A874-AB1BB0EBC6B0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WinFormsAppOne", "WinFormsAppOne\WinFormsAppOne.csproj", "{B2FCA3D6-8EF8-428E-A874-AB1BB0EBC6B0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,8 +21,5 @@ Global
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B68342A5-B5C0-4D99-AA62-F6F619D9DFBF}
-	EndGlobalSection
-	GlobalSection(SharedMSBuildProjectFiles) = preSolution
-		TwoWayDataExchangeStd.projitems*{23e40bc7-caf7-48f5-beab-1873e48955fc}*SharedItemsImports = 13
 	EndGlobalSection
 EndGlobal
