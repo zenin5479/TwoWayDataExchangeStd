@@ -18,7 +18,7 @@ namespace WinFormsAppOne
          InitializeComponent();
       }
 
-      private void btnCalculate_Click(object sender, System.EventArgs e)
+      private void btnCalculate_Click(object sender, EventArgs e)
       {
          // Поддерживает производительность при добавлении позиций в ListBox по одной,
          // запрещая рисование в элементе управления вплоть до вызова метода EndUpdate().
