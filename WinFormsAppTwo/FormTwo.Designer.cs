@@ -37,7 +37,7 @@
          // LabelPrompt
          // 
          LabelPrompt.AutoSize = true;
-         LabelPrompt.Location = new System.Drawing.Point(112, 86);
+         LabelPrompt.Location = new System.Drawing.Point(12, 9);
          LabelPrompt.Name = "LabelPrompt";
          LabelPrompt.Size = new System.Drawing.Size(161, 15);
          LabelPrompt.TabIndex = 7;
