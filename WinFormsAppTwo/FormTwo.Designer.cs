@@ -78,6 +78,7 @@
          Controls.Add(ButtonCalculator);
          Controls.Add(LabelResult);
          Controls.Add(TextBoxNumber);
+         MaximizeBox = false;
          Name = "FormTwo";
          StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
          Text = "Факториал через консоль";
