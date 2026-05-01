@@ -45,7 +45,7 @@
          // 
          // ButtonCalculator
          // 
-         ButtonCalculator.Location = new System.Drawing.Point(112, 133);
+         ButtonCalculator.Location = new System.Drawing.Point(12, 56);
          ButtonCalculator.Name = "ButtonCalculator";
          ButtonCalculator.Size = new System.Drawing.Size(150, 23);
          ButtonCalculator.TabIndex = 6;
