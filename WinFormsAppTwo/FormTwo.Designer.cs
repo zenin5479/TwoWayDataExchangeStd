@@ -64,7 +64,7 @@
          // 
          // TextBoxNumber
          // 
-         TextBoxNumber.Location = new System.Drawing.Point(112, 104);
+         TextBoxNumber.Location = new System.Drawing.Point(12, 27);
          TextBoxNumber.Name = "TextBoxNumber";
          TextBoxNumber.Size = new System.Drawing.Size(150, 23);
          TextBoxNumber.TabIndex = 4;
