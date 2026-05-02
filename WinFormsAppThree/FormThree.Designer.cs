@@ -36,6 +36,7 @@
          AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
          ClientSize = new System.Drawing.Size(384, 261);
          Name = "FormThree";
+         StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
          Text = "Обмен данными с консолью";
          ResumeLayout(false);
       }
