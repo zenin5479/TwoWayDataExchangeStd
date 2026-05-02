@@ -8,6 +8,5 @@ namespace WinFormsAppThree
       {
          InitializeComponent();
       }
-
    }
 }
