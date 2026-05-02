@@ -1,6 +1,6 @@
 ﻿namespace WinFormsAppThree
 {
-   partial class Form1
+   partial class FormThree
    {
       /// <summary>
       ///  Required designer variable.
