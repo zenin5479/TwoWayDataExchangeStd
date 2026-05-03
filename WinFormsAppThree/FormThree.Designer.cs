@@ -59,6 +59,7 @@
          btnStartConsole.TabIndex = 3;
          btnStartConsole.Text = "Запустить консоль";
          btnStartConsole.UseVisualStyleBackColor = true;
+         btnStartConsole.Click += btnStartConsole_Click;
          // 
          // FormThree
          // 

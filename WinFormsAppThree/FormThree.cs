@@ -8,5 +8,10 @@ namespace WinFormsAppThree
       {
          InitializeComponent();
       }
+
+      private void btnStartConsole_Click(object sender, System.EventArgs e)
+      {
+
+      }
    }
 }
