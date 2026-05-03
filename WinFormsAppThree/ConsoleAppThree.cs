@@ -53,6 +53,5 @@ namespace WinFormsAppThree
             Console.WriteLine($"Человек '{name}' добавлен в хранилище.\n");
          }
       }
-
    }
 }
