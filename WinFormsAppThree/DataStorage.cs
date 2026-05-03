@@ -24,4 +24,18 @@ namespace WinFormsAppThree
          return People.Count;
       }
    }
+
+   public class Person
+   {
+      public string Name { get; set; }
+      public int Age { get; set; }
+      public Address Address { get; set; }
+   }
+
+   public class Address
+   {
+      public string City { get; set; }
+      public string Street { get; set; }
+      public string PostalCode { get; set; }
+   }
 }
