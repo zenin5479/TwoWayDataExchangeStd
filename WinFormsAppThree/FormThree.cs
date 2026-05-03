@@ -10,6 +10,12 @@ namespace WinFormsAppThree
       public FormThree()
       {
          InitializeComponent();
+
+         _storage = new DataStorage();
+         _storage = new DataStorage();
+         _consoleApp = new ConsoleApp(_storage);
+
+
       }
 
       private void btnStartConsole_Click(object sender, System.EventArgs e)
