@@ -2,7 +2,7 @@
 
 namespace WinFormsAppThree
 {
-   internal class ConsoleThree
+   public class ConsoleThree
    {
       private DataStorage _storage;
 
