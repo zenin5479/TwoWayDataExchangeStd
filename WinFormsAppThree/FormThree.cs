@@ -5,20 +5,20 @@ namespace WinFormsAppThree
    public partial class FormThree : Form
    {
       private DataStorage _storage;
-      private ConsoleThree _consoleAppThree;
+      private ConsoleThree _consoleThree;
 
       public FormThree()
       {
          InitializeComponent();
 
          _storage = new DataStorage();
-         _consoleAppThree = new ConsoleThree(_storage);
+         _consoleThree = new ConsoleThree(_storage);
       }
 
       private void btnStartConsole_Click(object sender, System.EventArgs e)
       {
          // Запускаем консольное приложение
-         _consoleAppThree.Run();
+         _consoleThree.Run();
          UpdateListBox();
       }
 
