@@ -46,5 +46,15 @@ namespace WinFormsAppThree
             MessageBox.Show("Выберите человека из списка.", "Внимание");
          }
       }
+
+      private void UpdateListBox()
+      {
+         listBoxPeople.Items.Clear();
+         for (int i = 0; i < _storage.GetCount(); i++)
+         {
+            var person = _storage.GetPerson(i);
+            listBoxPeople.Items.Add($"{person.Name}, {person.Age} лет");
+         }
+      }
    }
 }
