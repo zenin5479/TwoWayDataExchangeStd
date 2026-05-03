@@ -27,7 +27,6 @@ namespace WinFormsAppThree
 
             Console.Write("Возраст: ");
             int age = int.Parse(Console.ReadLine());
-
             Console.Write("Город: ");
             string city = Console.ReadLine();
             Console.Write("Улица: ");
