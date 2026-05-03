@@ -18,7 +18,7 @@ namespace WinFormsAppThree
       private void btnStartConsole_Click(object sender, System.EventArgs e)
       {
          // Запускаем консольное приложение
-         _consoleApp.Run();
+         _consoleAppThree.Run();
          UpdateListBox();
       }
 
