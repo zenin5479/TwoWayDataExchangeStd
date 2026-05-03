@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace WinFormsAppThree
+﻿namespace WinFormsAppThree
 {
    internal class DataStorage
    {
