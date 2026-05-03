@@ -13,7 +13,7 @@ namespace WinFormsAppThree
 
          _storage = new DataStorage();
          _storage = new DataStorage();
-         _consoleApp = new ConsoleApp(_storage);
+         _consoleAppThree = new ConsoleAppThree(_storage);
 
 
       }
