@@ -24,7 +24,27 @@ namespace WinFormsAppThree
 
       private void btnShowSelected_Click(object sender, System.EventArgs e)
       {
+         if (listBoxPeople.SelectedIndex != -1)
+         {
+            int index = listBoxPeople.SelectedIndex;
+            var person = _storage.GetPerson(index);
 
+            if (person != null)
+            {
+               MessageBox.Show(
+                  $"Имя: {person.Name}\n" +
+                  $"Возраст: {person.Age}\n" +
+                  $"Город: {person.Address.City}\n" +
+                  $"Улица: {person.Address.Street}\n" +
+                  $"Почтовый индекс: {person.Address.PostalCode}",
+                  "Информация о человеке"
+               );
+            }
+         }
+         else
+         {
+            MessageBox.Show("Выберите человека из списка.", "Внимание");
+         }
       }
    }
 }
