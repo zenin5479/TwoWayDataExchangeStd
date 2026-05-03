@@ -5,14 +5,14 @@ namespace WinFormsAppThree
    public partial class FormThree : Form
    {
       private DataStorage _storage;
-      private ConsoleAppThree _consoleAppThree;
+      private ConsoleThree _consoleAppThree;
 
       public FormThree()
       {
          InitializeComponent();
 
          _storage = new DataStorage();
-         _consoleAppThree = new ConsoleAppThree(_storage);
+         _consoleAppThree = new ConsoleThree(_storage);
       }
 
       private void btnStartConsole_Click(object sender, System.EventArgs e)
