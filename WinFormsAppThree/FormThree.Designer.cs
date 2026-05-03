@@ -41,6 +41,7 @@
          btnShowSelected.TabIndex = 5;
          btnShowSelected.Text = "Показать выбранное";
          btnShowSelected.UseVisualStyleBackColor = true;
+         btnShowSelected.Click += btnShowSelected_Click;
          // 
          // listBoxPeople
          // 
