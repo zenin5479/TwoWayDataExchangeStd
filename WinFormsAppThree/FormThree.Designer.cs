@@ -48,7 +48,7 @@
          listBoxPeople.ItemHeight = 15;
          listBoxPeople.Location = new System.Drawing.Point(12, 41);
          listBoxPeople.Name = "listBoxPeople";
-         listBoxPeople.Size = new System.Drawing.Size(268, 94);
+         listBoxPeople.Size = new System.Drawing.Size(275, 94);
          listBoxPeople.TabIndex = 4;
          // 
          // btnStartConsole
