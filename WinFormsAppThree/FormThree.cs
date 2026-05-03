@@ -4,6 +4,9 @@ namespace WinFormsAppThree
 {
    public partial class FormThree : Form
    {
+      private DataStorage _storage;
+      private ConsoleAppThree _consoleAppThree;
+
       public FormThree()
       {
          InitializeComponent();
