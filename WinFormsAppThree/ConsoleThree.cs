@@ -24,11 +24,7 @@ namespace WinFormsAppThree
                break;
             }
 
-            Console.Write(@"Возраст: ");
-            //int age = Convert.ToInt32(Console.ReadLine());
-            //int age = int.Parse(Console.ReadLine());
-
-            Console.Write(@"Возраст: ");
+           Console.Write(@"Возраст: ");
             string input = Console.ReadLine();
 
             if (!int.TryParse(input, out int age))
