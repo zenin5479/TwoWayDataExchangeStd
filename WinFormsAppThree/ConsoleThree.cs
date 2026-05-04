@@ -31,7 +31,7 @@ namespace WinFormsAppThree
             string city = Console.ReadLine();
             Console.Write(@"Улица: ");
             string street = Console.ReadLine();
-            Console.Write("Почтовый индекс: ");
+            Console.Write(@"Почтовый индекс: ");
             string postalCode = Console.ReadLine();
 
             Address address = new Address
