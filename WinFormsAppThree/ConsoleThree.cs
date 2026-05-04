@@ -26,10 +26,6 @@ namespace WinFormsAppThree
 
             Console.Write(@"Возраст: ");
             int age = Convert.ToInt32(Console.ReadLine());
-            if (s == null)
-            {
-               s = string.Empty;
-            }
 
            
             Console.Write(@"Город: ");
