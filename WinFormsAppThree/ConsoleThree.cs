@@ -24,14 +24,13 @@ namespace WinFormsAppThree
                break;
             }
 
-           Console.Write(@"Возраст: ");
+            Console.Write(@"Возраст: ");
             string input = Console.ReadLine();
-
             if (!int.TryParse(input, out int age))
             {
                Console.WriteLine(@"Ошибка: введённая строка не является числом!");
             }
-           
+
 
 
             Console.Write(@"Город: ");
