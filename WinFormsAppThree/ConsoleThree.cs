@@ -28,6 +28,18 @@ namespace WinFormsAppThree
             //int age = Convert.ToInt32(Console.ReadLine());
             int age = int.Parse(Console.ReadLine());
 
+            Console.Write("Введите число: ");
+            string input = Console.ReadLine();
+
+            if (int.TryParse(input, out int number))
+            {
+               Console.WriteLine(string.Format("Успешно! Вы ввели число: {0}", number));
+            }
+            else
+            {
+               Console.WriteLine("Ошибка: не удалось преобразовать строку в число. Попробуйте ещё раз.");
+            }
+
 
             Console.Write(@"Город: ");
             string city = Console.ReadLine();
