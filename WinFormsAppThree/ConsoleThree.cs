@@ -26,19 +26,16 @@ namespace WinFormsAppThree
 
             Console.Write(@"Возраст: ");
             //int age = Convert.ToInt32(Console.ReadLine());
-            int age = int.Parse(Console.ReadLine());
+            //int age = int.Parse(Console.ReadLine());
 
             Console.Write(@"Возраст: ");
             string input = Console.ReadLine();
 
-            if (!int.TryParse(input, out int number))
+            if (!int.TryParse(input, out int age))
             {
                Console.WriteLine(@"Ошибка: не удалось преобразовать строку в число. Попробуйте ещё раз.");
             }
-            else
-            {
-               Console.WriteLine("Успешно! Вы ввели число: {0}", number);
-            }
+           
 
 
             Console.Write(@"Город: ");
