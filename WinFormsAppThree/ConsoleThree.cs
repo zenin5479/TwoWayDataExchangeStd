@@ -33,7 +33,7 @@ namespace WinFormsAppThree
 
             if (!int.TryParse(input, out int age))
             {
-               Console.WriteLine(@"Ошибка: не удалось преобразовать строку в число. Попробуйте ещё раз.");
+               Console.WriteLine(@"Ошибка: введённая строка не является числом!");
             }
            
 
