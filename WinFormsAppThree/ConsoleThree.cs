@@ -17,7 +17,7 @@ namespace WinFormsAppThree
 
          while (true)
          {
-            Console.Write("Имя (или 'exit' для выхода): ");
+            Console.Write(@"Имя (или 'exit' для выхода): ");
             string name = Console.ReadLine();
 
             if (name != null && name.ToLower() == "exit")
