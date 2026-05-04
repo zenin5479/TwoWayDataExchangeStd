@@ -41,7 +41,7 @@ namespace WinFormsAppThree
                PostalCode = postalCode
             };
 
-            var person = new Person
+            Person person = new Person
             {
                Name = name,
                Age = age,
