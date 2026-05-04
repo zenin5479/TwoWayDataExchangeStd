@@ -25,13 +25,13 @@ namespace WinFormsAppThree
             }
 
             Console.Write(@"Возраст: ");
-            int age = int.Parse(Console.ReadLine());
-            if (age != null)
+            int age = Convert.ToInt32(Console.ReadLine());
+            if (s == null)
             {
-
-               Console.WriteLine(@"Консольное приложение запущено. Введите данные нового человека:");
-
+               s = string.Empty;
             }
+
+           
             Console.Write(@"Город: ");
             string city = Console.ReadLine();
             Console.Write(@"Улица: ");
