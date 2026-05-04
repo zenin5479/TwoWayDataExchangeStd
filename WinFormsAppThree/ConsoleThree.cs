@@ -49,7 +49,7 @@ namespace WinFormsAppThree
             };
 
             _storage.AddPerson(person);
-            Console.WriteLine($"Человек '{name}' добавлен в хранилище.\n");
+            Console.WriteLine(string.Format("Человек '{0}' добавлен в хранилище.\n", name));
          }
       }
    }
