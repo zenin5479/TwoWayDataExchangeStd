@@ -31,8 +31,6 @@ namespace WinFormsAppThree
                Console.WriteLine(@"Ошибка: введённая строка не является числом!");
             }
 
-
-
             Console.Write(@"Город: ");
             string city = Console.ReadLine();
             Console.Write(@"Улица: ");
