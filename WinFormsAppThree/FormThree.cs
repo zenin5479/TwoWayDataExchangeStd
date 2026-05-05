@@ -49,17 +49,14 @@ namespace WinFormsAppThree
          int i = 0;
          while (i < _storage.GetCount())
          {
-
-           
-            
-            
+            Person person = _storage.GetPerson(i);
+            listBoxPeople.Items.Add(string.Format("{0}, {1} лет", person.Name, person.Age));
             i++;
          }
 
          for (  )
          {
-            Person person = _storage.GetPerson(i);
-            listBoxPeople.Items.Add(string.Format("{0}, {1} лет", person.Name, person.Age));
+
          }
       }
    }
