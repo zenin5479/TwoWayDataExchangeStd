@@ -32,7 +32,7 @@ namespace WinFormsAppThree
             if (person != null)
             {
                MessageBox.Show(
-                  $"Имя: {person.Name}\n" +
+                  string.Format("Имя: {0}\n", person.Name) +
                   $"Возраст: {person.Age}\n" +
                   $"Город: {person.Address.City}\n" +
                   $"Улица: {person.Address.Street}\n" +
