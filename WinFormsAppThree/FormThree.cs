@@ -31,7 +31,7 @@ namespace WinFormsAppThree
 
             if (person != null)
             {
-               MessageBox.Show(string.Format("Имя: {0}\n", person.Name) + string.Format("Возраст: {0}\n", person.Age) + 
+               MessageBox.Show(string.Format("Имя: {0}\n", person.Name) + string.Format("Возраст: {0}\n", person.Age) +
                                string.Format("Город: {0}\n", person.Address.City) + string.Format("Улица: {0}\n", person.Address.Street) +
                                string.Format("Почтовый индекс: {0}", person.Address.PostalCode), @"Информация о человеке");
             }
@@ -46,14 +46,17 @@ namespace WinFormsAppThree
       {
          listBoxPeople.Items.Clear();
 
-         
+         int i = 0;
          while (i < _storage.GetCount())
          {
-            
 
+           
+            
+            
+            i++;
          }
 
-         for (int i = 0; ; i++)
+         for (  )
          {
             Person person = _storage.GetPerson(i);
             listBoxPeople.Items.Add(string.Format("{0}, {1} лет", person.Name, person.Age));
