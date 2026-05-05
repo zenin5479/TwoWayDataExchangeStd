@@ -52,7 +52,7 @@ namespace WinFormsAppThree
          listBoxPeople.Items.Clear();
          for (int i = 0; i < _storage.GetCount(); i++)
          {
-            var person = _storage.GetPerson(i);
+            Person person = _storage.GetPerson(i);
             listBoxPeople.Items.Add(string.Format("{0}, {1} лет", person.Name, person.Age));
          }
       }
