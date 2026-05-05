@@ -43,7 +43,7 @@ namespace WinFormsAppThree
          }
          else
          {
-            MessageBox.Show(@"Выберите человека из списка.", "Внимание");
+            MessageBox.Show(@"Выберите человека из списка.", @"Внимание");
          }
       }
 
