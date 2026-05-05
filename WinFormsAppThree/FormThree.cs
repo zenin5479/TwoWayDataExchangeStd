@@ -27,7 +27,7 @@ namespace WinFormsAppThree
          if (listBoxPeople.SelectedIndex != -1)
          {
             int index = listBoxPeople.SelectedIndex;
-            var person = _storage.GetPerson(index);
+            Person person = _storage.GetPerson(index);
 
             if (person != null)
             {
