@@ -46,12 +46,14 @@ namespace WinFormsAppThree
       {
          listBoxPeople.Items.Clear();
 
-         while (expression)
+         
+         while (i < _storage.GetCount())
          {
             
 
          }
-         for (int i = 0; i < _storage.GetCount(); i++)
+
+         for (int i = 0; ; i++)
          {
             Person person = _storage.GetPerson(i);
             listBoxPeople.Items.Add(string.Format("{0}, {1} лет", person.Name, person.Age));
