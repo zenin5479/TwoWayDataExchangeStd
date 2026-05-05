@@ -37,7 +37,7 @@ namespace WinFormsAppThree
                   string.Format("Город: {0}\n", person.Address.City) +
                   string.Format("Улица: {0}\n", person.Address.Street) +
                   string.Format("Почтовый индекс: {0}", person.Address.PostalCode),
-                  "Информация о человеке"
+                  @"Информация о человеке"
                );
             }
          }
