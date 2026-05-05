@@ -53,11 +53,6 @@ namespace WinFormsAppThree
             listBoxPeople.Items.Add(string.Format("{0}, {1} лет", person.Name, person.Age));
             i++;
          }
-
-         for (  )
-         {
-
-         }
       }
    }
 }
