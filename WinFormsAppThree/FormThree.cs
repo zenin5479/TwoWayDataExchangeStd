@@ -35,7 +35,7 @@ namespace WinFormsAppThree
                   string.Format("Имя: {0}\n", person.Name) +
                   string.Format("Возраст: {0}\n", person.Age) +
                   string.Format("Город: {0}\n", person.Address.City) +
-                  $"Улица: {person.Address.Street}\n" +
+                  string.Format("Улица: {0}\n", person.Address.Street) +
                   $"Почтовый индекс: {person.Address.PostalCode}",
                   "Информация о человеке"
                );
