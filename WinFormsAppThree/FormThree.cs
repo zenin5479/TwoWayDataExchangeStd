@@ -45,6 +45,11 @@ namespace WinFormsAppThree
       private void UpdateListBox()
       {
          listBoxPeople.Items.Clear();
+
+         while (expression)
+         {
+            
+         }
          for (int i = 0; i < _storage.GetCount(); i++)
          {
             Person person = _storage.GetPerson(i);
