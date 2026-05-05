@@ -33,7 +33,7 @@ namespace WinFormsAppThree
             {
                MessageBox.Show(
                   string.Format("Имя: {0}\n", person.Name) +
-                  $"Возраст: {person.Age}\n" +
+                  string.Format("Возраст: {0}\n", person.Age) +
                   $"Город: {person.Address.City}\n" +
                   $"Улица: {person.Address.Street}\n" +
                   $"Почтовый индекс: {person.Address.PostalCode}",
