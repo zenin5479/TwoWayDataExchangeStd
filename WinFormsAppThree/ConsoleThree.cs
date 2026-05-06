@@ -32,6 +32,7 @@ namespace WinFormsAppThree
             }
          }
 
+         
          while (true)
          {
             Console.Write(@"Имя (или 'exit' для выхода): ");
@@ -40,6 +41,8 @@ namespace WinFormsAppThree
             {
                break;
             }
+           
+            
 
             Console.Write(@"Возраст: ");
             string input = Console.ReadLine();
