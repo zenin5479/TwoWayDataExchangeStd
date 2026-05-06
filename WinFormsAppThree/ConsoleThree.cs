@@ -21,15 +21,7 @@ namespace WinFormsAppThree
             Console.Write("Имя (или 'exit' для выхода): ");
             string name = Console.ReadLine();
 
-            if (name?.ToLower() == "exit")
-            {
-
-            }
-            else if (!string.IsNullOrWhiteSpace(name))
-            {
-               // Обработка остальных данных
-               // ... код добавления в хранилище
-            }
+           
          }
 
 
