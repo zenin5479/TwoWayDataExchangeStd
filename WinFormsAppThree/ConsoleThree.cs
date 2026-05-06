@@ -32,7 +32,6 @@ namespace WinFormsAppThree
             }
          }
 
-
          while (true)
          {
             Console.Write(@"Имя (или 'exit' для выхода): ");
