@@ -34,7 +34,6 @@ namespace WinFormsAppThree
 
 
          bool continueLoop = true;
-
          while (continueLoop)
          {
             Console.Write(@"Имя (или 'exit' для выхода): ");
