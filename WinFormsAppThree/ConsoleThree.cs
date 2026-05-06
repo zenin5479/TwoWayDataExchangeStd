@@ -31,8 +31,6 @@ namespace WinFormsAppThree
                continueLoop = false;
             }
 
-
-
             Console.Write(@"Возраст: ");
             string input = Console.ReadLine();
             if (!int.TryParse(input, out int age))
