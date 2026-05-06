@@ -41,7 +41,8 @@ namespace WinFormsAppThree
             string name = Console.ReadLine();
             if (name != null && name.ToLower() == "exit")
             {
-               continueLoop = false; // Устанавливаем флаг выхода
+               // Устанавливаем флаг выхода
+               continueLoop = false; 
             }
 
 
