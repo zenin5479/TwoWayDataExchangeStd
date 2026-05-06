@@ -31,9 +31,9 @@ namespace WinFormsAppThree
 
             if (person != null)
             {
-               MessageBox.Show(string.Format("Имя: {0}\n", person.Name) + 
+               MessageBox.Show(string.Format("Имя: {0}\n", person.Name) +
                                string.Format("Возраст: {0}\n", person.Age) +
-                               string.Format("Город: {0}\n", person.Address.City) + 
+                               string.Format("Город: {0}\n", person.Address.City) +
                                string.Format("Улица: {0}\n", person.Address.Street) +
                                string.Format("Почтовый индекс: {0}", person.Address.PostalCode), @"Информация о человеке");
             }

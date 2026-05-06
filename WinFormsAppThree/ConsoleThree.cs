@@ -15,7 +15,7 @@ namespace WinFormsAppThree
       {
          Console.WriteLine(@"Консольное приложение запущено. Введите данные нового человека:");
 
-         bool continueLoop = true;
+
          while (continueLoop)
          {
             Console.Write("Имя (или 'exit' для выхода): ");
@@ -32,7 +32,9 @@ namespace WinFormsAppThree
             }
          }
 
-         
+
+         bool continueLoop = true;
+
          while (true)
          {
             Console.Write(@"Имя (или 'exit' для выхода): ");
@@ -41,8 +43,8 @@ namespace WinFormsAppThree
             {
                break;
             }
-           
-            
+
+
 
             Console.Write(@"Возраст: ");
             string input = Console.ReadLine();
