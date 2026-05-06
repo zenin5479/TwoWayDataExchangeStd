@@ -21,7 +21,7 @@ namespace WinFormsAppThree
             Console.Write("Имя (или 'exit' для выхода): ");
             string name = Console.ReadLine();
 
-           
+
          }
 
 
@@ -33,8 +33,8 @@ namespace WinFormsAppThree
             //if (name != null && name.ToLower() == "exit")
             if (!string.IsNullOrWhiteSpace(name) && name.ToLower() == "exit")
             {
-
-               continueLoop = false; // Устанавливаем флаг выхода
+               // Флаг выхода
+               continueLoop = false;
             }
 
 
