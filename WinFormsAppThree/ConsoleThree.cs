@@ -41,7 +41,7 @@ namespace WinFormsAppThree
             string name = Console.ReadLine();
             if (name != null && name.ToLower() == "exit")
             {
-               break;
+               
             }
 
 
