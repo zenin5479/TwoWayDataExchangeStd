@@ -19,43 +19,46 @@ namespace WinFormsAppThree
          {
             Console.Write(@"Имя (или 'exit' для выхода): ");
             string name = Console.ReadLine();
-            //if (name != null && name.ToLower() == "exit")
-            if (!string.IsNullOrWhiteSpace(name) && name.ToLower() == "exit")
+            if (name != null && name.ToLower() == "exit")
             {
                // Флаг выхода
                continueLoop = false;
             }
-
-            Console.Write(@"Возраст: ");
-            string input = Console.ReadLine();
-            if (!int.TryParse(input, out int age))
+            else
             {
-               Console.WriteLine(@"Ошибка: введённая строка не является числом!");
+               Console.Write(@"Возраст: ");
+               string input = Console.ReadLine();
+               if (!int.TryParse(input, out int age))
+               {
+                  Console.WriteLine(@"Ошибка: введённая строка не является числом!");
+               }
+
+               Console.Write(@"Город: ");
+               string city = Console.ReadLine();
+               Console.Write(@"Улица: ");
+               string street = Console.ReadLine();
+               Console.Write(@"Почтовый индекс: ");
+               string postalCode = Console.ReadLine();
+
+               Address address = new Address
+               {
+                  City = city,
+                  Street = street,
+                  PostalCode = postalCode
+               };
+
+               Person person = new Person
+               {
+                  Name = name,
+                  Age = age,
+                  Address = address
+               };
+
+               _storage.AddPerson(person);
+               Console.WriteLine(@"Человек '{0}' добавлен в хранилище.", name);
             }
 
-            Console.Write(@"Город: ");
-            string city = Console.ReadLine();
-            Console.Write(@"Улица: ");
-            string street = Console.ReadLine();
-            Console.Write(@"Почтовый индекс: ");
-            string postalCode = Console.ReadLine();
 
-            Address address = new Address
-            {
-               City = city,
-               Street = street,
-               PostalCode = postalCode
-            };
-
-            Person person = new Person
-            {
-               Name = name,
-               Age = age,
-               Address = address
-            };
-
-            _storage.AddPerson(person);
-            Console.WriteLine(@"Человек '{0}' добавлен в хранилище.", name);
          }
       }
    }
