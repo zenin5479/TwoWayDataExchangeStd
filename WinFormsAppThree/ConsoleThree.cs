@@ -16,13 +16,7 @@ namespace WinFormsAppThree
          Console.WriteLine(@"Консольное приложение запущено. Введите данные нового человека:");
 
 
-         while (continueLoop)
-         {
-            Console.Write("Имя (или 'exit' для выхода): ");
-            string name = Console.ReadLine();
-
-
-         }
+        
 
 
          bool continueLoop = true;
