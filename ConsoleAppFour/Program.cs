@@ -1,7 +1,6 @@
 ﻿using ClassLibraryFour;
 using System;
 using System.Linq;
-//using SharedStorage.Models;
 
 namespace ConsoleAppFour
 {
