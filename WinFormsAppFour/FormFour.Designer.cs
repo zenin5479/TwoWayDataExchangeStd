@@ -36,7 +36,7 @@
          AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
          ClientSize = new System.Drawing.Size(484, 361);
          Name = "FormFour";
-         Text = "Form1";
+         Text = "Система обмена данными с консолью";
          ResumeLayout(false);
       }
 
