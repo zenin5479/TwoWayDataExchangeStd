@@ -43,7 +43,7 @@
          // 
          // panel2
          // 
-         panel2.Location = new System.Drawing.Point(250, 12);
+         panel2.Location = new System.Drawing.Point(218, 12);
          panel2.Name = "panel2";
          panel2.Size = new System.Drawing.Size(200, 100);
          panel2.TabIndex = 1;
@@ -51,10 +51,10 @@
          // dataGridView1
          // 
          dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-         dataGridView1.Location = new System.Drawing.Point(59, 202);
+         dataGridView1.Location = new System.Drawing.Point(12, 118);
          dataGridView1.Name = "dataGridView1";
          dataGridView1.RowTemplate.Height = 25;
-         dataGridView1.Size = new System.Drawing.Size(240, 150);
+         dataGridView1.Size = new System.Drawing.Size(200, 150);
          dataGridView1.TabIndex = 2;
          // 
          // FormFour
