@@ -28,18 +28,29 @@
       /// </summary>
       private void InitializeComponent()
       {
+         panel1 = new System.Windows.Forms.Panel();
          SuspendLayout();
+         // 
+         // panel1
+         // 
+         panel1.Location = new System.Drawing.Point(12, 12);
+         panel1.Name = "panel1";
+         panel1.Size = new System.Drawing.Size(200, 100);
+         panel1.TabIndex = 0;
          // 
          // FormFour
          // 
          AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
          AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
          ClientSize = new System.Drawing.Size(768, 471);
+         Controls.Add(panel1);
          Name = "FormFour";
          Text = "Система обмена данными с консолью";
          ResumeLayout(false);
       }
 
       #endregion
+
+      private System.Windows.Forms.Panel panel1;
    }
 }
