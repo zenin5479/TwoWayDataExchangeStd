@@ -1,8 +1,7 @@
-﻿using System;
-
-namespace ClassLibraryFour
+﻿namespace ClassLibraryFour
 {
    public class Class1
    {
+
    }
 }
