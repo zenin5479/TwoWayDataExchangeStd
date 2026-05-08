@@ -8,7 +8,7 @@ namespace ConsoleAppFour
    {
       static void Main()
       {
-         Console.WriteLine("Консольный ОБРАБОТЧИК");
+         Console.WriteLine("Консольный обработчик");
          Console.WriteLine("Текущее количество людей в хранилище: {0}", GlobalStorage.TotalPeopleCount);
 
          // Показываем существующих людей
