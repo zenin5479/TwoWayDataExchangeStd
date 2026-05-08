@@ -15,13 +15,13 @@ namespace ConsoleAppFour
          if (GlobalStorage.AllPeople.Any())
          {
             Console.WriteLine("\nСуществующие люди:");
-            
+            int i = 0;
             while ( i < GlobalStorage.AllPeople.Count)
             {
                
             }
 
-            for (int i = 0;; i++)
+            for (; i++)
             {
                var person = GlobalStorage.AllPeople[i];
                Console.WriteLine($"  {person}");
