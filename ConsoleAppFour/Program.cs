@@ -25,7 +25,7 @@ namespace ConsoleAppFour
          }
 
          // Выполняем операции над глобальными данными
-         Console.WriteLine("\n--- Выполняем операции ---");
+         Console.WriteLine("\nВыполняем операции");
 
          // 1. Добавляем нового человека из консоли
          var newPerson = new Person
