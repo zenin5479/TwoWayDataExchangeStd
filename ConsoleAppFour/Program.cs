@@ -22,11 +22,6 @@ namespace ConsoleAppFour
                Console.WriteLine($"  {person}");
                i++;
             }
-
-            for ( )
-            {
-
-            }
          }
 
          // Выполняем операции над глобальными данными
