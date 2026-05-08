@@ -55,8 +55,6 @@ namespace ConsoleAppFour
 
                i++;
             }
-
-           
          }
 
          // 3. Записываем сообщение для WinForms
