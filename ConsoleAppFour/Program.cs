@@ -16,16 +16,16 @@ namespace ConsoleAppFour
          {
             Console.WriteLine("\nСуществующие люди:");
             int i = 0;
-            while ( i < GlobalStorage.AllPeople.Count)
+            while (i < GlobalStorage.AllPeople.Count)
             {
-                var person = GlobalStorage.AllPeople[i];
+               var person = GlobalStorage.AllPeople[i];
                Console.WriteLine($"  {person}");
                i++;
             }
 
             for ( )
             {
-              
+
             }
          }
 
