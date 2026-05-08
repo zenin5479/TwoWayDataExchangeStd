@@ -45,7 +45,7 @@ namespace ConsoleAppFour
             foreach (Person person in GlobalStorage.AllPeople.Where(p => p.Id != newPerson.Id))
             {
                person.Salary += 5000;
-               Console.WriteLine($"✓ {person.Name} получил бонус +5000");
+               Console.WriteLine(string.Format("✓ {0} получил бонус +5000", person.Name));
             }
          }
 
