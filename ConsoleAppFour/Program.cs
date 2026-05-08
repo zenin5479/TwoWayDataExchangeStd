@@ -50,7 +50,9 @@ namespace ConsoleAppFour
          }
 
          // 3. Записываем сообщение для WinForms
-         GlobalStorage.LastConsoleOutput = $"Консоль завершила работу. Добавлен 1 человек, обновлено {GlobalStorage.AllPeople.Count - 1} человек(а). Всего: {GlobalStorage.TotalPeopleCount}";
+         GlobalStorage.LastConsoleOutput =
+            string.Format("Консоль завершила работу. Добавлен 1 человек, обновлено {0} человек(а). Всего: {1}",
+               GlobalStorage.AllPeople.Count - 1, GlobalStorage.TotalPeopleCount);
 
          Console.WriteLine($"\n--- ИТОГО: {GlobalStorage.TotalPeopleCount} человек в хранилище ---");
          Console.WriteLine("\nНажмите Enter для завершения...");
