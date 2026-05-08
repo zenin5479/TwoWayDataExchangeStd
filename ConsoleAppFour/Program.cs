@@ -30,7 +30,7 @@ namespace ConsoleAppFour
          // 1. Добавляем нового человека из консоли
          Person newPerson = new Person
          {
-            Name = "Консольный Пользователь",
+            Name = "Консольный пользователь",
             BirthDate = new DateTime(1985, 5, 15),
             Salary = 75000,
             Skills = { "C#", "Консоль", "DLL-интеграция" },
