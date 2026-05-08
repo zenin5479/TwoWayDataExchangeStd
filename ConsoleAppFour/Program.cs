@@ -19,7 +19,7 @@ namespace ConsoleAppFour
             while (i < GlobalStorage.AllPeople.Count)
             {
                Person person = GlobalStorage.AllPeople[i];
-               Console.WriteLine($"  {person}");
+               Console.WriteLine(string.Format("  {0}", person));
                i++;
             }
          }
