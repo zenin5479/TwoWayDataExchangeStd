@@ -46,18 +46,20 @@ namespace ConsoleAppFour
             int i = 0;
             while (i < GlobalStorage.AllPeople.Count)
             {
-
-               i++;
-            }
-
-            for ( )
-            {
-               Person person = GlobalStorage.AllPeople[i];
+Person person = GlobalStorage.AllPeople[i];
                if (person.Id != newPerson.Id)
                {
                   person.Salary += 5000;
                   Console.WriteLine("{0} получил бонус +5000", person.Name);
                }
+               
+               
+               i++;
+            }
+
+            for ( )
+            {
+               
             }
          }
 
