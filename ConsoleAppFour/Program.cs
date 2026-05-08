@@ -11,9 +11,9 @@ namespace ConsoleAppFour
          Console.WriteLine("Текущее количество людей в хранилище: {0}", GlobalStorage.TotalPeopleCount);
 
          // Показываем существующих людей
-         for (int index = 0; index < GlobalStorage.AllPeople.Count; )
+         for (int index = 0; index < GlobalStorage.AllPeople.Count; index++)
          {
-            Person person1 = GlobalStorage.AllPeople[index];
+            var person1 = GlobalStorage.AllPeople[index];
             Console.WriteLine("\nСуществующие люди:");
             int i = 0;
             while (i < GlobalStorage.AllPeople.Count)
