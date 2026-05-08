@@ -1,6 +1,5 @@
 ﻿using ClassLibraryFour;
 using System;
-using System.Linq;
 
 namespace ConsoleAppFour
 {
@@ -12,9 +11,9 @@ namespace ConsoleAppFour
          Console.WriteLine("Текущее количество людей в хранилище: {0}", GlobalStorage.TotalPeopleCount);
 
          // Показываем существующих людей
-         for (var index = 0; index < GlobalStorage.AllPeople.Count; index++)
+         for (int index = 0; index < GlobalStorage.AllPeople.Count; )
          {
-            var person1 = GlobalStorage.AllPeople[index];
+            Person person1 = GlobalStorage.AllPeople[index];
             Console.WriteLine("\nСуществующие люди:");
             int i = 0;
             while (i < GlobalStorage.AllPeople.Count)
