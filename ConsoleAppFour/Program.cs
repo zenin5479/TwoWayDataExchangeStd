@@ -45,7 +45,7 @@ namespace ConsoleAppFour
          {
             for (int i = 0; i < GlobalStorage.AllPeople.Count; i++)
             {
-               var person = GlobalStorage.AllPeople[i];
+               Person person = GlobalStorage.AllPeople[i];
                if (person.Id != newPerson.Id)
                {
                   person.Salary += 5000;
