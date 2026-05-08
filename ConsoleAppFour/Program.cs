@@ -43,7 +43,14 @@ namespace ConsoleAppFour
          // 2. Обновляем данные существующих (добавляем бонус к зарплате)
          if (GlobalStorage.AllPeople.Count > 1)
          {
-            for (int i = 0; i < GlobalStorage.AllPeople.Count; i++)
+            int i = 0;
+            while (i < GlobalStorage.AllPeople.Count)
+            {
+
+               i++;
+            }
+
+            for ( )
             {
                Person person = GlobalStorage.AllPeople[i];
                if (person.Id != newPerson.Id)
