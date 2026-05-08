@@ -42,7 +42,7 @@ namespace ConsoleAppFour
          // 2. Обновляем данные существующих (добавляем бонус к зарплате)
          if (GlobalStorage.AllPeople.Count > 1)
          {
-            foreach (var person in GlobalStorage.AllPeople.Where(p => p.Id != newPerson.Id))
+            foreach (Person person in GlobalStorage.AllPeople.Where(p => p.Id != newPerson.Id))
             {
                person.Salary += 5000;
                Console.WriteLine($"✓ {person.Name} получил бонус +5000");
