@@ -37,7 +37,7 @@ namespace ConsoleAppFour
             Attributes = { { "Отдел", "IT" }, { "Город", "Москва" } }
          };
          GlobalStorage.AddPerson(newPerson);
-         Console.WriteLine($"✓ Добавлен: {newPerson.Name}");
+         Console.WriteLine(string.Format("Добавлен: {0}", newPerson.Name));
 
          // 2. Обновляем данные существующих (добавляем бонус к зарплате)
          if (GlobalStorage.AllPeople.Count > 1)
