@@ -12,7 +12,7 @@ namespace ConsoleAppFour
          Console.WriteLine("Текущее количество людей в хранилище: {0}", GlobalStorage.TotalPeopleCount);
 
          // Показываем существующих людей
-         if (GlobalStorage.AllPeople.Any())
+         foreach (var person1 in GlobalStorage.AllPeople)
          {
             Console.WriteLine("\nСуществующие люди:");
             int i = 0;
@@ -22,6 +22,8 @@ namespace ConsoleAppFour
                Console.WriteLine("  {0}", person);
                i++;
             }
+
+            break;
          }
 
          // Выполняем операции над глобальными данными
