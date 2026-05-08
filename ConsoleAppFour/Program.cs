@@ -9,7 +9,7 @@ namespace ConsoleAppFour
       static void Main()
       {
          Console.WriteLine("=== КОНСОЛЬНЫЙ ОБРАБОТЧИК ===");
-         Console.WriteLine($"Текущее количество людей в хранилище: {GlobalStorage.TotalPeopleCount}");
+         Console.WriteLine(string.Format("Текущее количество людей в хранилище: {0}", GlobalStorage.TotalPeopleCount));
 
          // Показываем существующих людей
          if (GlobalStorage.AllPeople.Any())
