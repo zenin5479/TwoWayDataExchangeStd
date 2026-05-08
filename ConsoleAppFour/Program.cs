@@ -36,6 +36,7 @@ namespace ConsoleAppFour
             Skills = { "C#", "Консоль", "DLL-интеграция" },
             Attributes = { { "Отдел", "IT" }, { "Город", "Москва" } }
          };
+
          GlobalStorage.AddPerson(newPerson);
          Console.WriteLine("Добавлен: {0}", newPerson.Name);
 
@@ -45,7 +46,7 @@ namespace ConsoleAppFour
             foreach (Person person in GlobalStorage.AllPeople.Where(p => p.Id != newPerson.Id))
             {
                person.Salary += 5000;
-               Console.WriteLine(string.Format("✓ {0} получил бонус +5000", person.Name));
+               Console.WriteLine("{0} получил бонус +5000", person.Name);
             }
          }
 
