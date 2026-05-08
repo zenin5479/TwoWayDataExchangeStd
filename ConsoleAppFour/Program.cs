@@ -18,7 +18,7 @@ namespace ConsoleAppFour
             int i = 0;
             while (i < GlobalStorage.AllPeople.Count)
             {
-               var person = GlobalStorage.AllPeople[i];
+               Person person = GlobalStorage.AllPeople[i];
                Console.WriteLine($"  {person}");
                i++;
             }
