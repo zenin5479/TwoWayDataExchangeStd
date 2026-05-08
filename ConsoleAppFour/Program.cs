@@ -54,7 +54,7 @@ namespace ConsoleAppFour
             string.Format("Консоль завершила работу. Добавлен 1 человек, обновлено {0} человек(а). Всего: {1}",
                GlobalStorage.AllPeople.Count - 1, GlobalStorage.TotalPeopleCount);
 
-         Console.WriteLine(string.Format("\n--- ИТОГО: {0} человек в хранилище ---", GlobalStorage.TotalPeopleCount));
+         Console.WriteLine("\nИТОГО: {0} человек в хранилище", GlobalStorage.TotalPeopleCount);
          Console.WriteLine("\nНажмите Enter для завершения...");
          Console.ReadLine();
       }
