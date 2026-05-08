@@ -15,8 +15,9 @@ namespace ConsoleAppFour
          if (GlobalStorage.AllPeople.Any())
          {
             Console.WriteLine("\nСуществующие люди:");
-            foreach (var person in GlobalStorage.AllPeople)
+            for (var i = 0; i < GlobalStorage.AllPeople.Count; i++)
             {
+               var person = GlobalStorage.AllPeople[i];
                Console.WriteLine($"  {person}");
             }
          }
