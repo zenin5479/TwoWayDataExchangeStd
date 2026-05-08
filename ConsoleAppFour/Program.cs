@@ -28,7 +28,7 @@ namespace ConsoleAppFour
          Console.WriteLine("\nВыполняем операции");
 
          // 1. Добавляем нового человека из консоли
-         var newPerson = new Person
+         Person newPerson = new Person
          {
             Name = "Консольный Пользователь",
             BirthDate = new DateTime(1985, 5, 15),
