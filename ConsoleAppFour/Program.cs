@@ -16,7 +16,12 @@ namespace ConsoleAppFour
          {
             Console.WriteLine("\nСуществующие люди:");
             
-            for (int i = 0; i < GlobalStorage.AllPeople.Count; i++)
+            while ( i < GlobalStorage.AllPeople.Count)
+            {
+               
+            }
+
+            for (int i = 0;; i++)
             {
                var person = GlobalStorage.AllPeople[i];
                Console.WriteLine($"  {person}");
