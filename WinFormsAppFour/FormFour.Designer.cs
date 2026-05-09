@@ -48,14 +48,14 @@
          panelTop.Controls.Add(btnRunConsole);
          panelTop.Controls.Add(btnDeleteSelected);
          panelTop.Controls.Add(btnEditSelected);
-         panelTop.Location = new System.Drawing.Point(461, 66);
+         panelTop.Location = new System.Drawing.Point(12, 168);
          panelTop.Name = "panelTop";
          panelTop.Size = new System.Drawing.Size(194, 90);
          panelTop.TabIndex = 0;
          // 
          // panelBottom
          // 
-         panelBottom.Location = new System.Drawing.Point(218, 12);
+         panelBottom.Location = new System.Drawing.Point(245, 197);
          panelBottom.Name = "panelBottom";
          panelBottom.Size = new System.Drawing.Size(200, 100);
          panelBottom.TabIndex = 1;
@@ -63,7 +63,7 @@
          // dgvPeople
          // 
          dgvPeople.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-         dgvPeople.Location = new System.Drawing.Point(12, 118);
+         dgvPeople.Location = new System.Drawing.Point(12, 12);
          dgvPeople.Name = "dgvPeople";
          dgvPeople.RowTemplate.Height = 25;
          dgvPeople.Size = new System.Drawing.Size(200, 150);
