@@ -30,8 +30,8 @@
       {
          panel1 = new System.Windows.Forms.Panel();
          panel2 = new System.Windows.Forms.Panel();
-         dataGridView1 = new System.Windows.Forms.DataGridView();
-         ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+         dgvPeople = new System.Windows.Forms.DataGridView();
+         ((System.ComponentModel.ISupportInitialize)dgvPeople).BeginInit();
          SuspendLayout();
          // 
          // panel1
@@ -48,26 +48,26 @@
          panel2.Size = new System.Drawing.Size(200, 100);
          panel2.TabIndex = 1;
          // 
-         // dataGridView1
+         // dgvPeople
          // 
-         dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-         dataGridView1.Location = new System.Drawing.Point(12, 118);
-         dataGridView1.Name = "dataGridView1";
-         dataGridView1.RowTemplate.Height = 25;
-         dataGridView1.Size = new System.Drawing.Size(200, 150);
-         dataGridView1.TabIndex = 2;
+         dgvPeople.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+         dgvPeople.Location = new System.Drawing.Point(12, 118);
+         dgvPeople.Name = "dgvPeople";
+         dgvPeople.RowTemplate.Height = 25;
+         dgvPeople.Size = new System.Drawing.Size(200, 150);
+         dgvPeople.TabIndex = 2;
          // 
          // FormFour
          // 
          AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
          AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
          ClientSize = new System.Drawing.Size(768, 471);
-         Controls.Add(dataGridView1);
+         Controls.Add(dgvPeople);
          Controls.Add(panel2);
          Controls.Add(panel1);
          Name = "FormFour";
          Text = "Система обмена данными с консолью";
-         ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+         ((System.ComponentModel.ISupportInitialize)dgvPeople).EndInit();
          ResumeLayout(false);
       }
 
@@ -75,6 +75,6 @@
 
       private System.Windows.Forms.Panel panel1;
       private System.Windows.Forms.Panel panel2;
-      private System.Windows.Forms.DataGridView dataGridView1;
+      private System.Windows.Forms.DataGridView dgvPeople;
    }
 }
