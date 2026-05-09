@@ -36,6 +36,7 @@
          btnDeleteSelected = new System.Windows.Forms.Button();
          btnEditSelected = new System.Windows.Forms.Button();
          label1 = new System.Windows.Forms.Label();
+         label2 = new System.Windows.Forms.Label();
          ((System.ComponentModel.ISupportInitialize)dgvPeople).BeginInit();
          SuspendLayout();
          // 
@@ -107,11 +108,21 @@
          label1.TabIndex = 7;
          label1.Text = "Всего людей: 0";
          // 
+         // label2
+         // 
+         label2.AutoSize = true;
+         label2.Location = new System.Drawing.Point(421, 329);
+         label2.Name = "label2";
+         label2.Size = new System.Drawing.Size(38, 15);
+         label2.TabIndex = 8;
+         label2.Text = "label2";
+         // 
          // FormFour
          // 
          AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
          AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
          ClientSize = new System.Drawing.Size(768, 471);
+         Controls.Add(label2);
          Controls.Add(label1);
          Controls.Add(btnEditSelected);
          Controls.Add(btnDeleteSelected);
@@ -137,5 +148,6 @@
       private System.Windows.Forms.Button btnDeleteSelected;
       private System.Windows.Forms.Button btnEditSelected;
       private System.Windows.Forms.Label label1;
+      private System.Windows.Forms.Label label2;
    }
 }
