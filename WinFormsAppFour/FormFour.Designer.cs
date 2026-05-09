@@ -38,7 +38,7 @@
          label1 = new System.Windows.Forms.Label();
          lblAvgSalary = new System.Windows.Forms.Label();
          dgvPeople = new System.Windows.Forms.DataGridView();
-         label2 = new System.Windows.Forms.Label();
+         lblConsoleMessage = new System.Windows.Forms.Label();
          panelTop.SuspendLayout();
          panelBottom.SuspendLayout();
          ((System.ComponentModel.ISupportInitialize)dgvPeople).BeginInit();
@@ -137,21 +137,21 @@
          dgvPeople.Size = new System.Drawing.Size(200, 150);
          dgvPeople.TabIndex = 2;
          // 
-         // label2
+         // lblConsoleMessage
          // 
-         label2.AutoSize = true;
-         label2.Location = new System.Drawing.Point(290, 152);
-         label2.Name = "label2";
-         label2.Size = new System.Drawing.Size(38, 15);
-         label2.TabIndex = 3;
-         label2.Text = "label2";
+         lblConsoleMessage.AutoSize = true;
+         lblConsoleMessage.Location = new System.Drawing.Point(290, 152);
+         lblConsoleMessage.Name = "lblConsoleMessage";
+         lblConsoleMessage.Size = new System.Drawing.Size(96, 15);
+         lblConsoleMessage.TabIndex = 3;
+         lblConsoleMessage.Text = "ConsoleMessage";
          // 
          // FormFour
          // 
          AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
          AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
          ClientSize = new System.Drawing.Size(404, 270);
-         Controls.Add(label2);
+         Controls.Add(lblConsoleMessage);
          Controls.Add(dgvPeople);
          Controls.Add(panelBottom);
          Controls.Add(panelTop);
@@ -177,6 +177,6 @@
       private System.Windows.Forms.Label label1;
       private System.Windows.Forms.Label lblAvgSalary;
       private System.Windows.Forms.Label lblConsol;
-      private System.Windows.Forms.Label label2;
+      private System.Windows.Forms.Label lblConsoleMessage;
    }
 }
