@@ -111,11 +111,11 @@
          // lblAvgSalary
          // 
          lblAvgSalary.AutoSize = true;
-         lblAvgSalary.Location = new System.Drawing.Point(421, 329);
+         lblAvgSalary.Location = new System.Drawing.Point(493, 303);
          lblAvgSalary.Name = "lblAvgSalary";
-         lblAvgSalary.Size = new System.Drawing.Size(38, 15);
+         lblAvgSalary.Size = new System.Drawing.Size(84, 15);
          lblAvgSalary.TabIndex = 8;
-         lblAvgSalary.Text = "label2";
+         lblAvgSalary.Text = "Средняя ЗП: 0";
          // 
          // FormFour
          // 
