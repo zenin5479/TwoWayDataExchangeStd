@@ -33,7 +33,7 @@
          dgvPeople = new System.Windows.Forms.DataGridView();
          btnAddPerson = new System.Windows.Forms.Button();
          btnRunConsole = new System.Windows.Forms.Button();
-         button1 = new System.Windows.Forms.Button();
+         btnDeleteSelected = new System.Windows.Forms.Button();
          ((System.ComponentModel.ISupportInitialize)dgvPeople).BeginInit();
          SuspendLayout();
          // 
@@ -78,21 +78,21 @@
          btnRunConsole.Text = "▶ Запустить консоль";
          btnRunConsole.UseVisualStyleBackColor = true;
          // 
-         // button1
+         // btnDeleteSelected
          // 
-         button1.Location = new System.Drawing.Point(358, 309);
-         button1.Name = "button1";
-         button1.Size = new System.Drawing.Size(75, 23);
-         button1.TabIndex = 5;
-         button1.Text = "button1";
-         button1.UseVisualStyleBackColor = true;
+         btnDeleteSelected.Location = new System.Drawing.Point(358, 309);
+         btnDeleteSelected.Name = "btnDeleteSelected";
+         btnDeleteSelected.Size = new System.Drawing.Size(75, 23);
+         btnDeleteSelected.TabIndex = 5;
+         btnDeleteSelected.Text = "button1";
+         btnDeleteSelected.UseVisualStyleBackColor = true;
          // 
          // FormFour
          // 
          AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
          AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
          ClientSize = new System.Drawing.Size(768, 471);
-         Controls.Add(button1);
+         Controls.Add(btnDeleteSelected);
          Controls.Add(btnRunConsole);
          Controls.Add(btnAddPerson);
          Controls.Add(dgvPeople);
@@ -111,6 +111,6 @@
       private System.Windows.Forms.DataGridView dgvPeople;
       private System.Windows.Forms.Button btnAddPerson;
       private System.Windows.Forms.Button btnRunConsole;
-      private System.Windows.Forms.Button button1;
+      private System.Windows.Forms.Button btnDeleteSelected;
    }
 }
