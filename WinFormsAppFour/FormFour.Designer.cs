@@ -43,7 +43,7 @@
          // 
          // panelTop
          // 
-         panelTop.Location = new System.Drawing.Point(12, 12);
+         panelTop.Location = new System.Drawing.Point(504, 66);
          panelTop.Name = "panelTop";
          panelTop.Size = new System.Drawing.Size(200, 100);
          panelTop.TabIndex = 0;
