@@ -94,7 +94,7 @@
          btnEditSelected.Name = "btnEditSelected";
          btnEditSelected.Size = new System.Drawing.Size(75, 23);
          btnEditSelected.TabIndex = 6;
-         btnEditSelected.Text = "button1";
+         btnEditSelected.Text = "✏ Редактировать";
          btnEditSelected.UseVisualStyleBackColor = true;
          // 
          // FormFour
