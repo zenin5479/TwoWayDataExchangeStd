@@ -50,7 +50,7 @@
          panelTop.Controls.Add(btnEditSelected);
          panelTop.Location = new System.Drawing.Point(461, 66);
          panelTop.Name = "panelTop";
-         panelTop.Size = new System.Drawing.Size(243, 171);
+         panelTop.Size = new System.Drawing.Size(194, 90);
          panelTop.TabIndex = 0;
          // 
          // panelBottom
@@ -98,7 +98,7 @@
          // 
          // btnEditSelected
          // 
-         btnEditSelected.Location = new System.Drawing.Point(0, 61);
+         btnEditSelected.Location = new System.Drawing.Point(3, 61);
          btnEditSelected.Name = "btnEditSelected";
          btnEditSelected.Size = new System.Drawing.Size(125, 23);
          btnEditSelected.TabIndex = 6;
