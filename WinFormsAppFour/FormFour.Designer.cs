@@ -72,6 +72,7 @@
          btnRunConsole.TabIndex = 4;
          btnRunConsole.Text = "▶ Запустить консоль";
          btnRunConsole.UseVisualStyleBackColor = true;
+         btnRunConsole.Click += btnRunConsole_Click;
          // 
          // btnDeleteSelected
          // 
