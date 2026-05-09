@@ -7,6 +7,13 @@ namespace WinFormsAppFour
       public FormFour()
       {
          InitializeComponent();
+         RefreshDataGrid();
+         UpdateStatus();
+      }
+
+      private void btnAddPerson_Click(object sender, System.EventArgs e)
+      {
+
       }
    }
 }
