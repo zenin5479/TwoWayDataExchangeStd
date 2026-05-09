@@ -1,22 +1,22 @@
-﻿using ClassLibraryFour;
-using System;
+﻿using System;
 using System.Diagnostics;
+using System.IO;
 using System.Linq;
 using System.Windows.Forms;
-
+using ClassLibraryFour;
 
 namespace WinFormsAppFour
 {
-   public partial class FormFour : Form
+   public partial class MainForm : Form
    {
-      public FormFour()
+      public MainForm()
       {
          InitializeComponent();
          RefreshDataGrid();
          UpdateStatus();
       }
 
-      private void btnAddPerson_Click(object sender, System.EventArgs e)
+      private void btnAddPerson_Click(object sender, EventArgs e)
       {
          using (var inputDialog = new PersonInputDialog())
          {
@@ -31,14 +31,14 @@ namespace WinFormsAppFour
          }
       }
 
-      private void btnRunConsole_Click(object sender, System.EventArgs e)
+      private void btnRunConsole_Click(object sender, EventArgs e)
       {
          // Находим путь к консольному EXE
-         string consolePath = System.IO.Path.Combine(
-            System.IO.Path.GetDirectoryName(Application.ExecutablePath),
+         string consolePath = Path.Combine(
+            Path.GetDirectoryName(Application.ExecutablePath),
             "..", "..", "..", "ConsoleWorker", "bin", "Debug", "netcoreapp3.1", "ConsoleWorker.exe");
 
-         if (!System.IO.File.Exists(consolePath))
+         if (!File.Exists(consolePath))
          {
             MessageBox.Show($"Не найден ConsoleWorker.exe по пути:\n{consolePath}\n\nУкажите правильный путь!",
                "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -46,7 +46,7 @@ namespace WinFormsAppFour
          }
 
          // Запускаем консольное приложение синхронно
-         this.Cursor = Cursors.WaitCursor;
+         Cursor = Cursors.WaitCursor;
          try
          {
             var process = new Process
@@ -77,11 +77,11 @@ namespace WinFormsAppFour
          }
          finally
          {
-            this.Cursor = Cursors.Default;
+            Cursor = Cursors.Default;
          }
       }
 
-      private void btnDeleteSelected_Click(object sender, System.EventArgs e)
+      private void btnDeleteSelected_Click(object sender, EventArgs e)
       {
          if (dgvPeople.CurrentRow == null) return;
 
@@ -98,7 +98,7 @@ namespace WinFormsAppFour
          }
       }
 
-      private void btnEditSelected_Click(object sender, System.EventArgs e)
+      private void btnEditSelected_Click(object sender, EventArgs e)
       {
          if (dgvPeople.CurrentRow == null) return;
 
@@ -143,7 +143,7 @@ namespace WinFormsAppFour
             : "Средняя ЗП: 0";
       }
 
-      private void FormFour_Load(object sender, System.EventArgs e)
+      private void FormFour_Load(object sender, EventArgs e)
       {
          // Добавляем тестовые данные при первом запуске
          if (GlobalStorage.TotalPeopleCount == 0)
