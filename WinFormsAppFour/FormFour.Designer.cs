@@ -82,7 +82,7 @@
          // 
          btnDeleteSelected.Location = new System.Drawing.Point(358, 309);
          btnDeleteSelected.Name = "btnDeleteSelected";
-         btnDeleteSelected.Size = new System.Drawing.Size(75, 23);
+         btnDeleteSelected.Size = new System.Drawing.Size(90, 23);
          btnDeleteSelected.TabIndex = 5;
          btnDeleteSelected.Text = "🗑 Удалить";
          btnDeleteSelected.UseVisualStyleBackColor = true;
