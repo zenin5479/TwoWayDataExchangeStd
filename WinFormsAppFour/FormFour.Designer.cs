@@ -84,7 +84,7 @@
          btnDeleteSelected.Name = "btnDeleteSelected";
          btnDeleteSelected.Size = new System.Drawing.Size(75, 23);
          btnDeleteSelected.TabIndex = 5;
-         btnDeleteSelected.Text = "button1";
+         btnDeleteSelected.Text = "🗑 Удалить";
          btnDeleteSelected.UseVisualStyleBackColor = true;
          // 
          // FormFour
