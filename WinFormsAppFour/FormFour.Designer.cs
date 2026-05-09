@@ -35,6 +35,7 @@
          btnRunConsole = new System.Windows.Forms.Button();
          btnDeleteSelected = new System.Windows.Forms.Button();
          btnEditSelected = new System.Windows.Forms.Button();
+         label1 = new System.Windows.Forms.Label();
          ((System.ComponentModel.ISupportInitialize)dgvPeople).BeginInit();
          SuspendLayout();
          // 
@@ -97,11 +98,21 @@
          btnEditSelected.Text = "✏ Редактировать";
          btnEditSelected.UseVisualStyleBackColor = true;
          // 
+         // label1
+         // 
+         label1.AutoSize = true;
+         label1.Location = new System.Drawing.Point(461, 240);
+         label1.Name = "label1";
+         label1.Size = new System.Drawing.Size(38, 15);
+         label1.TabIndex = 7;
+         label1.Text = "label1";
+         // 
          // FormFour
          // 
          AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
          AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
          ClientSize = new System.Drawing.Size(768, 471);
+         Controls.Add(label1);
          Controls.Add(btnEditSelected);
          Controls.Add(btnDeleteSelected);
          Controls.Add(btnRunConsole);
@@ -113,6 +124,7 @@
          Text = "Система обмена данными с консолью";
          ((System.ComponentModel.ISupportInitialize)dgvPeople).EndInit();
          ResumeLayout(false);
+         PerformLayout();
       }
 
       #endregion
@@ -124,5 +136,6 @@
       private System.Windows.Forms.Button btnRunConsole;
       private System.Windows.Forms.Button btnDeleteSelected;
       private System.Windows.Forms.Button btnEditSelected;
+      private System.Windows.Forms.Label label1;
    }
 }
