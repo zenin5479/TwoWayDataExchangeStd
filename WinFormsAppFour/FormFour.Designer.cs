@@ -29,15 +29,16 @@
       private void InitializeComponent()
       {
          panelTop = new System.Windows.Forms.Panel();
-         panelBottom = new System.Windows.Forms.Panel();
-         dgvPeople = new System.Windows.Forms.DataGridView();
          btnAddPerson = new System.Windows.Forms.Button();
          btnRunConsole = new System.Windows.Forms.Button();
          btnDeleteSelected = new System.Windows.Forms.Button();
          btnEditSelected = new System.Windows.Forms.Button();
+         panelBottom = new System.Windows.Forms.Panel();
+         lblConsol = new System.Windows.Forms.Label();
          label1 = new System.Windows.Forms.Label();
          lblAvgSalary = new System.Windows.Forms.Label();
-         lblConsoleMessage = new System.Windows.Forms.Label();
+         dgvPeople = new System.Windows.Forms.DataGridView();
+         label2 = new System.Windows.Forms.Label();
          panelTop.SuspendLayout();
          panelBottom.SuspendLayout();
          ((System.ComponentModel.ISupportInitialize)dgvPeople).BeginInit();
@@ -53,25 +54,6 @@
          panelTop.Name = "panelTop";
          panelTop.Size = new System.Drawing.Size(194, 90);
          panelTop.TabIndex = 0;
-         // 
-         // panelBottom
-         // 
-         panelBottom.Controls.Add(lblConsoleMessage);
-         panelBottom.Controls.Add(label1);
-         panelBottom.Controls.Add(lblAvgSalary);
-         panelBottom.Location = new System.Drawing.Point(218, 12);
-         panelBottom.Name = "panelBottom";
-         panelBottom.Size = new System.Drawing.Size(177, 78);
-         panelBottom.TabIndex = 1;
-         // 
-         // dgvPeople
-         // 
-         dgvPeople.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-         dgvPeople.Location = new System.Drawing.Point(12, 12);
-         dgvPeople.Name = "dgvPeople";
-         dgvPeople.RowTemplate.Height = 25;
-         dgvPeople.Size = new System.Drawing.Size(200, 150);
-         dgvPeople.TabIndex = 2;
          // 
          // btnAddPerson
          // 
@@ -109,6 +91,25 @@
          btnEditSelected.Text = "✏ Редактировать";
          btnEditSelected.UseVisualStyleBackColor = true;
          // 
+         // panelBottom
+         // 
+         panelBottom.Controls.Add(lblConsol);
+         panelBottom.Controls.Add(label1);
+         panelBottom.Controls.Add(lblAvgSalary);
+         panelBottom.Location = new System.Drawing.Point(218, 12);
+         panelBottom.Name = "panelBottom";
+         panelBottom.Size = new System.Drawing.Size(177, 78);
+         panelBottom.TabIndex = 1;
+         // 
+         // lblConsol
+         // 
+         lblConsol.AutoSize = true;
+         lblConsol.Location = new System.Drawing.Point(3, 56);
+         lblConsol.Name = "lblConsol";
+         lblConsol.Size = new System.Drawing.Size(38, 15);
+         lblConsol.TabIndex = 9;
+         lblConsol.Text = "label8";
+         // 
          // label1
          // 
          label1.AutoSize = true;
@@ -127,20 +128,30 @@
          lblAvgSalary.TabIndex = 8;
          lblAvgSalary.Text = "Средняя ЗП: 0";
          // 
-         // lblConsoleMessage
+         // dgvPeople
          // 
-         lblConsoleMessage.AutoSize = true;
-         lblConsoleMessage.Location = new System.Drawing.Point(3, 56);
-         lblConsoleMessage.Name = "lblConsoleMessage";
-         lblConsoleMessage.Size = new System.Drawing.Size(38, 15);
-         lblConsoleMessage.TabIndex = 9;
-         lblConsoleMessage.Text = "label2";
+         dgvPeople.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+         dgvPeople.Location = new System.Drawing.Point(12, 12);
+         dgvPeople.Name = "dgvPeople";
+         dgvPeople.RowTemplate.Height = 25;
+         dgvPeople.Size = new System.Drawing.Size(200, 150);
+         dgvPeople.TabIndex = 2;
+         // 
+         // label2
+         // 
+         label2.AutoSize = true;
+         label2.Location = new System.Drawing.Point(290, 152);
+         label2.Name = "label2";
+         label2.Size = new System.Drawing.Size(38, 15);
+         label2.TabIndex = 3;
+         label2.Text = "label2";
          // 
          // FormFour
          // 
          AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
          AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
          ClientSize = new System.Drawing.Size(404, 270);
+         Controls.Add(label2);
          Controls.Add(dgvPeople);
          Controls.Add(panelBottom);
          Controls.Add(panelTop);
@@ -151,6 +162,7 @@
          panelBottom.PerformLayout();
          ((System.ComponentModel.ISupportInitialize)dgvPeople).EndInit();
          ResumeLayout(false);
+         PerformLayout();
       }
 
       #endregion
@@ -164,6 +176,7 @@
       private System.Windows.Forms.Button btnEditSelected;
       private System.Windows.Forms.Label label1;
       private System.Windows.Forms.Label lblAvgSalary;
-      private System.Windows.Forms.Label lblConsoleMessage;
+      private System.Windows.Forms.Label lblConsol;
+      private System.Windows.Forms.Label label2;
    }
 }
