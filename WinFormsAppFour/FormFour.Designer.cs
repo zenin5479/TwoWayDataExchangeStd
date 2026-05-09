@@ -34,7 +34,6 @@
          btnDeleteSelected = new System.Windows.Forms.Button();
          btnEditSelected = new System.Windows.Forms.Button();
          panelBottom = new System.Windows.Forms.Panel();
-         lblConsol = new System.Windows.Forms.Label();
          label1 = new System.Windows.Forms.Label();
          lblAvgSalary = new System.Windows.Forms.Label();
          dgvPeople = new System.Windows.Forms.DataGridView();
@@ -93,22 +92,12 @@
          // 
          // panelBottom
          // 
-         panelBottom.Controls.Add(lblConsol);
          panelBottom.Controls.Add(label1);
          panelBottom.Controls.Add(lblAvgSalary);
          panelBottom.Location = new System.Drawing.Point(218, 12);
          panelBottom.Name = "panelBottom";
          panelBottom.Size = new System.Drawing.Size(177, 78);
          panelBottom.TabIndex = 1;
-         // 
-         // lblConsol
-         // 
-         lblConsol.AutoSize = true;
-         lblConsol.Location = new System.Drawing.Point(3, 56);
-         lblConsol.Name = "lblConsol";
-         lblConsol.Size = new System.Drawing.Size(38, 15);
-         lblConsol.TabIndex = 9;
-         lblConsol.Text = "label8";
          // 
          // label1
          // 
@@ -176,7 +165,6 @@
       private System.Windows.Forms.Button btnEditSelected;
       private System.Windows.Forms.Label label1;
       private System.Windows.Forms.Label lblAvgSalary;
-      private System.Windows.Forms.Label lblConsol;
       private System.Windows.Forms.Label lblConsoleMessage;
    }
 }
