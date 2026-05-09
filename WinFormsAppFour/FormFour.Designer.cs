@@ -92,11 +92,12 @@
          // 
          // panelBottom
          // 
+         panelBottom.Controls.Add(lblConsoleMessage);
          panelBottom.Controls.Add(label1);
          panelBottom.Controls.Add(lblAvgSalary);
          panelBottom.Location = new System.Drawing.Point(218, 12);
          panelBottom.Name = "panelBottom";
-         panelBottom.Size = new System.Drawing.Size(177, 78);
+         panelBottom.Size = new System.Drawing.Size(177, 63);
          panelBottom.TabIndex = 1;
          // 
          // label1
@@ -111,7 +112,7 @@
          // lblAvgSalary
          // 
          lblAvgSalary.AutoSize = true;
-         lblAvgSalary.Location = new System.Drawing.Point(3, 32);
+         lblAvgSalary.Location = new System.Drawing.Point(3, 26);
          lblAvgSalary.Name = "lblAvgSalary";
          lblAvgSalary.Size = new System.Drawing.Size(84, 15);
          lblAvgSalary.TabIndex = 8;
@@ -129,7 +130,7 @@
          // lblConsoleMessage
          // 
          lblConsoleMessage.AutoSize = true;
-         lblConsoleMessage.Location = new System.Drawing.Point(290, 152);
+         lblConsoleMessage.Location = new System.Drawing.Point(3, 41);
          lblConsoleMessage.Name = "lblConsoleMessage";
          lblConsoleMessage.Size = new System.Drawing.Size(96, 15);
          lblConsoleMessage.TabIndex = 3;
@@ -140,7 +141,6 @@
          AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
          AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
          ClientSize = new System.Drawing.Size(404, 270);
-         Controls.Add(lblConsoleMessage);
          Controls.Add(dgvPeople);
          Controls.Add(panelBottom);
          Controls.Add(panelTop);
@@ -151,7 +151,6 @@
          panelBottom.PerformLayout();
          ((System.ComponentModel.ISupportInitialize)dgvPeople).EndInit();
          ResumeLayout(false);
-         PerformLayout();
       }
 
       #endregion
