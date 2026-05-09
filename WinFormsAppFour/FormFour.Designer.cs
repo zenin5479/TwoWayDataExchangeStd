@@ -74,7 +74,7 @@
          btnRunConsole.Name = "btnRunConsole";
          btnRunConsole.Size = new System.Drawing.Size(75, 23);
          btnRunConsole.TabIndex = 4;
-         btnRunConsole.Text = "button1";
+         btnRunConsole.Text = "▶ Запустить консоль";
          btnRunConsole.UseVisualStyleBackColor = true;
          // 
          // FormFour
