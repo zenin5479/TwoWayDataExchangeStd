@@ -1,5 +1,5 @@
-﻿using System.Windows.Forms;
-using ClassLibraryFour;
+﻿using ClassLibraryFour;
+using System.Windows.Forms;
 
 namespace WinFormsAppFour
 {
