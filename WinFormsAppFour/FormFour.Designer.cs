@@ -37,6 +37,7 @@
          btnEditSelected = new System.Windows.Forms.Button();
          label1 = new System.Windows.Forms.Label();
          lblAvgSalary = new System.Windows.Forms.Label();
+         label2 = new System.Windows.Forms.Label();
          ((System.ComponentModel.ISupportInitialize)dgvPeople).BeginInit();
          SuspendLayout();
          // 
@@ -117,11 +118,21 @@
          lblAvgSalary.TabIndex = 8;
          lblAvgSalary.Text = "Средняя ЗП: 0";
          // 
+         // label2
+         // 
+         label2.AutoSize = true;
+         label2.Location = new System.Drawing.Point(421, 364);
+         label2.Name = "label2";
+         label2.Size = new System.Drawing.Size(38, 15);
+         label2.TabIndex = 9;
+         label2.Text = "label2";
+         // 
          // FormFour
          // 
          AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
          AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
          ClientSize = new System.Drawing.Size(768, 471);
+         Controls.Add(label2);
          Controls.Add(lblAvgSalary);
          Controls.Add(label1);
          Controls.Add(btnEditSelected);
@@ -149,5 +160,6 @@
       private System.Windows.Forms.Button btnEditSelected;
       private System.Windows.Forms.Label label1;
       private System.Windows.Forms.Label lblAvgSalary;
+      private System.Windows.Forms.Label label2;
    }
 }
