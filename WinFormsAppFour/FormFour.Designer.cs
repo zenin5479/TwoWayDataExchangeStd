@@ -38,14 +38,19 @@
          label1 = new System.Windows.Forms.Label();
          lblAvgSalary = new System.Windows.Forms.Label();
          lblConsoleMessage = new System.Windows.Forms.Label();
+         panelTop.SuspendLayout();
          ((System.ComponentModel.ISupportInitialize)dgvPeople).BeginInit();
          SuspendLayout();
          // 
          // panelTop
          // 
-         panelTop.Location = new System.Drawing.Point(504, 66);
+         panelTop.Controls.Add(btnAddPerson);
+         panelTop.Controls.Add(btnRunConsole);
+         panelTop.Controls.Add(btnDeleteSelected);
+         panelTop.Controls.Add(btnEditSelected);
+         panelTop.Location = new System.Drawing.Point(461, 66);
          panelTop.Name = "panelTop";
-         panelTop.Size = new System.Drawing.Size(200, 100);
+         panelTop.Size = new System.Drawing.Size(243, 171);
          panelTop.TabIndex = 0;
          // 
          // panelBottom
@@ -66,7 +71,7 @@
          // 
          // btnAddPerson
          // 
-         btnAddPerson.Location = new System.Drawing.Point(12, 274);
+         btnAddPerson.Location = new System.Drawing.Point(3, 32);
          btnAddPerson.Name = "btnAddPerson";
          btnAddPerson.Size = new System.Drawing.Size(90, 23);
          btnAddPerson.TabIndex = 3;
@@ -75,7 +80,7 @@
          // 
          // btnRunConsole
          // 
-         btnRunConsole.Location = new System.Drawing.Point(12, 303);
+         btnRunConsole.Location = new System.Drawing.Point(3, 3);
          btnRunConsole.Name = "btnRunConsole";
          btnRunConsole.Size = new System.Drawing.Size(135, 23);
          btnRunConsole.TabIndex = 4;
@@ -84,7 +89,7 @@
          // 
          // btnDeleteSelected
          // 
-         btnDeleteSelected.Location = new System.Drawing.Point(12, 332);
+         btnDeleteSelected.Location = new System.Drawing.Point(99, 32);
          btnDeleteSelected.Name = "btnDeleteSelected";
          btnDeleteSelected.Size = new System.Drawing.Size(90, 23);
          btnDeleteSelected.TabIndex = 5;
@@ -93,7 +98,7 @@
          // 
          // btnEditSelected
          // 
-         btnEditSelected.Location = new System.Drawing.Point(12, 361);
+         btnEditSelected.Location = new System.Drawing.Point(0, 61);
          btnEditSelected.Name = "btnEditSelected";
          btnEditSelected.Size = new System.Drawing.Size(125, 23);
          btnEditSelected.TabIndex = 6;
@@ -135,15 +140,12 @@
          Controls.Add(lblConsoleMessage);
          Controls.Add(lblAvgSalary);
          Controls.Add(label1);
-         Controls.Add(btnEditSelected);
-         Controls.Add(btnDeleteSelected);
-         Controls.Add(btnRunConsole);
-         Controls.Add(btnAddPerson);
          Controls.Add(dgvPeople);
          Controls.Add(panelBottom);
          Controls.Add(panelTop);
          Name = "FormFour";
          Text = "Система обмена данными с консолью";
+         panelTop.ResumeLayout(false);
          ((System.ComponentModel.ISupportInitialize)dgvPeople).EndInit();
          ResumeLayout(false);
          PerformLayout();
