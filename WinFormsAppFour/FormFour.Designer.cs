@@ -90,7 +90,7 @@
          // 
          // btnEditSelected
          // 
-         btnEditSelected.Location = new System.Drawing.Point(307, 377);
+         btnEditSelected.Location = new System.Drawing.Point(12, 361);
          btnEditSelected.Name = "btnEditSelected";
          btnEditSelected.Size = new System.Drawing.Size(125, 23);
          btnEditSelected.TabIndex = 6;
