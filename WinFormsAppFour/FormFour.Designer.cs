@@ -92,7 +92,7 @@
          // 
          btnEditSelected.Location = new System.Drawing.Point(307, 377);
          btnEditSelected.Name = "btnEditSelected";
-         btnEditSelected.Size = new System.Drawing.Size(123, 23);
+         btnEditSelected.Size = new System.Drawing.Size(125, 23);
          btnEditSelected.TabIndex = 6;
          btnEditSelected.Text = "✏ Редактировать";
          btnEditSelected.UseVisualStyleBackColor = true;
