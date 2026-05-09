@@ -1,18 +1,18 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Text;
-using System.Windows.Forms;
+﻿using System.Windows.Forms;
+using ClassLibraryFour;
 
 namespace WinFormsAppFour
 {
    public partial class PersonInputDialog : Form
    {
-      public PersonInputDialog()
+      public Person CreatedPerson { get; private set; }
+      private Person _editPerson;
+
+      public PersonInputDialog(Person editPerson = null)
       {
          InitializeComponent();
+
+         _editPerson = editPerson;
       }
    }
 }
