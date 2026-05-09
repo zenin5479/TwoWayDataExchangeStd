@@ -61,7 +61,7 @@
          // 
          // btnAddPerson
          // 
-         btnAddPerson.Location = new System.Drawing.Point(244, 345);
+         btnAddPerson.Location = new System.Drawing.Point(12, 274);
          btnAddPerson.Name = "btnAddPerson";
          btnAddPerson.Size = new System.Drawing.Size(90, 23);
          btnAddPerson.TabIndex = 3;
@@ -70,9 +70,9 @@
          // 
          // btnRunConsole
          // 
-         btnRunConsole.Location = new System.Drawing.Point(447, 345);
+         btnRunConsole.Location = new System.Drawing.Point(12, 303);
          btnRunConsole.Name = "btnRunConsole";
-         btnRunConsole.Size = new System.Drawing.Size(75, 23);
+         btnRunConsole.Size = new System.Drawing.Size(135, 23);
          btnRunConsole.TabIndex = 4;
          btnRunConsole.Text = "▶ Запустить консоль";
          btnRunConsole.UseVisualStyleBackColor = true;
