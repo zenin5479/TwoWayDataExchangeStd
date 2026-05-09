@@ -29,7 +29,7 @@
       private void InitializeComponent()
       {
          panelTop = new System.Windows.Forms.Panel();
-         panel2 = new System.Windows.Forms.Panel();
+         panelBottom = new System.Windows.Forms.Panel();
          dgvPeople = new System.Windows.Forms.DataGridView();
          btnAddPerson = new System.Windows.Forms.Button();
          btnRunConsole = new System.Windows.Forms.Button();
@@ -48,12 +48,12 @@
          panelTop.Size = new System.Drawing.Size(200, 100);
          panelTop.TabIndex = 0;
          // 
-         // panel2
+         // panelBottom
          // 
-         panel2.Location = new System.Drawing.Point(218, 12);
-         panel2.Name = "panel2";
-         panel2.Size = new System.Drawing.Size(200, 100);
-         panel2.TabIndex = 1;
+         panelBottom.Location = new System.Drawing.Point(218, 12);
+         panelBottom.Name = "panelBottom";
+         panelBottom.Size = new System.Drawing.Size(200, 100);
+         panelBottom.TabIndex = 1;
          // 
          // dgvPeople
          // 
@@ -140,7 +140,7 @@
          Controls.Add(btnRunConsole);
          Controls.Add(btnAddPerson);
          Controls.Add(dgvPeople);
-         Controls.Add(panel2);
+         Controls.Add(panelBottom);
          Controls.Add(panelTop);
          Name = "FormFour";
          Text = "Система обмена данными с консолью";
@@ -152,7 +152,7 @@
       #endregion
 
       private System.Windows.Forms.Panel panelTop;
-      private System.Windows.Forms.Panel panel2;
+      private System.Windows.Forms.Panel panelBottom;
       private System.Windows.Forms.DataGridView dgvPeople;
       private System.Windows.Forms.Button btnAddPerson;
       private System.Windows.Forms.Button btnRunConsole;
