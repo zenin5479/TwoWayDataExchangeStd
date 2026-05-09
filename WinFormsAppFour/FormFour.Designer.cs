@@ -34,10 +34,10 @@
          btnDeleteSelected = new System.Windows.Forms.Button();
          btnEditSelected = new System.Windows.Forms.Button();
          panelBottom = new System.Windows.Forms.Panel();
-         label1 = new System.Windows.Forms.Label();
+         lblConsoleMessage = new System.Windows.Forms.Label();
+         lblTotalCount = new System.Windows.Forms.Label();
          lblAvgSalary = new System.Windows.Forms.Label();
          dgvPeople = new System.Windows.Forms.DataGridView();
-         lblConsoleMessage = new System.Windows.Forms.Label();
          panelTop.SuspendLayout();
          panelBottom.SuspendLayout();
          ((System.ComponentModel.ISupportInitialize)dgvPeople).BeginInit();
@@ -93,21 +93,30 @@
          // panelBottom
          // 
          panelBottom.Controls.Add(lblConsoleMessage);
-         panelBottom.Controls.Add(label1);
+         panelBottom.Controls.Add(lblTotalCount);
          panelBottom.Controls.Add(lblAvgSalary);
          panelBottom.Location = new System.Drawing.Point(218, 12);
          panelBottom.Name = "panelBottom";
          panelBottom.Size = new System.Drawing.Size(177, 63);
          panelBottom.TabIndex = 1;
          // 
-         // label1
+         // lblConsoleMessage
          // 
-         label1.AutoSize = true;
-         label1.Location = new System.Drawing.Point(3, 11);
-         label1.Name = "label1";
-         label1.Size = new System.Drawing.Size(89, 15);
-         label1.TabIndex = 7;
-         label1.Text = "Всего людей: 0";
+         lblConsoleMessage.AutoSize = true;
+         lblConsoleMessage.Location = new System.Drawing.Point(3, 41);
+         lblConsoleMessage.Name = "lblConsoleMessage";
+         lblConsoleMessage.Size = new System.Drawing.Size(96, 15);
+         lblConsoleMessage.TabIndex = 3;
+         lblConsoleMessage.Text = "ConsoleMessage";
+         // 
+         // lblTotalCount
+         // 
+         lblTotalCount.AutoSize = true;
+         lblTotalCount.Location = new System.Drawing.Point(3, 11);
+         lblTotalCount.Name = "lblTotalCount";
+         lblTotalCount.Size = new System.Drawing.Size(89, 15);
+         lblTotalCount.TabIndex = 7;
+         lblTotalCount.Text = "Всего людей: 0";
          // 
          // lblAvgSalary
          // 
@@ -126,15 +135,6 @@
          dgvPeople.RowTemplate.Height = 25;
          dgvPeople.Size = new System.Drawing.Size(200, 150);
          dgvPeople.TabIndex = 2;
-         // 
-         // lblConsoleMessage
-         // 
-         lblConsoleMessage.AutoSize = true;
-         lblConsoleMessage.Location = new System.Drawing.Point(3, 41);
-         lblConsoleMessage.Name = "lblConsoleMessage";
-         lblConsoleMessage.Size = new System.Drawing.Size(96, 15);
-         lblConsoleMessage.TabIndex = 3;
-         lblConsoleMessage.Text = "ConsoleMessage";
          // 
          // FormFour
          // 
@@ -162,7 +162,7 @@
       private System.Windows.Forms.Button btnRunConsole;
       private System.Windows.Forms.Button btnDeleteSelected;
       private System.Windows.Forms.Button btnEditSelected;
-      private System.Windows.Forms.Label label1;
+      private System.Windows.Forms.Label lblTotalCount;
       private System.Windows.Forms.Label lblAvgSalary;
       private System.Windows.Forms.Label lblConsoleMessage;
    }
