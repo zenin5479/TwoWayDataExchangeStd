@@ -82,6 +82,7 @@
          btnDeleteSelected.TabIndex = 5;
          btnDeleteSelected.Text = "🗑 Удалить";
          btnDeleteSelected.UseVisualStyleBackColor = true;
+         btnDeleteSelected.Click += btnDeleteSelected_Click;
          // 
          // btnEditSelected
          // 
@@ -91,6 +92,7 @@
          btnEditSelected.TabIndex = 6;
          btnEditSelected.Text = "✏ Редактировать";
          btnEditSelected.UseVisualStyleBackColor = true;
+         btnEditSelected.Click += btnEditSelected_Click;
          // 
          // panelBottom
          // 
@@ -148,6 +150,7 @@
          Controls.Add(panelTop);
          Name = "FormFour";
          Text = "Система обмена данными с консолью";
+         Load += FormFour_Load;
          panelTop.ResumeLayout(false);
          panelBottom.ResumeLayout(false);
          panelBottom.PerformLayout();

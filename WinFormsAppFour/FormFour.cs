@@ -1,5 +1,9 @@
-﻿using System.Diagnostics;
+﻿using ClassLibraryFour;
+using System;
+using System.Diagnostics;
+using System.Linq;
 using System.Windows.Forms;
+
 
 namespace WinFormsAppFour
 {
@@ -74,6 +78,92 @@ namespace WinFormsAppFour
          finally
          {
             this.Cursor = Cursors.Default;
+         }
+      }
+
+      private void btnDeleteSelected_Click(object sender, System.EventArgs e)
+      {
+         if (dgvPeople.CurrentRow == null) return;
+
+         var person = dgvPeople.CurrentRow.DataBoundItem as Person;
+         if (person != null)
+         {
+            if (MessageBox.Show($"Удалить {person.Name}?", "Подтверждение",
+                   MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+               GlobalStorage.AllPeople.Remove(person);
+               RefreshDataGrid();
+               UpdateStatus();
+            }
+         }
+      }
+
+      private void btnEditSelected_Click(object sender, System.EventArgs e)
+      {
+         if (dgvPeople.CurrentRow == null) return;
+
+         var person = dgvPeople.CurrentRow.DataBoundItem as Person;
+         if (person != null)
+         {
+            using (var editDialog = new PersonEditDialog(person))
+            {
+               if (editDialog.ShowDialog() == DialogResult.OK)
+               {
+                  RefreshDataGrid();
+                  UpdateStatus();
+               }
+            }
+         }
+      }
+
+      private void RefreshDataGrid()
+      {
+         dgvPeople.DataSource = null;
+         dgvPeople.DataSource = GlobalStorage.AllPeople.ToList();
+
+         // Настройка колонок
+         if (dgvPeople.Columns.Count > 0)
+         {
+            dgvPeople.Columns["Id"].Width = 50;
+            dgvPeople.Columns["Name"].Width = 150;
+            dgvPeople.Columns["BirthDate"].Width = 100;
+            dgvPeople.Columns["Salary"].Width = 100;
+            dgvPeople.Columns["Skills"].Visible = false;
+            dgvPeople.Columns["Attributes"].Visible = false;
+
+            dgvPeople.Columns["Salary"].DefaultCellStyle.Format = "C";
+         }
+      }
+
+      private void UpdateStatus()
+      {
+         lblTotalCount.Text = $"Всего людей: {GlobalStorage.TotalPeopleCount}";
+         lblAvgSalary.Text = GlobalStorage.AllPeople.Any()
+            ? $"Средняя ЗП: {GlobalStorage.AllPeople.Average(p => p.Salary):C}"
+            : "Средняя ЗП: 0";
+      }
+
+      private void FormFour_Load(object sender, System.EventArgs e)
+      {
+         // Добавляем тестовые данные при первом запуске
+         if (GlobalStorage.TotalPeopleCount == 0)
+         {
+            GlobalStorage.AddPerson(new Person
+            {
+               Name = "Иван Петров",
+               BirthDate = new DateTime(1990, 5, 20),
+               Salary = 50000,
+               Skills = { "C#", "SQL" }
+            });
+            GlobalStorage.AddPerson(new Person
+            {
+               Name = "Мария Сидорова",
+               BirthDate = new DateTime(1988, 12, 10),
+               Salary = 65000,
+               Skills = { "Java", "Python" }
+            });
+            RefreshDataGrid();
+            UpdateStatus();
          }
       }
    }
