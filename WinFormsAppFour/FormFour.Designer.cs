@@ -59,7 +59,7 @@
          panelBottom.Controls.Add(lblConsoleMessage);
          panelBottom.Controls.Add(label1);
          panelBottom.Controls.Add(lblAvgSalary);
-         panelBottom.Location = new System.Drawing.Point(245, 197);
+         panelBottom.Location = new System.Drawing.Point(218, 12);
          panelBottom.Name = "panelBottom";
          panelBottom.Size = new System.Drawing.Size(177, 78);
          panelBottom.TabIndex = 1;
