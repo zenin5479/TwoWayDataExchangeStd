@@ -31,7 +31,7 @@
          panel1 = new System.Windows.Forms.Panel();
          panel2 = new System.Windows.Forms.Panel();
          dgvPeople = new System.Windows.Forms.DataGridView();
-         button1 = new System.Windows.Forms.Button();
+         btnAddPerson = new System.Windows.Forms.Button();
          ((System.ComponentModel.ISupportInitialize)dgvPeople).BeginInit();
          SuspendLayout();
          // 
@@ -58,21 +58,21 @@
          dgvPeople.Size = new System.Drawing.Size(200, 150);
          dgvPeople.TabIndex = 2;
          // 
-         // button1
+         // btnAddPerson
          // 
-         button1.Location = new System.Drawing.Point(244, 345);
-         button1.Name = "button1";
-         button1.Size = new System.Drawing.Size(75, 23);
-         button1.TabIndex = 3;
-         button1.Text = "button1";
-         button1.UseVisualStyleBackColor = true;
+         btnAddPerson.Location = new System.Drawing.Point(244, 345);
+         btnAddPerson.Name = "btnAddPerson";
+         btnAddPerson.Size = new System.Drawing.Size(75, 23);
+         btnAddPerson.TabIndex = 3;
+         btnAddPerson.Text = "button1";
+         btnAddPerson.UseVisualStyleBackColor = true;
          // 
          // FormFour
          // 
          AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
          AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
          ClientSize = new System.Drawing.Size(768, 471);
-         Controls.Add(button1);
+         Controls.Add(btnAddPerson);
          Controls.Add(dgvPeople);
          Controls.Add(panel2);
          Controls.Add(panel1);
@@ -87,6 +87,6 @@
       private System.Windows.Forms.Panel panel1;
       private System.Windows.Forms.Panel panel2;
       private System.Windows.Forms.DataGridView dgvPeople;
-      private System.Windows.Forms.Button button1;
+      private System.Windows.Forms.Button btnAddPerson;
    }
 }
