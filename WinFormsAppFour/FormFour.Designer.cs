@@ -39,6 +39,7 @@
          lblAvgSalary = new System.Windows.Forms.Label();
          lblConsoleMessage = new System.Windows.Forms.Label();
          panelTop.SuspendLayout();
+         panelBottom.SuspendLayout();
          ((System.ComponentModel.ISupportInitialize)dgvPeople).BeginInit();
          SuspendLayout();
          // 
@@ -55,9 +56,12 @@
          // 
          // panelBottom
          // 
+         panelBottom.Controls.Add(lblConsoleMessage);
+         panelBottom.Controls.Add(label1);
+         panelBottom.Controls.Add(lblAvgSalary);
          panelBottom.Location = new System.Drawing.Point(245, 197);
          panelBottom.Name = "panelBottom";
-         panelBottom.Size = new System.Drawing.Size(200, 100);
+         panelBottom.Size = new System.Drawing.Size(177, 78);
          panelBottom.TabIndex = 1;
          // 
          // dgvPeople
@@ -108,7 +112,7 @@
          // label1
          // 
          label1.AutoSize = true;
-         label1.Location = new System.Drawing.Point(461, 240);
+         label1.Location = new System.Drawing.Point(3, 11);
          label1.Name = "label1";
          label1.Size = new System.Drawing.Size(89, 15);
          label1.TabIndex = 7;
@@ -117,7 +121,7 @@
          // lblAvgSalary
          // 
          lblAvgSalary.AutoSize = true;
-         lblAvgSalary.Location = new System.Drawing.Point(493, 303);
+         lblAvgSalary.Location = new System.Drawing.Point(3, 32);
          lblAvgSalary.Name = "lblAvgSalary";
          lblAvgSalary.Size = new System.Drawing.Size(84, 15);
          lblAvgSalary.TabIndex = 8;
@@ -126,7 +130,7 @@
          // lblConsoleMessage
          // 
          lblConsoleMessage.AutoSize = true;
-         lblConsoleMessage.Location = new System.Drawing.Point(421, 364);
+         lblConsoleMessage.Location = new System.Drawing.Point(3, 56);
          lblConsoleMessage.Name = "lblConsoleMessage";
          lblConsoleMessage.Size = new System.Drawing.Size(38, 15);
          lblConsoleMessage.TabIndex = 9;
@@ -137,18 +141,16 @@
          AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
          AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
          ClientSize = new System.Drawing.Size(768, 471);
-         Controls.Add(lblConsoleMessage);
-         Controls.Add(lblAvgSalary);
-         Controls.Add(label1);
          Controls.Add(dgvPeople);
          Controls.Add(panelBottom);
          Controls.Add(panelTop);
          Name = "FormFour";
          Text = "Система обмена данными с консолью";
          panelTop.ResumeLayout(false);
+         panelBottom.ResumeLayout(false);
+         panelBottom.PerformLayout();
          ((System.ComponentModel.ISupportInitialize)dgvPeople).EndInit();
          ResumeLayout(false);
-         PerformLayout();
       }
 
       #endregion
