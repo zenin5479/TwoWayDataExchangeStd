@@ -28,7 +28,7 @@
       /// </summary>
       private void InitializeComponent()
       {
-         panel1 = new System.Windows.Forms.Panel();
+         panelTop = new System.Windows.Forms.Panel();
          panel2 = new System.Windows.Forms.Panel();
          dgvPeople = new System.Windows.Forms.DataGridView();
          btnAddPerson = new System.Windows.Forms.Button();
@@ -41,12 +41,12 @@
          ((System.ComponentModel.ISupportInitialize)dgvPeople).BeginInit();
          SuspendLayout();
          // 
-         // panel1
+         // panelTop
          // 
-         panel1.Location = new System.Drawing.Point(12, 12);
-         panel1.Name = "panel1";
-         panel1.Size = new System.Drawing.Size(200, 100);
-         panel1.TabIndex = 0;
+         panelTop.Location = new System.Drawing.Point(12, 12);
+         panelTop.Name = "panelTop";
+         panelTop.Size = new System.Drawing.Size(200, 100);
+         panelTop.TabIndex = 0;
          // 
          // panel2
          // 
@@ -141,7 +141,7 @@
          Controls.Add(btnAddPerson);
          Controls.Add(dgvPeople);
          Controls.Add(panel2);
-         Controls.Add(panel1);
+         Controls.Add(panelTop);
          Name = "FormFour";
          Text = "Система обмена данными с консолью";
          ((System.ComponentModel.ISupportInitialize)dgvPeople).EndInit();
@@ -151,7 +151,7 @@
 
       #endregion
 
-      private System.Windows.Forms.Panel panel1;
+      private System.Windows.Forms.Panel panelTop;
       private System.Windows.Forms.Panel panel2;
       private System.Windows.Forms.DataGridView dgvPeople;
       private System.Windows.Forms.Button btnAddPerson;
