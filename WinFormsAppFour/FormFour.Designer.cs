@@ -34,6 +34,7 @@
          btnAddPerson = new System.Windows.Forms.Button();
          btnRunConsole = new System.Windows.Forms.Button();
          btnDeleteSelected = new System.Windows.Forms.Button();
+         button1 = new System.Windows.Forms.Button();
          ((System.ComponentModel.ISupportInitialize)dgvPeople).BeginInit();
          SuspendLayout();
          // 
@@ -87,11 +88,21 @@
          btnDeleteSelected.Text = "🗑 Удалить";
          btnDeleteSelected.UseVisualStyleBackColor = true;
          // 
+         // button1
+         // 
+         button1.Location = new System.Drawing.Point(307, 377);
+         button1.Name = "button1";
+         button1.Size = new System.Drawing.Size(75, 23);
+         button1.TabIndex = 6;
+         button1.Text = "button1";
+         button1.UseVisualStyleBackColor = true;
+         // 
          // FormFour
          // 
          AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
          AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
          ClientSize = new System.Drawing.Size(768, 471);
+         Controls.Add(button1);
          Controls.Add(btnDeleteSelected);
          Controls.Add(btnRunConsole);
          Controls.Add(btnAddPerson);
@@ -112,5 +123,6 @@
       private System.Windows.Forms.Button btnAddPerson;
       private System.Windows.Forms.Button btnRunConsole;
       private System.Windows.Forms.Button btnDeleteSelected;
+      private System.Windows.Forms.Button button1;
    }
 }
