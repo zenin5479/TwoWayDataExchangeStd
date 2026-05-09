@@ -62,7 +62,7 @@
          // 
          btnAddPerson.Location = new System.Drawing.Point(244, 345);
          btnAddPerson.Name = "btnAddPerson";
-         btnAddPerson.Size = new System.Drawing.Size(86, 23);
+         btnAddPerson.Size = new System.Drawing.Size(90, 23);
          btnAddPerson.TabIndex = 3;
          btnAddPerson.Text = "➕ Добавить";
          btnAddPerson.UseVisualStyleBackColor = true;
