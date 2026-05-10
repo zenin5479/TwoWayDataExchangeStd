@@ -128,8 +128,8 @@ namespace WinFormsAppFour
             dgvPeople.Columns["Name"].Width = 150;
             dgvPeople.Columns["BirthDate"].Width = 100;
             dgvPeople.Columns["Salary"].Width = 100;
-            dgvPeople.Columns["Skills"].Visible = false;
-            dgvPeople.Columns["Attributes"].Visible = false;
+            //dgvPeople.Columns["Skills"].Visible = true;
+            //dgvPeople.Columns["Attributes"].Visible = false;
 
             dgvPeople.Columns["Salary"].DefaultCellStyle.Format = "C";
          }
