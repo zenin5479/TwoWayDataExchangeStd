@@ -120,15 +120,19 @@ namespace WinFormsAppFour
       {
          dgvPeople.DataSource = null;
          dgvPeople.DataSource = GlobalStorage.AllPeople.ToList();
-
       }
 
       private void UpdateStatus()
       {
-         lblTotalCount.Text = $"Всего людей: {GlobalStorage.TotalPeopleCount}";
-         lblAvgSalary.Text = GlobalStorage.AllPeople.Any()
-            ? $"Средняя ЗП: {GlobalStorage.AllPeople.Average(p => p.Salary):C}"
-            : "Средняя ЗП: 0";
+         lblTotalCount.Text = string.Format(@"Всего людей: {0}", GlobalStorage.TotalPeopleCount);
+         if (GlobalStorage.AllPeople.Any())
+         {
+            lblAvgSalary.Text = string.Format(@"Средняя ЗП: {0:C}", GlobalStorage.AllPeople.Average(p => p.Salary));
+         }
+         else
+         {
+            lblAvgSalary.Text = @"Средняя ЗП: 0";
+         }
       }
 
       private void FormFour_Load(object sender, EventArgs e)
@@ -141,21 +145,21 @@ namespace WinFormsAppFour
                Name = "Лев Ткачук",
                BirthDate = new DateTime(1990, 5, 20),
                Salary = 87000,
-               Skills = { "C#", "SQL" }
+               //Skills = { "C#", "SQL" }
             });
             GlobalStorage.AddPerson(new Person
             {
                Name = "Татьяна Свиридова",
                BirthDate = new DateTime(1988, 12, 10),
                Salary = 99000,
-               Skills = { "Java", "Python" }
+               //Skills = { "Java", "Python" }
             });
             GlobalStorage.AddPerson(new Person
             {
                Name = "Надежда Белова",
                BirthDate = new DateTime(1996, 10, 21),
                Salary = 119000,
-               Skills = { "C++", "HTML" }
+               //Skills = { "C++", "HTML" }
             });
 
             RefreshDataGrid();
