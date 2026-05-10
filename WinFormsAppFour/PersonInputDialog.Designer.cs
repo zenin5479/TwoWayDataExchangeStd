@@ -101,9 +101,9 @@
          label2.AutoSize = true;
          label2.Location = new System.Drawing.Point(86, 227);
          label2.Name = "label2";
-         label2.Size = new System.Drawing.Size(38, 15);
+         label2.Size = new System.Drawing.Size(93, 15);
          label2.TabIndex = 7;
-         label2.Text = "label2";
+         label2.Text = "Дата рождения:";
          // 
          // PersonInputDialog
          // 
