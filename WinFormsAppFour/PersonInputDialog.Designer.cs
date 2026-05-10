@@ -82,7 +82,7 @@
          btnOk.Name = "btnOk";
          btnOk.Size = new System.Drawing.Size(75, 23);
          btnOk.TabIndex = 5;
-         btnOk.Text = "button1";
+         btnOk.Text = "Ok";
          btnOk.UseVisualStyleBackColor = true;
          // 
          // PersonInputDialog
