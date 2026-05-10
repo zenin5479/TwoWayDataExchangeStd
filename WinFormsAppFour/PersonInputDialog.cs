@@ -16,7 +16,20 @@ namespace WinFormsAppFour
 
          _editPerson = editPerson;
 
-
+         if (_editPerson != null)
+         {
+            Text = "Редактирование человека";
+            txtName.Text = _editPerson.Name;
+            dtpBirth.Value = _editPerson.BirthDate;
+            numSalary.Value = _editPerson.Salary;
+            txtSkills.Text = string.Join(", ", _editPerson.Skills);
+            btnOk.Text = "Сохранить";
+         }
+         else
+         {
+            Text = "Добавление человека";
+            btnOk.Text = "Добавить";
+         }
       }
 
       private void btnOk_Click(object sender, System.EventArgs e)
