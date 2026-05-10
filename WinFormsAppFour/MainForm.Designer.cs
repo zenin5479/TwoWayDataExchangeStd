@@ -35,7 +35,6 @@
          btnDeleteSelected = new System.Windows.Forms.Button();
          btnEditSelected = new System.Windows.Forms.Button();
          panelBottom = new System.Windows.Forms.Panel();
-         lblConsoleMessage = new System.Windows.Forms.Label();
          lblTotalCount = new System.Windows.Forms.Label();
          lblAvgSalary = new System.Windows.Forms.Label();
          dgvPeople = new System.Windows.Forms.DataGridView();
@@ -102,22 +101,12 @@
          // 
          // panelBottom
          // 
-         panelBottom.Controls.Add(lblConsoleMessage);
          panelBottom.Controls.Add(lblTotalCount);
          panelBottom.Controls.Add(lblAvgSalary);
          panelBottom.Location = new System.Drawing.Point(212, 168);
          panelBottom.Name = "panelBottom";
-         panelBottom.Size = new System.Drawing.Size(177, 63);
+         panelBottom.Size = new System.Drawing.Size(177, 44);
          panelBottom.TabIndex = 1;
-         // 
-         // lblConsoleMessage
-         // 
-         lblConsoleMessage.AutoSize = true;
-         lblConsoleMessage.Location = new System.Drawing.Point(3, 41);
-         lblConsoleMessage.Name = "lblConsoleMessage";
-         lblConsoleMessage.Size = new System.Drawing.Size(96, 15);
-         lblConsoleMessage.TabIndex = 3;
-         lblConsoleMessage.Text = "ConsoleMessage";
          // 
          // lblTotalCount
          // 
@@ -207,7 +196,6 @@
       private System.Windows.Forms.Button btnEditSelected;
       private System.Windows.Forms.Label lblTotalCount;
       private System.Windows.Forms.Label lblAvgSalary;
-      private System.Windows.Forms.Label lblConsoleMessage;
       private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
       private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
       private System.Windows.Forms.DataGridViewTextBoxColumn Column3;

@@ -104,7 +104,7 @@ namespace WinFormsAppFour
       {
          if (dgvPeople.CurrentRow == null) return;
 
-         Person person = dgvPeople.CurrentRow.DataBoundItem as Person;
+         Person person = (Person)dgvPeople.CurrentRow.DataBoundItem;
          if (person != null)
          {
             if (MessageBox.Show(string.Format(@"Удалить {0}?", person.Name), @"Подтверждение",
@@ -119,7 +119,10 @@ namespace WinFormsAppFour
 
       private void btnEditSelected_Click(object sender, EventArgs e)
       {
-         if (dgvPeople.CurrentRow == null) return;
+         if (dgvPeople.CurrentRow == null)
+         {
+            return;
+         }
 
          Person person = (Person)dgvPeople.CurrentRow.DataBoundItem;
          if (person != null)
@@ -137,9 +140,9 @@ namespace WinFormsAppFour
 
       private void RefreshDataGrid()
       {
-         dgvPeople.SelectAll();
-         dgvPeople.ClearSelection();
-         dgvPeople.Rows.Clear();
+         //dgvPeople.SelectAll();
+         //dgvPeople.ClearSelection();
+         //dgvPeople.Rows.Clear();
 
          for (int i = 0; i < GlobalStorage.AllPeople.Count; ++i)
          {
@@ -149,12 +152,6 @@ namespace WinFormsAppFour
             dgvPeople.Rows[rowNumber].Cells[2].Value = GlobalStorage.AllPeople[i].BirthDate.ToShortDateString();
             dgvPeople.Rows[rowNumber].Cells[3].Value = GlobalStorage.AllPeople[i].Salary;
             dgvPeople.Rows[rowNumber].Cells[4].Value = string.Join(", ", GlobalStorage.AllPeople[i].Skills);
-            
-            // Формат DateTime
-            // .ToShortDateString()
-            // .ToString("d")
-            // .ToString("yyyy.MM.dd")
-            // .ToString("dd.MM.yyyy")
          }
       }
 
