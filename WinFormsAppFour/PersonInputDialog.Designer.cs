@@ -31,6 +31,9 @@
          dtpBirth = new System.Windows.Forms.DateTimePicker();
          label1 = new System.Windows.Forms.Label();
          txtName = new System.Windows.Forms.TextBox();
+         numSalary = new System.Windows.Forms.NumericUpDown();
+         txtSkills = new System.Windows.Forms.TextBox();
+         ((System.ComponentModel.ISupportInitialize)numSalary).BeginInit();
          SuspendLayout();
          // 
          // dtpBirth
@@ -43,7 +46,7 @@
          // label1
          // 
          label1.AutoSize = true;
-         label1.Location = new System.Drawing.Point(57, 89);
+         label1.Location = new System.Drawing.Point(29, 197);
          label1.Name = "label1";
          label1.Size = new System.Drawing.Size(34, 15);
          label1.TabIndex = 1;
@@ -51,21 +54,38 @@
          // 
          // txtName
          // 
-         txtName.Location = new System.Drawing.Point(39, 135);
+         txtName.Location = new System.Drawing.Point(12, 41);
          txtName.Name = "txtName";
          txtName.Size = new System.Drawing.Size(100, 23);
          txtName.TabIndex = 2;
+         // 
+         // numSalary
+         // 
+         numSalary.Location = new System.Drawing.Point(12, 124);
+         numSalary.Name = "numSalary";
+         numSalary.Size = new System.Drawing.Size(120, 23);
+         numSalary.TabIndex = 3;
+         // 
+         // txtSkills
+         // 
+         txtSkills.Location = new System.Drawing.Point(219, 149);
+         txtSkills.Name = "txtSkills";
+         txtSkills.Size = new System.Drawing.Size(100, 23);
+         txtSkills.TabIndex = 4;
          // 
          // PersonInputDialog
          // 
          AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
          AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
          ClientSize = new System.Drawing.Size(372, 232);
+         Controls.Add(txtSkills);
+         Controls.Add(numSalary);
          Controls.Add(txtName);
          Controls.Add(label1);
          Controls.Add(dtpBirth);
          Name = "PersonInputDialog";
          Text = "Редактирование человека";
+         ((System.ComponentModel.ISupportInitialize)numSalary).EndInit();
          ResumeLayout(false);
          PerformLayout();
       }
@@ -75,5 +95,7 @@
       private System.Windows.Forms.DateTimePicker dtpBirth;
       private System.Windows.Forms.Label label1;
       private System.Windows.Forms.TextBox txtName;
+      private System.Windows.Forms.NumericUpDown numSalary;
+      private System.Windows.Forms.TextBox txtSkills;
    }
 }
