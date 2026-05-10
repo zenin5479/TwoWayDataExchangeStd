@@ -102,10 +102,12 @@ namespace WinFormsAppFour
 
       private void btnDeleteSelected_Click(object sender, EventArgs e)
       {
+         if (dgvPeople.CurrentRow == null)
+         {
+            return;
+         }
 
-         if (dgvPeople.CurrentRow == null) return;
-
-         Person person = dgvPeople.CurrentRow.Tag as Person;
+         Person person = (Person)dgvPeople.CurrentRow.Tag;
          if (person != null)
          {
             if (MessageBox.Show(string.Format(@"Удалить {0}?", person.Name), @"Подтверждение",
@@ -141,25 +143,6 @@ namespace WinFormsAppFour
                }
             }
          }
-
-
-         //if (dgvPeople.CurrentRow == null)
-         //{
-         //   return;
-         //}
-
-         //Person person = (Person)dgvPeople.CurrentRow.DataBoundItem;
-         //if (person != null)
-         //{
-         //   using (PersonEditDialog editDialog = new PersonEditDialog(person))
-         //   {
-         //      if (editDialog.ShowDialog() == DialogResult.OK)
-         //      {
-         //         RefreshDataGrid();
-         //         UpdateStatus();
-         //      }
-         //   }
-         //}
       }
 
       private void RefreshDataGrid()
