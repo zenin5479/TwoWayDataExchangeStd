@@ -35,6 +35,7 @@
          txtSkills = new System.Windows.Forms.TextBox();
          btnOk = new System.Windows.Forms.Button();
          btnCancel = new System.Windows.Forms.Button();
+         label2 = new System.Windows.Forms.Label();
          ((System.ComponentModel.ISupportInitialize)numSalary).BeginInit();
          SuspendLayout();
          // 
@@ -48,7 +49,7 @@
          // label1
          // 
          label1.AutoSize = true;
-         label1.Location = new System.Drawing.Point(12, 125);
+         label1.Location = new System.Drawing.Point(12, 227);
          label1.Name = "label1";
          label1.Size = new System.Drawing.Size(34, 15);
          label1.TabIndex = 1;
@@ -95,11 +96,21 @@
          btnCancel.Text = "Отмена";
          btnCancel.UseVisualStyleBackColor = true;
          // 
+         // label2
+         // 
+         label2.AutoSize = true;
+         label2.Location = new System.Drawing.Point(86, 227);
+         label2.Name = "label2";
+         label2.Size = new System.Drawing.Size(38, 15);
+         label2.TabIndex = 7;
+         label2.Text = "label2";
+         // 
          // PersonInputDialog
          // 
          AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
          AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
          ClientSize = new System.Drawing.Size(453, 318);
+         Controls.Add(label2);
          Controls.Add(btnCancel);
          Controls.Add(btnOk);
          Controls.Add(txtSkills);
@@ -123,5 +134,6 @@
       private System.Windows.Forms.TextBox txtSkills;
       private System.Windows.Forms.Button btnOk;
       private System.Windows.Forms.Button btnCancel;
+      private System.Windows.Forms.Label label2;
    }
 }
