@@ -82,7 +82,7 @@
          // 
          // btnOk
          // 
-         btnOk.Location = new System.Drawing.Point(138, 154);
+         btnOk.Location = new System.Drawing.Point(12, 128);
          btnOk.Name = "btnOk";
          btnOk.Size = new System.Drawing.Size(75, 23);
          btnOk.TabIndex = 5;
@@ -92,7 +92,7 @@
          // 
          // btnCancel
          // 
-         btnCancel.Location = new System.Drawing.Point(154, 213);
+         btnCancel.Location = new System.Drawing.Point(93, 128);
          btnCancel.Name = "btnCancel";
          btnCancel.Size = new System.Drawing.Size(75, 23);
          btnCancel.TabIndex = 6;
