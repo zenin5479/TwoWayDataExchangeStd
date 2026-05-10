@@ -152,21 +152,21 @@ namespace WinFormsAppFour
             {
                Name = "Лев Ткачук",
                BirthDate = new DateTime(1990, 5, 20),
-               Salary = 50000,
+               Salary = 87000,
                Skills = { "C#", "SQL" }
             });
             GlobalStorage.AddPerson(new Person
             {
                Name = "Татьяна Свиридова",
                BirthDate = new DateTime(1988, 12, 10),
-               Salary = 65000,
+               Salary = 99000,
                Skills = { "Java", "Python" }
             });
             GlobalStorage.AddPerson(new Person
             {
                Name = "Надежда Белова",
                BirthDate = new DateTime(1996, 10, 21),
-               Salary = 65000,
+               Salary = 119000,
                Skills = { "C++", "HTML" }
             });
 
