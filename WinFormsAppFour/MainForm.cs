@@ -151,18 +151,18 @@ namespace WinFormsAppFour
 
          dgvPeople.DataSource = list;
 
-         // Настройка колонок
-         if (dgvPeople.Columns.Count > 0)
-         {
-            dgvPeople.Columns["Id"].Width = 50;
-            dgvPeople.Columns["Name"].Width = 150;
-            dgvPeople.Columns["BirthDate"].Width = 100;
-            dgvPeople.Columns["Salary"].Width = 100;
-            dgvPeople.Columns["Skills"].Visible = false;
-            dgvPeople.Columns["Attributes"].Visible = false;
+         //// Настройка колонок
+         //if (dgvPeople.Columns.Count > 0)
+         //{
+         //   dgvPeople.Columns["Id"].Width = 50;
+         //   dgvPeople.Columns["Name"].Width = 150;
+         //   dgvPeople.Columns["BirthDate"].Width = 100;
+         //   dgvPeople.Columns["Salary"].Width = 100;
+         //   dgvPeople.Columns["Skills"].Visible = false;
+         //   dgvPeople.Columns["Attributes"].Visible = false;
 
-            dgvPeople.Columns["Salary"].DefaultCellStyle.Format = "C";
-         }
+         //   dgvPeople.Columns["Salary"].DefaultCellStyle.Format = "C";
+         //}
 
 
 
