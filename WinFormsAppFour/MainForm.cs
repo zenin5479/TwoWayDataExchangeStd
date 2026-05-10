@@ -141,15 +141,37 @@ namespace WinFormsAppFour
 
       private void RefreshDataGrid()
       {
-         dgvPeople.DataSource = null;
-         List<Person> list = new List<Person>();
-         for (int i = 0; i < GlobalStorage.AllPeople.Count; i++)
+         //dgvPeople.DataSource = null;
+         //List<Person> list = new List<Person>();
+         //for (int i = 0; i < GlobalStorage.AllPeople.Count; i++)
+         //{
+         //   Person person = GlobalStorage.AllPeople[i];
+         //   list.Add(person);
+         //}
+
+         //dgvPeople.DataSource = list;
+
+
+         // Очищаем все строки
+         dgvPeople.Rows.Clear();
+
+         // Перебираем всех людей из хранилища
+         for (int index = 0; index < GlobalStorage.AllPeople.Count; index++)
          {
-            Person person = GlobalStorage.AllPeople[i];
-            list.Add(person);
+            Person person = GlobalStorage.AllPeople[index];
+            // Добавляем новую строку и заполняем ячейки по индексу или имени колонки
+            int rowIndex = dgvPeople.Rows.Add();
+            DataGridViewRow row = dgvPeople.Rows[rowIndex];
+
+            row.Cells[0].Value = person.Id;
+            row.Cells[1].Value = person.Name;
+            row.Cells[2].Value = person.BirthDate;
+            row.Cells[3].Value = person.Salary;
+            row.Cells[4].Value = string.Join(", ", person.Skills);
          }
 
-         dgvPeople.DataSource = list;
+         // Обновляем статус (например, количество строк)
+         lblTotalCount.Text = string.Format(@"Всего людей: {0}", dgvPeople.Rows.Count);
 
          //// Настройка колонок
          //if (dgvPeople.Columns.Count > 0)
@@ -168,26 +190,26 @@ namespace WinFormsAppFour
          //dgvPeople.ClearSelection();
          //dgvPeople.Rows.Clear();
 
-         for (int i = 0; i < list.Count; ++i)
-         {
-            //dgvPeople.Columns["Id"][i] = list[i].Id;
+         //for (int i = 0; i < list.Count; ++i)
+         //{
+         //dgvPeople.Columns["Id"][i] = list[i].Id;
 
-            //dgvPeople.Columns["Id"][i] = list[i].Id;
-            //dgvPeople.Columns["Name"].Width = 150;
-            //dgvPeople.Columns["BirthDate"].Width = 100;
-            //dgvPeople.Columns["Salary"].Width = 100;
-            //dgvPeople.Columns["Skills"].Visible = false;
-            //dgvPeople.Columns["Attributes"].Visible = false;
+         //dgvPeople.Columns["Id"][i] = list[i].Id;
+         //dgvPeople.Columns["Name"].Width = 150;
+         //dgvPeople.Columns["BirthDate"].Width = 100;
+         //dgvPeople.Columns["Salary"].Width = 100;
+         //dgvPeople.Columns["Skills"].Visible = false;
+         //dgvPeople.Columns["Attributes"].Visible = false;
 
-            //dgvPeople.Columns["Salary"].DefaultCellStyle.Format = "C";
+         //dgvPeople.Columns["Salary"].DefaultCellStyle.Format = "C";
 
 
-            dgvPeople.Rows[i].Cells["Id"].Value = list[i].Id;
-            dgvPeople.Rows[i].Cells["Name"].Value = list[i].Name;
-            dgvPeople.Rows[i].Cells["BirthDate"].Value = list[i].BirthDate.ToShortDateString();
-            dgvPeople.Rows[i].Cells["Skills"].Value = list[i].Salary;
-            dgvPeople.Rows[i].Cells["Attributes"].Value = string.Join(", ", list[i].Skills);
-         }
+         //dgvPeople.Rows[i].Cells["Id"].Value = list[i].Id;
+         //dgvPeople.Rows[i].Cells["Name"].Value = list[i].Name;
+         //dgvPeople.Rows[i].Cells["BirthDate"].Value = list[i].BirthDate.ToShortDateString();
+         //dgvPeople.Rows[i].Cells["Skills"].Value = list[i].Salary;
+         //dgvPeople.Rows[i].Cells["Attributes"].Value = string.Join(", ", list[i].Skills);
+         //}
 
 
       }
