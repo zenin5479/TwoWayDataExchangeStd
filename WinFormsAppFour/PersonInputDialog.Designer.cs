@@ -66,10 +66,10 @@
          // 
          // numSalary
          // 
-         numSalary.Location = new System.Drawing.Point(123, 108);
+         numSalary.Location = new System.Drawing.Point(79, 70);
          numSalary.Maximum = new decimal(new int[] { 1000000, 0, 0, 0 });
          numSalary.Name = "numSalary";
-         numSalary.Size = new System.Drawing.Size(120, 23);
+         numSalary.Size = new System.Drawing.Size(232, 23);
          numSalary.TabIndex = 3;
          // 
          // txtSkills
@@ -111,7 +111,7 @@
          // label3
          // 
          label3.AutoSize = true;
-         label3.Location = new System.Drawing.Point(151, 227);
+         label3.Location = new System.Drawing.Point(12, 72);
          label3.Name = "label3";
          label3.Size = new System.Drawing.Size(61, 15);
          label3.TabIndex = 8;
