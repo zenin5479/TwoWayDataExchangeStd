@@ -33,6 +33,7 @@
          txtName = new System.Windows.Forms.TextBox();
          numSalary = new System.Windows.Forms.NumericUpDown();
          txtSkills = new System.Windows.Forms.TextBox();
+         btnOk = new System.Windows.Forms.Button();
          ((System.ComponentModel.ISupportInitialize)numSalary).BeginInit();
          SuspendLayout();
          // 
@@ -75,11 +76,21 @@
          txtSkills.Size = new System.Drawing.Size(250, 23);
          txtSkills.TabIndex = 4;
          // 
+         // btnOk
+         // 
+         btnOk.Location = new System.Drawing.Point(210, 86);
+         btnOk.Name = "btnOk";
+         btnOk.Size = new System.Drawing.Size(75, 23);
+         btnOk.TabIndex = 5;
+         btnOk.Text = "button1";
+         btnOk.UseVisualStyleBackColor = true;
+         // 
          // PersonInputDialog
          // 
          AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
          AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
          ClientSize = new System.Drawing.Size(372, 232);
+         Controls.Add(btnOk);
          Controls.Add(txtSkills);
          Controls.Add(numSalary);
          Controls.Add(txtName);
@@ -99,5 +110,6 @@
       private System.Windows.Forms.TextBox txtName;
       private System.Windows.Forms.NumericUpDown numSalary;
       private System.Windows.Forms.TextBox txtSkills;
+      private System.Windows.Forms.Button btnOk;
    }
 }
