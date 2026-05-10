@@ -36,7 +36,7 @@ namespace WinFormsAppFour
          // Находим путь к консольному EXE
          string consolePath = Path.Combine(
             Path.GetDirectoryName(Application.ExecutablePath),
-            "..", "..", "..", "ConsoleWorker", "bin", "Debug", "netcoreapp3.1", "ConsoleWorker.exe");
+            "..", "..", "..", "ConsoleAppFour", "bin", "Debug", "netcoreapp3.1", "ConsoleAppFour.exe");
 
          if (!File.Exists(consolePath))
          {
