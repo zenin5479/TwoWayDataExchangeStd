@@ -108,7 +108,7 @@ namespace WinFormsAppFour
          Person person = dgvPeople.CurrentRow.Tag as Person;
          if (person != null)
          {
-            if (MessageBox.Show($"Удалить {person.Name}?", "Подтверждение",
+            if (MessageBox.Show(string.Format(@"Удалить {0}?", person.Name), @"Подтверждение",
                    MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
                GlobalStorage.AllPeople.Remove(person);
@@ -197,7 +197,7 @@ namespace WinFormsAppFour
 
             row.Cells[0].Value = person.Id;
             row.Cells[1].Value = person.Name;
-            row.Cells[2].Value = person.BirthDate;
+            row.Cells[2].Value = person.BirthDate.ToShortDateString();
             row.Cells[3].Value = person.Salary;
             row.Cells[4].Value = string.Join(", ", person.Skills);
             // Сохраняем сам объект в Tag строки
