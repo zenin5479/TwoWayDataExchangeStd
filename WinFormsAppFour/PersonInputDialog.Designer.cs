@@ -43,7 +43,7 @@
          // 
          // dtpBirth
          // 
-         dtpBirth.Location = new System.Drawing.Point(227, 70);
+         dtpBirth.Location = new System.Drawing.Point(111, 41);
          dtpBirth.Name = "dtpBirth";
          dtpBirth.Size = new System.Drawing.Size(200, 23);
          dtpBirth.TabIndex = 0;
@@ -61,7 +61,7 @@
          // 
          txtName.Location = new System.Drawing.Point(52, 12);
          txtName.Name = "txtName";
-         txtName.Size = new System.Drawing.Size(100, 23);
+         txtName.Size = new System.Drawing.Size(259, 23);
          txtName.TabIndex = 2;
          // 
          // numSalary
@@ -102,7 +102,7 @@
          // label2
          // 
          label2.AutoSize = true;
-         label2.Location = new System.Drawing.Point(52, 227);
+         label2.Location = new System.Drawing.Point(12, 47);
          label2.Name = "label2";
          label2.Size = new System.Drawing.Size(93, 15);
          label2.TabIndex = 7;
