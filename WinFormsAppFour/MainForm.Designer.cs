@@ -28,6 +28,7 @@
       /// </summary>
       private void InitializeComponent()
       {
+         System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
          panelTop = new System.Windows.Forms.Panel();
          btnAddPerson = new System.Windows.Forms.Button();
          btnRunConsole = new System.Windows.Forms.Button();
@@ -43,6 +44,7 @@
          Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
          Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
          Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+         Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
          panelTop.SuspendLayout();
          panelBottom.SuspendLayout();
          ((System.ComponentModel.ISupportInitialize)dgvPeople).BeginInit();
@@ -139,11 +141,11 @@
          // dgvPeople
          // 
          dgvPeople.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-         dgvPeople.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] { Column1, Column2, Column3, Column4, Column5 });
+         dgvPeople.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] { Column1, Column2, Column3, Column4, Column5, Column6 });
          dgvPeople.Location = new System.Drawing.Point(12, 12);
          dgvPeople.Name = "dgvPeople";
          dgvPeople.RowTemplate.Height = 25;
-         dgvPeople.Size = new System.Drawing.Size(679, 150);
+         dgvPeople.Size = new System.Drawing.Size(740, 150);
          dgvPeople.TabIndex = 2;
          // 
          // Column1
@@ -173,11 +175,19 @@
          Column5.HeaderText = "Skills";
          Column5.Name = "Column5";
          // 
+         // Column6
+         // 
+         dataGridViewCellStyle1.Format = "C";
+         dataGridViewCellStyle1.NullValue = null;
+         Column6.DefaultCellStyle = dataGridViewCellStyle1;
+         Column6.HeaderText = "Attributes";
+         Column6.Name = "Column6";
+         // 
          // MainForm
          // 
          AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
          AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-         ClientSize = new System.Drawing.Size(801, 270);
+         ClientSize = new System.Drawing.Size(890, 270);
          Controls.Add(dgvPeople);
          Controls.Add(panelBottom);
          Controls.Add(panelTop);
@@ -208,5 +218,6 @@
       private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
       private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
       private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
+      private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
    }
 }
