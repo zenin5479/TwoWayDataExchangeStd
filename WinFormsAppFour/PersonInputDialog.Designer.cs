@@ -111,9 +111,9 @@
          label3.AutoSize = true;
          label3.Location = new System.Drawing.Point(222, 231);
          label3.Name = "label3";
-         label3.Size = new System.Drawing.Size(38, 15);
+         label3.Size = new System.Drawing.Size(61, 15);
          label3.TabIndex = 8;
-         label3.Text = "label3";
+         label3.Text = "Зарплата:";
          // 
          // PersonInputDialog
          // 
