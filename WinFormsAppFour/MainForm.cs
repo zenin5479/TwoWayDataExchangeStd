@@ -150,18 +150,26 @@ namespace WinFormsAppFour
          {
             GlobalStorage.AddPerson(new Person
             {
-               Name = "Иван Петров",
+               Name = "Лев Ткачук",
                BirthDate = new DateTime(1990, 5, 20),
                Salary = 50000,
                Skills = { "C#", "SQL" }
             });
             GlobalStorage.AddPerson(new Person
             {
-               Name = "Мария Сидорова",
+               Name = "Татьяна Свиридова",
                BirthDate = new DateTime(1988, 12, 10),
                Salary = 65000,
                Skills = { "Java", "Python" }
             });
+            GlobalStorage.AddPerson(new Person
+            {
+               Name = "Надежда Белова",
+               BirthDate = new DateTime(1996, 10, 21),
+               Salary = 65000,
+               Skills = { "C++", "HTML" }
+            });
+
             RefreshDataGrid();
             UpdateStatus();
          }
