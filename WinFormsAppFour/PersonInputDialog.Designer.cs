@@ -33,7 +33,7 @@
          // 
          // dtpBirth
          // 
-         dtpBirth.Location = new System.Drawing.Point(52, 99);
+         dtpBirth.Location = new System.Drawing.Point(12, 95);
          dtpBirth.Name = "dtpBirth";
          dtpBirth.Size = new System.Drawing.Size(200, 23);
          dtpBirth.TabIndex = 0;
