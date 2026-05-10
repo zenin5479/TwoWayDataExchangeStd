@@ -92,7 +92,7 @@
          btnCancel.Name = "btnCancel";
          btnCancel.Size = new System.Drawing.Size(75, 23);
          btnCancel.TabIndex = 6;
-         btnCancel.Text = "button1";
+         btnCancel.Text = "Отмена";
          btnCancel.UseVisualStyleBackColor = true;
          // 
          // PersonInputDialog
