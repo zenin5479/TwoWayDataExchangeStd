@@ -1,6 +1,6 @@
-﻿using System;
+﻿using ClassLibraryFour;
+using System;
 using System.Linq;
-using ClassLibraryFour;
 using System.Windows.Forms;
 
 namespace WinFormsAppFour

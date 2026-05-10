@@ -49,7 +49,7 @@ namespace WinFormsAppFour
          //string path5 = AppContext.BaseDirectory;
          //Console.WriteLine(path5);
          //// 6 вариант 
-        
+
 
 
          // Находим путь к консольному EXE
@@ -121,7 +121,7 @@ namespace WinFormsAppFour
       {
          if (dgvPeople.CurrentRow == null) return;
 
-         var person = dgvPeople.CurrentRow.DataBoundItem as Person;
+         Person person = (Person)dgvPeople.CurrentRow.DataBoundItem;
          if (person != null)
          {
             using (var editDialog = new PersonEditDialog(person))
@@ -137,29 +137,25 @@ namespace WinFormsAppFour
 
       private void RefreshDataGrid()
       {
-         //dgvPeople.DataSource = null;
-         //dgvPeople.DataSource = GlobalStorage.AllPeople.ToList();
-         
          dgvPeople.SelectAll();
          dgvPeople.ClearSelection();
-         //dgvPeople.Rows.Clear();
+         dgvPeople.Rows.Clear();
 
-         for (var i = 0; i < GlobalStorage.AllPeople.Count; ++i)
+         for (int i = 0; i < GlobalStorage.AllPeople.Count; ++i)
          {
             int rowNumber = dgvPeople.Rows.Add();
             dgvPeople.Rows[rowNumber].Cells[0].Value = GlobalStorage.AllPeople[i].Id;
             dgvPeople.Rows[rowNumber].Cells[1].Value = GlobalStorage.AllPeople[i].Name;
             dgvPeople.Rows[rowNumber].Cells[2].Value = GlobalStorage.AllPeople[i].BirthDate.ToShortDateString();
             dgvPeople.Rows[rowNumber].Cells[3].Value = GlobalStorage.AllPeople[i].Salary;
-            dgvPeople.Rows[rowNumber].Cells[4].Value = GlobalStorage.AllPeople[i].Skills;
-
+            dgvPeople.Rows[rowNumber].Cells[4].Value = string.Join(", ", GlobalStorage.AllPeople[i].Skills);
+            
             // Формат DateTime
             // .ToShortDateString()
             // .ToString("d")
             // .ToString("yyyy.MM.dd")
             // .ToString("dd.MM.yyyy")
          }
-
       }
 
       private void UpdateStatus()

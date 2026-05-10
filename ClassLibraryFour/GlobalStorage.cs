@@ -23,7 +23,7 @@ namespace ClassLibraryFour
       // Статистика
       public static int TotalPeopleCount
       {
-         get {return AllPeople.Count; }
+         get { return AllPeople.Count; }
       }
 
       // Сброс данных (для тестов)
