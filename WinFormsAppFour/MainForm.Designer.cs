@@ -174,6 +174,7 @@
          // 
          // Column5
          // 
+         Column5.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
          Column5.HeaderText = "Skills";
          Column5.Name = "Column5";
          // 
@@ -207,11 +208,11 @@
       private System.Windows.Forms.Button btnEditSelected;
       private System.Windows.Forms.Label lblTotalCount;
       private System.Windows.Forms.Label lblAvgSalary;
+      private System.Windows.Forms.Label lblConsoleMessage;
       private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
       private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
       private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
       private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
       private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
-      private System.Windows.Forms.Label lblConsoleMessage;
    }
 }
