@@ -29,6 +29,7 @@
       private void InitializeComponent()
       {
          dtpBirth = new System.Windows.Forms.DateTimePicker();
+         label1 = new System.Windows.Forms.Label();
          SuspendLayout();
          // 
          // dtpBirth
@@ -38,19 +39,31 @@
          dtpBirth.Size = new System.Drawing.Size(200, 23);
          dtpBirth.TabIndex = 0;
          // 
+         // label1
+         // 
+         label1.AutoSize = true;
+         label1.Location = new System.Drawing.Point(57, 89);
+         label1.Name = "label1";
+         label1.Size = new System.Drawing.Size(38, 15);
+         label1.TabIndex = 1;
+         label1.Text = "label1";
+         // 
          // PersonInputDialog
          // 
          AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
          AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
          ClientSize = new System.Drawing.Size(372, 232);
+         Controls.Add(label1);
          Controls.Add(dtpBirth);
          Name = "PersonInputDialog";
          Text = "Редактирование человека";
          ResumeLayout(false);
+         PerformLayout();
       }
 
       #endregion
 
       private System.Windows.Forms.DateTimePicker dtpBirth;
+      private System.Windows.Forms.Label label1;
    }
 }
