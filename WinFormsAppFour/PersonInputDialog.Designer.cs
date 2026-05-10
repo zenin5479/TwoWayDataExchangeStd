@@ -142,6 +142,7 @@
          Controls.Add(label1);
          Controls.Add(dtpBirth);
          MaximizeBox = false;
+         MinimizeBox = false;
          Name = "PersonInputDialog";
          Text = "Редактирование человека";
          ((System.ComponentModel.ISupportInitialize)numSalary).EndInit();
