@@ -139,8 +139,7 @@ namespace WinFormsAppFour
       {
          //dgvPeople.DataSource = null;
          //dgvPeople.DataSource = GlobalStorage.AllPeople.ToList();
-
-
+         
          dgvPeople.SelectAll();
          dgvPeople.ClearSelection();
          //dgvPeople.Rows.Clear();
