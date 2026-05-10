@@ -1,7 +1,7 @@
-﻿using ClassLibraryFour;
-using System;
+﻿using System;
 using System.Linq;
 using System.Windows.Forms;
+using ClassLibraryFour;
 
 namespace WinFormsAppFour
 {
@@ -32,7 +32,7 @@ namespace WinFormsAppFour
          }
       }
 
-      private void btnOk_Click(object sender, System.EventArgs e)
+      private void btnOk_Click(object sender, EventArgs e)
       {
          if (string.IsNullOrWhiteSpace(txtName.Text))
          {

@@ -28,7 +28,7 @@
       /// </summary>
       private void InitializeComponent()
       {
-         System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+         System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
          panelTop = new System.Windows.Forms.Panel();
          btnAddPerson = new System.Windows.Forms.Button();
          btnRunConsole = new System.Windows.Forms.Button();
@@ -43,6 +43,7 @@
          Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
          Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
          Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+         lblConsoleMessage = new System.Windows.Forms.Label();
          panelTop.SuspendLayout();
          panelBottom.SuspendLayout();
          ((System.ComponentModel.ISupportInitialize)dgvPeople).BeginInit();
@@ -101,11 +102,12 @@
          // 
          // panelBottom
          // 
+         panelBottom.Controls.Add(lblConsoleMessage);
          panelBottom.Controls.Add(lblTotalCount);
          panelBottom.Controls.Add(lblAvgSalary);
          panelBottom.Location = new System.Drawing.Point(212, 168);
          panelBottom.Name = "panelBottom";
-         panelBottom.Size = new System.Drawing.Size(177, 44);
+         panelBottom.Size = new System.Drawing.Size(177, 65);
          panelBottom.TabIndex = 1;
          // 
          // lblTotalCount
@@ -156,9 +158,9 @@
          // 
          // Column4
          // 
-         dataGridViewCellStyle1.Format = "C0";
-         dataGridViewCellStyle1.NullValue = null;
-         Column4.DefaultCellStyle = dataGridViewCellStyle1;
+         dataGridViewCellStyle2.Format = "C0";
+         dataGridViewCellStyle2.NullValue = null;
+         Column4.DefaultCellStyle = dataGridViewCellStyle2;
          Column4.HeaderText = "Salary";
          Column4.Name = "Column4";
          // 
@@ -166,6 +168,15 @@
          // 
          Column5.HeaderText = "Skills";
          Column5.Name = "Column5";
+         // 
+         // lblConsoleMessage
+         // 
+         lblConsoleMessage.AutoSize = true;
+         lblConsoleMessage.Location = new System.Drawing.Point(3, 41);
+         lblConsoleMessage.Name = "lblConsoleMessage";
+         lblConsoleMessage.Size = new System.Drawing.Size(96, 15);
+         lblConsoleMessage.TabIndex = 9;
+         lblConsoleMessage.Text = "ConsoleMessage";
          // 
          // MainForm
          // 
@@ -201,5 +212,6 @@
       private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
       private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
       private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
+      private System.Windows.Forms.Label lblConsoleMessage;
    }
 }

@@ -127,7 +127,7 @@ namespace WinFormsAppFour
          Person person = (Person)dgvPeople.CurrentRow.DataBoundItem;
          if (person != null)
          {
-            using (var editDialog = new PersonEditDialog(person))
+            using (PersonEditDialog editDialog = new PersonEditDialog(person))
             {
                if (editDialog.ShowDialog() == DialogResult.OK)
                {
@@ -140,9 +140,9 @@ namespace WinFormsAppFour
 
       private void RefreshDataGrid()
       {
-         //dgvPeople.SelectAll();
-         //dgvPeople.ClearSelection();
-         //dgvPeople.Rows.Clear();
+         dgvPeople.SelectAll();
+         dgvPeople.ClearSelection();
+         dgvPeople.Rows.Clear();
 
          for (int i = 0; i < GlobalStorage.AllPeople.Count; ++i)
          {
