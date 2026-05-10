@@ -69,9 +69,10 @@
          // 
          // txtSkills
          // 
-         txtSkills.Location = new System.Drawing.Point(219, 149);
+         txtSkills.Location = new System.Drawing.Point(110, 189);
          txtSkills.Name = "txtSkills";
-         txtSkills.Size = new System.Drawing.Size(100, 23);
+         txtSkills.PlaceholderText = "C#, SQL, Python (через запятую)";
+         txtSkills.Size = new System.Drawing.Size(250, 23);
          txtSkills.TabIndex = 4;
          // 
          // PersonInputDialog
