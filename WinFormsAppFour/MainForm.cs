@@ -104,10 +104,10 @@ namespace WinFormsAppFour
       {
          if (dgvPeople.CurrentRow == null) return;
 
-         var person = dgvPeople.CurrentRow.DataBoundItem as Person;
+         Person person = dgvPeople.CurrentRow.DataBoundItem as Person;
          if (person != null)
          {
-            if (MessageBox.Show($"Удалить {person.Name}?", "Подтверждение",
+            if (MessageBox.Show(string.Format(@"Удалить {0}?", person.Name), @"Подтверждение",
                    MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
                GlobalStorage.AllPeople.Remove(person);
