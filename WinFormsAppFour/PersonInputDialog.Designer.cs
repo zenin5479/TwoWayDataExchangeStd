@@ -88,6 +88,7 @@
          btnOk.TabIndex = 5;
          btnOk.Text = "Ok";
          btnOk.UseVisualStyleBackColor = true;
+         btnOk.Click += btnOk_Click;
          // 
          // btnCancel
          // 
