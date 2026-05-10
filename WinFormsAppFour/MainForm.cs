@@ -154,7 +154,7 @@ namespace WinFormsAppFour
          //// Настройка колонок
          //if (dgvPeople.Columns.Count > 0)
          //{
-         //   dgvPeople.Columns["Id"].Width = 50;
+         //   dgvPeople.Columns["Id"] = list.;
          //   dgvPeople.Columns["Name"].Width = 150;
          //   dgvPeople.Columns["BirthDate"].Width = 100;
          //   dgvPeople.Columns["Salary"].Width = 100;
@@ -164,22 +164,32 @@ namespace WinFormsAppFour
          //   dgvPeople.Columns["Salary"].DefaultCellStyle.Format = "C";
          //}
 
-
-
-
          //dgvPeople.SelectAll();
          //dgvPeople.ClearSelection();
          //dgvPeople.Rows.Clear();
 
-         //for (int i = 0; i < GlobalStorage.AllPeople.Count; ++i)
-         //{
-         //   int rowNumber = dgvPeople.Rows.Add();
-         //   dgvPeople.Rows[rowNumber].Cells[0].Value = GlobalStorage.AllPeople[i].Id;
-         //   dgvPeople.Rows[rowNumber].Cells[1].Value = GlobalStorage.AllPeople[i].Name;
-         //   dgvPeople.Rows[rowNumber].Cells[2].Value = GlobalStorage.AllPeople[i].BirthDate.ToShortDateString();
-         //   dgvPeople.Rows[rowNumber].Cells[3].Value = GlobalStorage.AllPeople[i].Salary;
-         //   dgvPeople.Rows[rowNumber].Cells[4].Value = string.Join(", ", GlobalStorage.AllPeople[i].Skills);
-         //}
+         for (int i = 0; i < list.Count; ++i)
+         {
+            //dgvPeople.Columns["Id"][i] = list[i].Id;
+
+            //dgvPeople.Columns["Id"][i] = list[i].Id;
+            //dgvPeople.Columns["Name"].Width = 150;
+            //dgvPeople.Columns["BirthDate"].Width = 100;
+            //dgvPeople.Columns["Salary"].Width = 100;
+            //dgvPeople.Columns["Skills"].Visible = false;
+            //dgvPeople.Columns["Attributes"].Visible = false;
+
+            //dgvPeople.Columns["Salary"].DefaultCellStyle.Format = "C";
+
+
+            dgvPeople.Rows[i].Cells["Id"].Value = list[i].Id;
+            dgvPeople.Rows[i].Cells["Name"].Value = list[i].Name;
+            dgvPeople.Rows[i].Cells["BirthDate"].Value = list[i].BirthDate.ToShortDateString();
+            dgvPeople.Rows[i].Cells["Skills"].Value = list[i].Salary;
+            dgvPeople.Rows[i].Cells["Attributes"].Value = string.Join(", ", list[i].Skills);
+         }
+
+
       }
 
       private void UpdateStatus()
