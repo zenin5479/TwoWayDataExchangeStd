@@ -89,7 +89,7 @@
          // 
          AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
          AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-         ClientSize = new System.Drawing.Size(372, 232);
+         ClientSize = new System.Drawing.Size(453, 318);
          Controls.Add(btnOk);
          Controls.Add(txtSkills);
          Controls.Add(numSalary);
