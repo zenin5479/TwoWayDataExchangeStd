@@ -41,6 +41,8 @@
          Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
          Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
          Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+         Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+         Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
          panelTop.SuspendLayout();
          panelBottom.SuspendLayout();
          ((System.ComponentModel.ISupportInitialize)dgvPeople).BeginInit();
@@ -102,7 +104,7 @@
          panelBottom.Controls.Add(lblConsoleMessage);
          panelBottom.Controls.Add(lblTotalCount);
          panelBottom.Controls.Add(lblAvgSalary);
-         panelBottom.Location = new System.Drawing.Point(612, 12);
+         panelBottom.Location = new System.Drawing.Point(212, 168);
          panelBottom.Name = "panelBottom";
          panelBottom.Size = new System.Drawing.Size(177, 63);
          panelBottom.TabIndex = 1;
@@ -137,11 +139,11 @@
          // dgvPeople
          // 
          dgvPeople.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-         dgvPeople.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] { Column1, Column2, Column3 });
+         dgvPeople.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] { Column1, Column2, Column3, Column4, Column5 });
          dgvPeople.Location = new System.Drawing.Point(12, 12);
          dgvPeople.Name = "dgvPeople";
          dgvPeople.RowTemplate.Height = 25;
-         dgvPeople.Size = new System.Drawing.Size(578, 150);
+         dgvPeople.Size = new System.Drawing.Size(679, 150);
          dgvPeople.TabIndex = 2;
          // 
          // Column1
@@ -160,6 +162,16 @@
          // 
          Column3.HeaderText = "BirthDate";
          Column3.Name = "Column3";
+         // 
+         // Column4
+         // 
+         Column4.HeaderText = "Salary";
+         Column4.Name = "Column4";
+         // 
+         // Column5
+         // 
+         Column5.HeaderText = "Skills";
+         Column5.Name = "Column5";
          // 
          // MainForm
          // 
@@ -194,5 +206,7 @@
       private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
       private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
       private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
+      private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
+      private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
    }
 }
