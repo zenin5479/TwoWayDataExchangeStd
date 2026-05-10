@@ -36,7 +36,6 @@ namespace ConsoleAppFour
             BirthDate = new DateTime(1985, 5, 15),
             Salary = 75000,
             Skills = { "C#", "Консоль", "DLL-интеграция" },
-            Attributes = { { "Отдел", "IT" }, { "Город", "Москва" } }
          };
 
          GlobalStorage.AddPerson(newPerson);
