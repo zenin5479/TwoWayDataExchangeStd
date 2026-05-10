@@ -43,7 +43,7 @@
          // 
          // dtpBirth
          // 
-         dtpBirth.Location = new System.Drawing.Point(12, 12);
+         dtpBirth.Location = new System.Drawing.Point(227, 70);
          dtpBirth.Name = "dtpBirth";
          dtpBirth.Size = new System.Drawing.Size(200, 23);
          dtpBirth.TabIndex = 0;
@@ -59,14 +59,14 @@
          // 
          // txtName
          // 
-         txtName.Location = new System.Drawing.Point(12, 41);
+         txtName.Location = new System.Drawing.Point(188, 24);
          txtName.Name = "txtName";
          txtName.Size = new System.Drawing.Size(100, 23);
          txtName.TabIndex = 2;
          // 
          // numSalary
          // 
-         numSalary.Location = new System.Drawing.Point(12, 70);
+         numSalary.Location = new System.Drawing.Point(123, 108);
          numSalary.Maximum = new decimal(new int[] { 1000000, 0, 0, 0 });
          numSalary.Name = "numSalary";
          numSalary.Size = new System.Drawing.Size(120, 23);
@@ -74,7 +74,7 @@
          // 
          // txtSkills
          // 
-         txtSkills.Location = new System.Drawing.Point(12, 99);
+         txtSkills.Location = new System.Drawing.Point(151, 156);
          txtSkills.Name = "txtSkills";
          txtSkills.PlaceholderText = "C#, SQL, Python (через запятую)";
          txtSkills.Size = new System.Drawing.Size(250, 23);
