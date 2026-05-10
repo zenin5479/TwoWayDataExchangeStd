@@ -112,40 +112,31 @@ namespace WinFormsAppFour
                    MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
                GlobalStorage.AllPeople.Remove(person);
-               RefreshDataGrid(); // перезаполняем грид
+               // Обновляем строку в DataGrid
+               RefreshDataGrid();
+               // Обновляем статусную строку
                UpdateStatus(); // если есть статусная строка
             }
          }
-
-
-         //if (dgvPeople.CurrentRow == null) return;
-
-         //Person person = (Person)dgvPeople.CurrentRow.DataBoundItem;
-         //if (person != null)
-         //{
-         //   if (MessageBox.Show(string.Format(@"Удалить {0}?", person.Name), @"Подтверждение",
-         //          MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
-         //   {
-         //      GlobalStorage.AllPeople.Remove(person);
-         //      RefreshDataGrid();
-         //      UpdateStatus();
-         //   }
-         //}
       }
 
       private void btnEditSelected_Click(object sender, EventArgs e)
       {
-         if (dgvPeople.CurrentRow == null) return;
+         if (dgvPeople.CurrentRow == null)
+         {
+            return;
+         }
 
-         Person person = dgvPeople.CurrentRow.Tag as Person;
+         Person person = (Person)dgvPeople.CurrentRow.Tag;
          if (person != null)
          {
-            using (var editDialog = new PersonEditDialog(person)) // или ваш диалог
+            using (var editDialog = new PersonEditDialog(person))
             {
                if (editDialog.ShowDialog() == DialogResult.OK)
                {
-                  // Обновляем строку в гриде (можно просто перезаполнить)
+                  // Обновляем строку в DataGrid
                   RefreshDataGrid();
+                  // Обновляем статусную строку
                   UpdateStatus();
                }
             }
@@ -173,17 +164,6 @@ namespace WinFormsAppFour
 
       private void RefreshDataGrid()
       {
-         //dgvPeople.DataSource = null;
-         //List<Person> list = new List<Person>();
-         //for (int i = 0; i < GlobalStorage.AllPeople.Count; i++)
-         //{
-         //   Person person = GlobalStorage.AllPeople[i];
-         //   list.Add(person);
-         //}
-
-         //dgvPeople.DataSource = list;
-
-
          // Очищаем все строки
          dgvPeople.Rows.Clear();
 
@@ -203,51 +183,6 @@ namespace WinFormsAppFour
             // Сохраняем сам объект в Tag строки
             row.Tag = person;
          }
-
-
-
-         // Обновляем статус (например, количество строк)
-         lblTotalCount.Text = string.Format(@"Всего людей: {0}", dgvPeople.Rows.Count);
-
-         //// Настройка колонок
-         //if (dgvPeople.Columns.Count > 0)
-         //{
-         //   dgvPeople.Columns["Id"] = list.;
-         //   dgvPeople.Columns["Name"].Width = 150;
-         //   dgvPeople.Columns["BirthDate"].Width = 100;
-         //   dgvPeople.Columns["Salary"].Width = 100;
-         //   dgvPeople.Columns["Skills"].Visible = false;
-         //   dgvPeople.Columns["Attributes"].Visible = false;
-
-         //   dgvPeople.Columns["Salary"].DefaultCellStyle.Format = "C";
-         //}
-
-         //dgvPeople.SelectAll();
-         //dgvPeople.ClearSelection();
-         //dgvPeople.Rows.Clear();
-
-         //for (int i = 0; i < list.Count; ++i)
-         //{
-         //dgvPeople.Columns["Id"][i] = list[i].Id;
-
-         //dgvPeople.Columns["Id"][i] = list[i].Id;
-         //dgvPeople.Columns["Name"].Width = 150;
-         //dgvPeople.Columns["BirthDate"].Width = 100;
-         //dgvPeople.Columns["Salary"].Width = 100;
-         //dgvPeople.Columns["Skills"].Visible = false;
-         //dgvPeople.Columns["Attributes"].Visible = false;
-
-         //dgvPeople.Columns["Salary"].DefaultCellStyle.Format = "C";
-
-
-         //dgvPeople.Rows[i].Cells["Id"].Value = list[i].Id;
-         //dgvPeople.Rows[i].Cells["Name"].Value = list[i].Name;
-         //dgvPeople.Rows[i].Cells["BirthDate"].Value = list[i].BirthDate.ToShortDateString();
-         //dgvPeople.Rows[i].Cells["Skills"].Value = list[i].Salary;
-         //dgvPeople.Rows[i].Cells["Attributes"].Value = string.Join(", ", list[i].Skills);
-         //}
-
-
       }
 
       private void UpdateStatus()
