@@ -144,7 +144,7 @@
          dgvPeople.Location = new System.Drawing.Point(12, 12);
          dgvPeople.Name = "dgvPeople";
          dgvPeople.RowTemplate.Height = 25;
-         dgvPeople.Size = new System.Drawing.Size(740, 150);
+         dgvPeople.Size = new System.Drawing.Size(572, 150);
          dgvPeople.TabIndex = 2;
          // 
          // Column1
@@ -181,11 +181,12 @@
          // 
          AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
          AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-         ClientSize = new System.Drawing.Size(890, 270);
+         ClientSize = new System.Drawing.Size(596, 270);
          Controls.Add(dgvPeople);
          Controls.Add(panelBottom);
          Controls.Add(panelTop);
          Name = "MainForm";
+         StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
          Text = "Система обмена данными с консолью";
          Load += FormFour_Load;
          panelTop.ResumeLayout(false);
