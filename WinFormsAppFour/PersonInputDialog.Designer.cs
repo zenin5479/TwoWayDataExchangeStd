@@ -62,6 +62,7 @@
          // numSalary
          // 
          numSalary.Location = new System.Drawing.Point(12, 124);
+         numSalary.Maximum = new decimal(new int[] { 1000000, 0, 0, 0 });
          numSalary.Name = "numSalary";
          numSalary.Size = new System.Drawing.Size(120, 23);
          numSalary.TabIndex = 3;
