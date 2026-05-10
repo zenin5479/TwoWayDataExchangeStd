@@ -1,5 +1,6 @@
 ﻿using ClassLibraryFour;
 using System;
+using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
 using System.Linq;
@@ -140,19 +141,45 @@ namespace WinFormsAppFour
 
       private void RefreshDataGrid()
       {
-         dgvPeople.SelectAll();
-         dgvPeople.ClearSelection();
-         dgvPeople.Rows.Clear();
-
-         for (int i = 0; i < GlobalStorage.AllPeople.Count; ++i)
+         dgvPeople.DataSource = null;
+         List<Person> list = new List<Person>();
+         for (int i = 0; i < GlobalStorage.AllPeople.Count; i++)
          {
-            int rowNumber = dgvPeople.Rows.Add();
-            dgvPeople.Rows[rowNumber].Cells[0].Value = GlobalStorage.AllPeople[i].Id;
-            dgvPeople.Rows[rowNumber].Cells[1].Value = GlobalStorage.AllPeople[i].Name;
-            dgvPeople.Rows[rowNumber].Cells[2].Value = GlobalStorage.AllPeople[i].BirthDate.ToShortDateString();
-            dgvPeople.Rows[rowNumber].Cells[3].Value = GlobalStorage.AllPeople[i].Salary;
-            dgvPeople.Rows[rowNumber].Cells[4].Value = string.Join(", ", GlobalStorage.AllPeople[i].Skills);
+            Person person = GlobalStorage.AllPeople[i];
+            list.Add(person);
          }
+
+         dgvPeople.DataSource = list;
+
+         // Настройка колонок
+         if (dgvPeople.Columns.Count > 0)
+         {
+            dgvPeople.Columns["Id"].Width = 50;
+            dgvPeople.Columns["Name"].Width = 150;
+            dgvPeople.Columns["BirthDate"].Width = 100;
+            dgvPeople.Columns["Salary"].Width = 100;
+            dgvPeople.Columns["Skills"].Visible = false;
+            dgvPeople.Columns["Attributes"].Visible = false;
+
+            dgvPeople.Columns["Salary"].DefaultCellStyle.Format = "C";
+         }
+
+
+
+
+         //dgvPeople.SelectAll();
+         //dgvPeople.ClearSelection();
+         //dgvPeople.Rows.Clear();
+
+         //for (int i = 0; i < GlobalStorage.AllPeople.Count; ++i)
+         //{
+         //   int rowNumber = dgvPeople.Rows.Add();
+         //   dgvPeople.Rows[rowNumber].Cells[0].Value = GlobalStorage.AllPeople[i].Id;
+         //   dgvPeople.Rows[rowNumber].Cells[1].Value = GlobalStorage.AllPeople[i].Name;
+         //   dgvPeople.Rows[rowNumber].Cells[2].Value = GlobalStorage.AllPeople[i].BirthDate.ToShortDateString();
+         //   dgvPeople.Rows[rowNumber].Cells[3].Value = GlobalStorage.AllPeople[i].Salary;
+         //   dgvPeople.Rows[rowNumber].Cells[4].Value = string.Join(", ", GlobalStorage.AllPeople[i].Skills);
+         //}
       }
 
       private void UpdateStatus()

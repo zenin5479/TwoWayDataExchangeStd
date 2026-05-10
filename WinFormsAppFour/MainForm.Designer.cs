@@ -28,13 +28,14 @@
       /// </summary>
       private void InitializeComponent()
       {
-         System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+         System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
          panelTop = new System.Windows.Forms.Panel();
          btnAddPerson = new System.Windows.Forms.Button();
          btnRunConsole = new System.Windows.Forms.Button();
          btnDeleteSelected = new System.Windows.Forms.Button();
          btnEditSelected = new System.Windows.Forms.Button();
          panelBottom = new System.Windows.Forms.Panel();
+         lblConsoleMessage = new System.Windows.Forms.Label();
          lblTotalCount = new System.Windows.Forms.Label();
          lblAvgSalary = new System.Windows.Forms.Label();
          dgvPeople = new System.Windows.Forms.DataGridView();
@@ -43,7 +44,6 @@
          Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
          Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
          Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-         lblConsoleMessage = new System.Windows.Forms.Label();
          panelTop.SuspendLayout();
          panelBottom.SuspendLayout();
          ((System.ComponentModel.ISupportInitialize)dgvPeople).BeginInit();
@@ -110,6 +110,15 @@
          panelBottom.Size = new System.Drawing.Size(177, 65);
          panelBottom.TabIndex = 1;
          // 
+         // lblConsoleMessage
+         // 
+         lblConsoleMessage.AutoSize = true;
+         lblConsoleMessage.Location = new System.Drawing.Point(3, 41);
+         lblConsoleMessage.Name = "lblConsoleMessage";
+         lblConsoleMessage.Size = new System.Drawing.Size(96, 15);
+         lblConsoleMessage.TabIndex = 9;
+         lblConsoleMessage.Text = "ConsoleMessage";
+         // 
          // lblTotalCount
          // 
          lblTotalCount.AutoSize = true;
@@ -130,7 +139,6 @@
          // 
          // dgvPeople
          // 
-         dgvPeople.AllowUserToAddRows = false;
          dgvPeople.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
          dgvPeople.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] { Column1, Column2, Column3, Column4, Column5 });
          dgvPeople.Location = new System.Drawing.Point(12, 12);
@@ -158,9 +166,9 @@
          // 
          // Column4
          // 
-         dataGridViewCellStyle2.Format = "C0";
-         dataGridViewCellStyle2.NullValue = null;
-         Column4.DefaultCellStyle = dataGridViewCellStyle2;
+         dataGridViewCellStyle1.Format = "C0";
+         dataGridViewCellStyle1.NullValue = null;
+         Column4.DefaultCellStyle = dataGridViewCellStyle1;
          Column4.HeaderText = "Salary";
          Column4.Name = "Column4";
          // 
@@ -168,15 +176,6 @@
          // 
          Column5.HeaderText = "Skills";
          Column5.Name = "Column5";
-         // 
-         // lblConsoleMessage
-         // 
-         lblConsoleMessage.AutoSize = true;
-         lblConsoleMessage.Location = new System.Drawing.Point(3, 41);
-         lblConsoleMessage.Name = "lblConsoleMessage";
-         lblConsoleMessage.Size = new System.Drawing.Size(96, 15);
-         lblConsoleMessage.TabIndex = 9;
-         lblConsoleMessage.Text = "ConsoleMessage";
          // 
          // MainForm
          // 
