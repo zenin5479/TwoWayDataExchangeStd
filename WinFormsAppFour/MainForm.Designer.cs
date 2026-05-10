@@ -38,6 +38,8 @@
          lblTotalCount = new System.Windows.Forms.Label();
          lblAvgSalary = new System.Windows.Forms.Label();
          dgvPeople = new System.Windows.Forms.DataGridView();
+         Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+         Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
          panelTop.SuspendLayout();
          panelBottom.SuspendLayout();
          ((System.ComponentModel.ISupportInitialize)dgvPeople).BeginInit();
@@ -99,7 +101,7 @@
          panelBottom.Controls.Add(lblConsoleMessage);
          panelBottom.Controls.Add(lblTotalCount);
          panelBottom.Controls.Add(lblAvgSalary);
-         panelBottom.Location = new System.Drawing.Point(218, 12);
+         panelBottom.Location = new System.Drawing.Point(612, 12);
          panelBottom.Name = "panelBottom";
          panelBottom.Size = new System.Drawing.Size(177, 63);
          panelBottom.TabIndex = 1;
@@ -134,21 +136,33 @@
          // dgvPeople
          // 
          dgvPeople.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+         dgvPeople.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] { Column1, Column2 });
          dgvPeople.Location = new System.Drawing.Point(12, 12);
          dgvPeople.Name = "dgvPeople";
          dgvPeople.RowTemplate.Height = 25;
          dgvPeople.Size = new System.Drawing.Size(200, 150);
          dgvPeople.TabIndex = 2;
          // 
-         // FormFour
+         // Column1
+         // 
+         Column1.HeaderText = "Id";
+         Column1.Name = "Column1";
+         Column1.Width = 50;
+         // 
+         // Column2
+         // 
+         Column2.HeaderText = "Name";
+         Column2.Name = "Column2";
+         // 
+         // MainForm
          // 
          AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
          AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-         ClientSize = new System.Drawing.Size(404, 270);
+         ClientSize = new System.Drawing.Size(801, 270);
          Controls.Add(dgvPeople);
          Controls.Add(panelBottom);
          Controls.Add(panelTop);
-         Name = "FormFour";
+         Name = "MainForm";
          Text = "Система обмена данными с консолью";
          Load += FormFour_Load;
          panelTop.ResumeLayout(false);
@@ -170,5 +184,7 @@
       private System.Windows.Forms.Label lblTotalCount;
       private System.Windows.Forms.Label lblAvgSalary;
       private System.Windows.Forms.Label lblConsoleMessage;
+      private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+      private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
    }
 }
