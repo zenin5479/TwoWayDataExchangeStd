@@ -74,15 +74,15 @@
          // 
          // txtSkills
          // 
-         txtSkills.Location = new System.Drawing.Point(151, 156);
+         txtSkills.Location = new System.Drawing.Point(71, 99);
          txtSkills.Name = "txtSkills";
          txtSkills.PlaceholderText = "C#, SQL, Python (через запятую)";
-         txtSkills.Size = new System.Drawing.Size(250, 23);
+         txtSkills.Size = new System.Drawing.Size(240, 23);
          txtSkills.TabIndex = 4;
          // 
          // btnOk
          // 
-         btnOk.Location = new System.Drawing.Point(12, 143);
+         btnOk.Location = new System.Drawing.Point(138, 154);
          btnOk.Name = "btnOk";
          btnOk.Size = new System.Drawing.Size(75, 23);
          btnOk.TabIndex = 5;
@@ -92,7 +92,7 @@
          // 
          // btnCancel
          // 
-         btnCancel.Location = new System.Drawing.Point(12, 172);
+         btnCancel.Location = new System.Drawing.Point(154, 213);
          btnCancel.Name = "btnCancel";
          btnCancel.Size = new System.Drawing.Size(75, 23);
          btnCancel.TabIndex = 6;
@@ -120,7 +120,7 @@
          // label4
          // 
          label4.AutoSize = true;
-         label4.Location = new System.Drawing.Point(218, 227);
+         label4.Location = new System.Drawing.Point(12, 102);
          label4.Name = "label4";
          label4.Size = new System.Drawing.Size(53, 15);
          label4.TabIndex = 9;
