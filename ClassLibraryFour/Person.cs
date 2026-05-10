@@ -10,11 +10,10 @@ namespace ClassLibraryFour
       public DateTime BirthDate { get; set; }
       public decimal Salary { get; set; }
       public List<string> Skills { get; set; } = new List<string>();
-      public Dictionary<string, string> Attributes { get; set; } = new Dictionary<string, string>();
 
       public override string ToString()
       {
-         return $"[{Id}] {Name} ({BirthDate:yyyy-MM-dd}) - ЗП: {Salary:C} - Навыки: {string.Join(", ", Skills)}";
+         return string.Format("[{0}] {1} ({2:yyyy-MM-dd}) - ЗП: {3:C} - Навыки: {4}", Id, Name, BirthDate, Salary, string.Join(", ", Skills));
       }
    }
 }

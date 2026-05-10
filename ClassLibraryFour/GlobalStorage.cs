@@ -21,7 +21,10 @@ namespace ClassLibraryFour
       public static string LastConsoleOutput { get; set; }
 
       // Статистика
-      public static int TotalPeopleCount => AllPeople.Count;
+      public static int TotalPeopleCount
+      {
+         get {return AllPeople.Count; }
+      }
 
       // Сброс данных (для тестов)
       public static void Reset()

@@ -121,18 +121,6 @@ namespace WinFormsAppFour
          dgvPeople.DataSource = null;
          dgvPeople.DataSource = GlobalStorage.AllPeople.ToList();
 
-         // Настройка колонок
-         //if (dgvPeople.Columns.Count > 0)
-         //{
-         //   dgvPeople.Columns["Id"].Width = 50;
-         //   dgvPeople.Columns["Name"].Width = 150;
-         //   dgvPeople.Columns["BirthDate"].Width = 100;
-         //   dgvPeople.Columns["Salary"].Width = 100;
-         //   dgvPeople.Columns["Skills"].Width = 100;
-         //   dgvPeople.Columns["Attributes"].Width = 100;
-
-         //   dgvPeople.Columns["Salary"].DefaultCellStyle.Format = "C";
-         //}
       }
 
       private void UpdateStatus()
