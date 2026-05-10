@@ -1,6 +1,5 @@
 ﻿using ClassLibraryFour;
 using System;
-using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
 using System.Linq;
@@ -103,40 +102,73 @@ namespace WinFormsAppFour
 
       private void btnDeleteSelected_Click(object sender, EventArgs e)
       {
+
          if (dgvPeople.CurrentRow == null) return;
 
-         Person person = (Person)dgvPeople.CurrentRow.DataBoundItem;
+         Person person = dgvPeople.CurrentRow.Tag as Person;
          if (person != null)
          {
-            if (MessageBox.Show(string.Format(@"Удалить {0}?", person.Name), @"Подтверждение",
+            if (MessageBox.Show($"Удалить {person.Name}?", "Подтверждение",
                    MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
                GlobalStorage.AllPeople.Remove(person);
-               RefreshDataGrid();
-               UpdateStatus();
+               RefreshDataGrid(); // перезаполняем грид
+               UpdateStatus(); // если есть статусная строка
             }
          }
+
+
+         //if (dgvPeople.CurrentRow == null) return;
+
+         //Person person = (Person)dgvPeople.CurrentRow.DataBoundItem;
+         //if (person != null)
+         //{
+         //   if (MessageBox.Show(string.Format(@"Удалить {0}?", person.Name), @"Подтверждение",
+         //          MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+         //   {
+         //      GlobalStorage.AllPeople.Remove(person);
+         //      RefreshDataGrid();
+         //      UpdateStatus();
+         //   }
+         //}
       }
 
       private void btnEditSelected_Click(object sender, EventArgs e)
       {
-         if (dgvPeople.CurrentRow == null)
-         {
-            return;
-         }
+         if (dgvPeople.CurrentRow == null) return;
 
-         Person person = (Person)dgvPeople.CurrentRow.DataBoundItem;
+         Person person = dgvPeople.CurrentRow.Tag as Person;
          if (person != null)
          {
-            using (PersonEditDialog editDialog = new PersonEditDialog(person))
+            using (var editDialog = new PersonEditDialog(person)) // или ваш диалог
             {
                if (editDialog.ShowDialog() == DialogResult.OK)
                {
+                  // Обновляем строку в гриде (можно просто перезаполнить)
                   RefreshDataGrid();
                   UpdateStatus();
                }
             }
          }
+
+
+         //if (dgvPeople.CurrentRow == null)
+         //{
+         //   return;
+         //}
+
+         //Person person = (Person)dgvPeople.CurrentRow.DataBoundItem;
+         //if (person != null)
+         //{
+         //   using (PersonEditDialog editDialog = new PersonEditDialog(person))
+         //   {
+         //      if (editDialog.ShowDialog() == DialogResult.OK)
+         //      {
+         //         RefreshDataGrid();
+         //         UpdateStatus();
+         //      }
+         //   }
+         //}
       }
 
       private void RefreshDataGrid()
@@ -168,7 +200,11 @@ namespace WinFormsAppFour
             row.Cells[2].Value = person.BirthDate;
             row.Cells[3].Value = person.Salary;
             row.Cells[4].Value = string.Join(", ", person.Skills);
+            // Сохраняем сам объект в Tag строки
+            row.Tag = person;
          }
+
+
 
          // Обновляем статус (например, количество строк)
          lblTotalCount.Text = string.Format(@"Всего людей: {0}", dgvPeople.Rows.Count);
