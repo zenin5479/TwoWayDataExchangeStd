@@ -40,6 +40,7 @@
          dgvPeople = new System.Windows.Forms.DataGridView();
          Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
          Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+         Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
          panelTop.SuspendLayout();
          panelBottom.SuspendLayout();
          ((System.ComponentModel.ISupportInitialize)dgvPeople).BeginInit();
@@ -136,11 +137,11 @@
          // dgvPeople
          // 
          dgvPeople.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-         dgvPeople.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] { Column1, Column2 });
+         dgvPeople.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] { Column1, Column2, Column3 });
          dgvPeople.Location = new System.Drawing.Point(12, 12);
          dgvPeople.Name = "dgvPeople";
          dgvPeople.RowTemplate.Height = 25;
-         dgvPeople.Size = new System.Drawing.Size(200, 150);
+         dgvPeople.Size = new System.Drawing.Size(578, 150);
          dgvPeople.TabIndex = 2;
          // 
          // Column1
@@ -153,6 +154,12 @@
          // 
          Column2.HeaderText = "Name";
          Column2.Name = "Column2";
+         Column2.Width = 150;
+         // 
+         // Column3
+         // 
+         Column3.HeaderText = "BirthDate";
+         Column3.Name = "Column3";
          // 
          // MainForm
          // 
@@ -186,5 +193,6 @@
       private System.Windows.Forms.Label lblConsoleMessage;
       private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
       private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+      private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
    }
 }
