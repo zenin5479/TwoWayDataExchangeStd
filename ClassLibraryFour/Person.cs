@@ -13,7 +13,8 @@ namespace ClassLibraryFour
 
       public override string ToString()
       {
-         return string.Format("[{0}] {1} ({2:yyyy-MM-dd}) - ЗП: {3:C} - Навыки: {4}", Id, Name, BirthDate, Salary, string.Join(", ", Skills));
+         return string.Format("[{0}] {1} ({2:yyyy-MM-dd}) - ЗП: {3:C} - Навыки: {4}", Id, Name, BirthDate, Salary,
+            string.Join(", ", Skills));
       }
    }
 }

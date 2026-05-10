@@ -28,6 +28,7 @@
       /// </summary>
       private void InitializeComponent()
       {
+         System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
          panelTop = new System.Windows.Forms.Panel();
          btnAddPerson = new System.Windows.Forms.Button();
          btnRunConsole = new System.Windows.Forms.Button();
@@ -138,6 +139,7 @@
          // 
          // dgvPeople
          // 
+         dgvPeople.AllowUserToAddRows = false;
          dgvPeople.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
          dgvPeople.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] { Column1, Column2, Column3, Column4, Column5 });
          dgvPeople.Location = new System.Drawing.Point(12, 12);
@@ -165,6 +167,9 @@
          // 
          // Column4
          // 
+         dataGridViewCellStyle1.Format = "C0";
+         dataGridViewCellStyle1.NullValue = null;
+         Column4.DefaultCellStyle = dataGridViewCellStyle1;
          Column4.HeaderText = "Salary";
          Column4.Name = "Column4";
          // 
