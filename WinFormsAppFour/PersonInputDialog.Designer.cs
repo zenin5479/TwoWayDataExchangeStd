@@ -37,6 +37,7 @@
          btnCancel = new System.Windows.Forms.Button();
          label2 = new System.Windows.Forms.Label();
          label3 = new System.Windows.Forms.Label();
+         label4 = new System.Windows.Forms.Label();
          ((System.ComponentModel.ISupportInitialize)numSalary).BeginInit();
          SuspendLayout();
          // 
@@ -109,17 +110,27 @@
          // label3
          // 
          label3.AutoSize = true;
-         label3.Location = new System.Drawing.Point(222, 231);
+         label3.Location = new System.Drawing.Point(151, 227);
          label3.Name = "label3";
          label3.Size = new System.Drawing.Size(61, 15);
          label3.TabIndex = 8;
          label3.Text = "Зарплата:";
+         // 
+         // label4
+         // 
+         label4.AutoSize = true;
+         label4.Location = new System.Drawing.Point(139, 263);
+         label4.Name = "label4";
+         label4.Size = new System.Drawing.Size(38, 15);
+         label4.TabIndex = 9;
+         label4.Text = "label4";
          // 
          // PersonInputDialog
          // 
          AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
          AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
          ClientSize = new System.Drawing.Size(453, 318);
+         Controls.Add(label4);
          Controls.Add(label3);
          Controls.Add(label2);
          Controls.Add(btnCancel);
@@ -147,5 +158,6 @@
       private System.Windows.Forms.Button btnCancel;
       private System.Windows.Forms.Label label2;
       private System.Windows.Forms.Label label3;
+      private System.Windows.Forms.Label label4;
    }
 }
