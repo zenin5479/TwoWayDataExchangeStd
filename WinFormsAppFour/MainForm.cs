@@ -65,14 +65,13 @@ namespace WinFormsAppFour
          //   Console.WriteLine(path7);
          //}
 
-         string fileName = "ConsoleAppFour.exe";
-         string absolutePath = Path.GetFullPath(fileName);
+         
          
 
          // Находим путь к консольному EXE
-         string consolePath = Path.Combine(
-            Path.GetDirectoryName(Application.ExecutablePath),
-            "..", "..", "..", "ConsoleAppFour", "bin", "Debug", "netcoreapp3.1", "ConsoleAppFour.exe");
+string fileName = "ConsoleAppFour.exe";
+
+         string consolePath = Path.GetFullPath(fileName);
 
          if (!File.Exists(consolePath))
          {
