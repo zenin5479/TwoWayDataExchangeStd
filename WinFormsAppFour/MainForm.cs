@@ -55,7 +55,7 @@ namespace WinFormsAppFour
                {
                   FileName = consolePath,
                   UseShellExecute = false,
-                  CreateNoWindow = false,
+                  CreateNoWindow = true,
                   WindowStyle = ProcessWindowStyle.Normal
                }
             };
