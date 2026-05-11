@@ -65,18 +65,18 @@ namespace WinFormsAppFour
          //   Console.WriteLine(path7);
          //}
 
-         
-         
+
+
 
          // Находим путь к консольному EXE
-string fileName = "ConsoleAppFour.exe";
-
+         string fileName = "ConsoleAppFour.exe";
          string consolePath = Path.GetFullPath(fileName);
 
          if (!File.Exists(consolePath))
          {
-            MessageBox.Show($"Не найден ConsoleWorker.exe по пути:\n{consolePath}\n\nУкажите правильный путь!",
-               "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            MessageBox.Show(
+               string.Format(@"Не найден ConsoleAppFour.exe по пути:{0} Укажите правильный путь!", consolePath),
+               @"Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
             return;
          }
 
