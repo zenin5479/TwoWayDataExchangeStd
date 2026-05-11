@@ -54,8 +54,8 @@ namespace WinFormsAppFour
                StartInfo = new ProcessStartInfo
                {
                   FileName = consolePath,
-                  UseShellExecute = false,
-                  CreateNoWindow = true,
+                  UseShellExecute = true,
+                  CreateNoWindow = false,
                   WindowStyle = ProcessWindowStyle.Normal
                }
             };
