@@ -65,6 +65,10 @@ namespace WinFormsAppFour
          //   Console.WriteLine(path7);
          //}
 
+         string fileName = "ConsoleAppFour.exe";
+         string absolutePath = Path.GetFullPath(fileName);
+         
+
          // Находим путь к консольному EXE
          string consolePath = Path.Combine(
             Path.GetDirectoryName(Application.ExecutablePath),
