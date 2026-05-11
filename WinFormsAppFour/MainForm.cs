@@ -90,8 +90,8 @@ namespace WinFormsAppFour
                {
                   FileName = consolePath,
                   UseShellExecute = false,
-                  CreateNoWindow = true, // Без окна консоли
-                  WindowStyle = ProcessWindowStyle.Hidden
+                  CreateNoWindow = false,
+                  WindowStyle = ProcessWindowStyle.Normal
                }
             };
 
