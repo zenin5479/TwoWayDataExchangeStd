@@ -33,12 +33,6 @@ namespace WinFormsAppFour
 
       private void btnRunConsole_Click(object sender, EventArgs e)
       {
-
-        
-
-
-
-
          // Находим путь к консольному EXE
          string fileName = "ConsoleAppFour.exe";
          string consolePath = Path.GetFullPath(fileName);
@@ -77,7 +71,7 @@ namespace WinFormsAppFour
             if (!string.IsNullOrEmpty(GlobalStorage.LastConsoleOutput))
             {
                lblConsoleMessage.Text = GlobalStorage.LastConsoleOutput;
-               MessageBox.Show(GlobalStorage.LastConsoleOutput, "Результат работы консоли",
+               MessageBox.Show(GlobalStorage.LastConsoleOutput, @"Результат работы консоли",
                   MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
          }
