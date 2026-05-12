@@ -28,7 +28,7 @@
       /// </summary>
       private void InitializeComponent()
       {
-         System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+         System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
          panelTop = new System.Windows.Forms.Panel();
          btnAddPerson = new System.Windows.Forms.Button();
          btnDeleteSelected = new System.Windows.Forms.Button();
@@ -59,7 +59,7 @@
          // 
          // btnAddPerson
          // 
-         btnAddPerson.Location = new System.Drawing.Point(3, 32);
+         btnAddPerson.Location = new System.Drawing.Point(3, 3);
          btnAddPerson.Name = "btnAddPerson";
          btnAddPerson.Size = new System.Drawing.Size(90, 23);
          btnAddPerson.TabIndex = 3;
@@ -69,7 +69,7 @@
          // 
          // btnDeleteSelected
          // 
-         btnDeleteSelected.Location = new System.Drawing.Point(99, 32);
+         btnDeleteSelected.Location = new System.Drawing.Point(99, 3);
          btnDeleteSelected.Name = "btnDeleteSelected";
          btnDeleteSelected.Size = new System.Drawing.Size(90, 23);
          btnDeleteSelected.TabIndex = 5;
@@ -79,7 +79,7 @@
          // 
          // btnEditSelected
          // 
-         btnEditSelected.Location = new System.Drawing.Point(3, 61);
+         btnEditSelected.Location = new System.Drawing.Point(3, 32);
          btnEditSelected.Name = "btnEditSelected";
          btnEditSelected.Size = new System.Drawing.Size(125, 23);
          btnEditSelected.TabIndex = 6;
@@ -143,9 +143,9 @@
          // 
          // Column4
          // 
-         dataGridViewCellStyle4.Format = "C0";
-         dataGridViewCellStyle4.NullValue = null;
-         Column4.DefaultCellStyle = dataGridViewCellStyle4;
+         dataGridViewCellStyle5.Format = "C0";
+         dataGridViewCellStyle5.NullValue = null;
+         Column4.DefaultCellStyle = dataGridViewCellStyle5;
          Column4.HeaderText = "Salary";
          Column4.Name = "Column4";
          // 
