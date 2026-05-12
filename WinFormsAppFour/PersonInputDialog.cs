@@ -29,12 +29,12 @@ namespace WinFormsAppFour
          {
             // Создание нового
             List<string> list = new List<string>();
-            
-            
-            for (int index = 0; index < txtSkills.Text.Split(new[] { ',' }, StringSplitOptions.RemoveEmptyEntries).Length; index++)
+            int index = 0;
+            while (index < txtSkills.Text.Split(new[] { ',' }, StringSplitOptions.RemoveEmptyEntries).Length)
             {
                string s = txtSkills.Text.Split(new[] { ',' }, StringSplitOptions.RemoveEmptyEntries)[index];
                list.Add(s.Trim());
+               index++;
             }
 
             CreatedPerson = new Person
