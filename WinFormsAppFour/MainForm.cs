@@ -31,55 +31,7 @@ namespace WinFormsAppFour
          }
       }
 
-      private void btnRunConsole_Click(object sender, EventArgs e)
-      {
-         // Находим путь к консольному EXE
-         string fileName = "ConsoleAppFour.exe";
-         string consolePath = Path.GetFullPath(fileName);
-
-         if (!File.Exists(consolePath))
-         {
-            MessageBox.Show(
-               string.Format(@"Не найден ConsoleAppFour.exe по пути:{0} Укажите правильный путь!", consolePath),
-               @"Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            return;
-         }
-
-         // Запускаем консольное приложение синхронно
-         Cursor = Cursors.WaitCursor;
-         try
-         {
-            Process process = new Process
-            {
-               StartInfo = new ProcessStartInfo
-               {
-                  FileName = consolePath,
-                  UseShellExecute = true,
-                  CreateNoWindow = false,
-                  WindowStyle = ProcessWindowStyle.Normal
-               }
-            };
-
-            process.Start();
-            process.WaitForExit();
-
-            // После завершения консоли читаем обновлённые данные
-            RefreshDataGrid();
-            UpdateStatus();
-
-            // Показываем сообщение от консоли
-            if (!string.IsNullOrEmpty(GlobalStorage.LastConsoleOutput))
-            {
-               MessageBox.Show(GlobalStorage.LastConsoleOutput, @"Результат работы консоли",
-                  MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
-         }
-         finally
-         {
-            Cursor = Cursors.Default;
-         }
-      }
-
+     
       private void btnDeleteSelected_Click(object sender, EventArgs e)
       {
          if (dgvPeople.CurrentRow == null)
