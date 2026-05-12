@@ -29,14 +29,13 @@ namespace WinFormsAppFour
             numSalary.Value = _editPerson.Salary;
             txtSkills.Text = string.Join(", ", _editPerson.Skills);
          }
-        
       }
 
       private void btnOk_Click(object sender, EventArgs e)
       {
          if (string.IsNullOrWhiteSpace(txtName.Text))
          {
-            MessageBox.Show("Введите имя!", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            MessageBox.Show(@"Введите имя!", @"Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             return;
          }
 
@@ -47,8 +46,12 @@ namespace WinFormsAppFour
             _editPerson.BirthDate = dtpBirth.Value;
             _editPerson.Salary = numSalary.Value;
             _editPerson.Skills.Clear();
-            foreach (var skill in txtSkills.Text.Split(new[] { ',' }, StringSplitOptions.RemoveEmptyEntries))
+            for (int index = 0; index < txtSkills.Text.Split(new[] { ',' }, StringSplitOptions.RemoveEmptyEntries).Length; index++)
+            {
+               string skill = txtSkills.Text.Split(new[] { ',' }, StringSplitOptions.RemoveEmptyEntries)[index];
                _editPerson.Skills.Add(skill.Trim());
+            }
+
             CreatedPerson = _editPerson;
          }
          else
