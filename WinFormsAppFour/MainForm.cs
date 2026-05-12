@@ -80,7 +80,7 @@ namespace WinFormsAppFour
          dgvPeople.Rows.Clear();
 
          // Перебираем всех людей из хранилища
-         int index = 0; 
+         int index = 0;
          while (index < GlobalStorage.AllPeople.Count)
          {
             Person person = GlobalStorage.AllPeople[index];
