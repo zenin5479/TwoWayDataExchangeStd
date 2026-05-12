@@ -45,7 +45,7 @@
          // 
          dtpBirth.Location = new System.Drawing.Point(111, 41);
          dtpBirth.Name = "dtpBirth";
-         dtpBirth.Size = new System.Drawing.Size(200, 23);
+         dtpBirth.Size = new System.Drawing.Size(201, 23);
          dtpBirth.TabIndex = 0;
          // 
          // label1
@@ -61,7 +61,7 @@
          // 
          txtName.Location = new System.Drawing.Point(52, 12);
          txtName.Name = "txtName";
-         txtName.Size = new System.Drawing.Size(259, 23);
+         txtName.Size = new System.Drawing.Size(260, 23);
          txtName.TabIndex = 2;
          // 
          // numSalary
@@ -69,7 +69,7 @@
          numSalary.Location = new System.Drawing.Point(79, 70);
          numSalary.Maximum = new decimal(new int[] { 1000000, 0, 0, 0 });
          numSalary.Name = "numSalary";
-         numSalary.Size = new System.Drawing.Size(232, 23);
+         numSalary.Size = new System.Drawing.Size(233, 23);
          numSalary.TabIndex = 3;
          // 
          // txtSkills
@@ -77,7 +77,7 @@
          txtSkills.Location = new System.Drawing.Point(71, 99);
          txtSkills.Name = "txtSkills";
          txtSkills.PlaceholderText = "C#, SQL, Python (через запятую)";
-         txtSkills.Size = new System.Drawing.Size(240, 23);
+         txtSkills.Size = new System.Drawing.Size(241, 23);
          txtSkills.TabIndex = 4;
          // 
          // btnOk
@@ -130,7 +130,7 @@
          // 
          AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
          AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-         ClientSize = new System.Drawing.Size(327, 163);
+         ClientSize = new System.Drawing.Size(324, 161);
          Controls.Add(label4);
          Controls.Add(label3);
          Controls.Add(label2);
