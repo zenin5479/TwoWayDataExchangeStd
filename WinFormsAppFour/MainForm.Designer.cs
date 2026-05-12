@@ -28,7 +28,7 @@
       /// </summary>
       private void InitializeComponent()
       {
-         System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+         System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
          panelTop = new System.Windows.Forms.Panel();
          btnAddPerson = new System.Windows.Forms.Button();
          btnRunConsole = new System.Windows.Forms.Button();
@@ -103,15 +103,15 @@
          // 
          panelBottom.Controls.Add(lblTotalCount);
          panelBottom.Controls.Add(lblAvgSalary);
-         panelBottom.Location = new System.Drawing.Point(212, 168);
+         panelBottom.Location = new System.Drawing.Point(363, 200);
          panelBottom.Name = "panelBottom";
-         panelBottom.Size = new System.Drawing.Size(177, 65);
+         panelBottom.Size = new System.Drawing.Size(150, 40);
          panelBottom.TabIndex = 1;
          // 
          // lblTotalCount
          // 
          lblTotalCount.AutoSize = true;
-         lblTotalCount.Location = new System.Drawing.Point(3, 11);
+         lblTotalCount.Location = new System.Drawing.Point(3, 4);
          lblTotalCount.Name = "lblTotalCount";
          lblTotalCount.Size = new System.Drawing.Size(89, 15);
          lblTotalCount.TabIndex = 7;
@@ -120,7 +120,7 @@
          // lblAvgSalary
          // 
          lblAvgSalary.AutoSize = true;
-         lblAvgSalary.Location = new System.Drawing.Point(3, 26);
+         lblAvgSalary.Location = new System.Drawing.Point(3, 19);
          lblAvgSalary.Name = "lblAvgSalary";
          lblAvgSalary.Size = new System.Drawing.Size(84, 15);
          lblAvgSalary.TabIndex = 8;
@@ -155,9 +155,9 @@
          // 
          // Column4
          // 
-         dataGridViewCellStyle1.Format = "C0";
-         dataGridViewCellStyle1.NullValue = null;
-         Column4.DefaultCellStyle = dataGridViewCellStyle1;
+         dataGridViewCellStyle3.Format = "C0";
+         dataGridViewCellStyle3.NullValue = null;
+         Column4.DefaultCellStyle = dataGridViewCellStyle3;
          Column4.HeaderText = "Salary";
          Column4.Name = "Column4";
          // 
