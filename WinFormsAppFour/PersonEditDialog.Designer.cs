@@ -141,6 +141,8 @@
          Controls.Add(txtName);
          Controls.Add(label1);
          Controls.Add(dtpBirth);
+         MaximizeBox = false;
+         MinimizeBox = false;
          Name = "PersonEditDialog";
          StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
          Text = "Редактирование человека";
