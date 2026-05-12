@@ -126,14 +126,14 @@ namespace WinFormsAppFour
             {
                Name = "Татьяна Свиридова",
                BirthDate = new DateTime(1988, 12, 10),
-               Salary = 99000,
+               Salary = 119000,
                Skills = { "Java", "Python" }
             });
             GlobalStorage.AddPerson(new Person
             {
                Name = "Надежда Белова",
                BirthDate = new DateTime(1996, 10, 21),
-               Salary = 119000,
+               Salary = 137000,
                Skills = { "C++", "HTML" }
             });
 
