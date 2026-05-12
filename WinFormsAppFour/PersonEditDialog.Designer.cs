@@ -83,7 +83,7 @@
          btnOk.Name = "btnOk";
          btnOk.Size = new System.Drawing.Size(75, 23);
          btnOk.TabIndex = 15;
-         btnOk.Text = "Ok";
+         btnOk.Text = "Сохранить";
          btnOk.UseVisualStyleBackColor = true;
          btnOk.Click += btnOk_Click;
          // 
