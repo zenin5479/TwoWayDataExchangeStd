@@ -28,7 +28,7 @@
       /// </summary>
       private void InitializeComponent()
       {
-         System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+         System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
          panelTop = new System.Windows.Forms.Panel();
          btnAddPerson = new System.Windows.Forms.Button();
          btnDeleteSelected = new System.Windows.Forms.Button();
@@ -54,7 +54,7 @@
          panelTop.Controls.Add(btnEditSelected);
          panelTop.Location = new System.Drawing.Point(12, 168);
          panelTop.Name = "panelTop";
-         panelTop.Size = new System.Drawing.Size(194, 90);
+         panelTop.Size = new System.Drawing.Size(194, 61);
          panelTop.TabIndex = 0;
          // 
          // btnAddPerson
@@ -91,7 +91,7 @@
          // 
          panelBottom.Controls.Add(lblTotalCount);
          panelBottom.Controls.Add(lblAvgSalary);
-         panelBottom.Location = new System.Drawing.Point(363, 200);
+         panelBottom.Location = new System.Drawing.Point(313, 171);
          panelBottom.Name = "panelBottom";
          panelBottom.Size = new System.Drawing.Size(150, 40);
          panelBottom.TabIndex = 1;
@@ -143,9 +143,9 @@
          // 
          // Column4
          // 
-         dataGridViewCellStyle5.Format = "C0";
-         dataGridViewCellStyle5.NullValue = null;
-         Column4.DefaultCellStyle = dataGridViewCellStyle5;
+         dataGridViewCellStyle6.Format = "C0";
+         dataGridViewCellStyle6.NullValue = null;
+         Column4.DefaultCellStyle = dataGridViewCellStyle6;
          Column4.HeaderText = "Salary";
          Column4.Name = "Column4";
          // 
