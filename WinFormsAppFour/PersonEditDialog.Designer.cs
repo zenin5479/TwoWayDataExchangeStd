@@ -44,7 +44,7 @@
          // label4
          // 
          label4.AutoSize = true;
-         label4.Location = new System.Drawing.Point(12, 104);
+         label4.Location = new System.Drawing.Point(12, 102);
          label4.Name = "label4";
          label4.Size = new System.Drawing.Size(53, 15);
          label4.TabIndex = 19;
@@ -53,7 +53,7 @@
          // label3
          // 
          label3.AutoSize = true;
-         label3.Location = new System.Drawing.Point(12, 74);
+         label3.Location = new System.Drawing.Point(12, 72);
          label3.Name = "label3";
          label3.Size = new System.Drawing.Size(61, 15);
          label3.TabIndex = 18;
@@ -62,7 +62,7 @@
          // label2
          // 
          label2.AutoSize = true;
-         label2.Location = new System.Drawing.Point(12, 49);
+         label2.Location = new System.Drawing.Point(12, 47);
          label2.Name = "label2";
          label2.Size = new System.Drawing.Size(93, 15);
          label2.TabIndex = 17;
@@ -70,7 +70,7 @@
          // 
          // btnCancel
          // 
-         btnCancel.Location = new System.Drawing.Point(93, 130);
+         btnCancel.Location = new System.Drawing.Point(93, 128);
          btnCancel.Name = "btnCancel";
          btnCancel.Size = new System.Drawing.Size(75, 23);
          btnCancel.TabIndex = 16;
@@ -79,7 +79,7 @@
          // 
          // btnOk
          // 
-         btnOk.Location = new System.Drawing.Point(12, 130);
+         btnOk.Location = new System.Drawing.Point(12, 128);
          btnOk.Name = "btnOk";
          btnOk.Size = new System.Drawing.Size(75, 23);
          btnOk.TabIndex = 15;
@@ -89,7 +89,7 @@
          // 
          // txtSkills
          // 
-         txtSkills.Location = new System.Drawing.Point(71, 101);
+         txtSkills.Location = new System.Drawing.Point(71, 99);
          txtSkills.Name = "txtSkills";
          txtSkills.PlaceholderText = "C#, SQL, Python (через запятую)";
          txtSkills.Size = new System.Drawing.Size(241, 23);
@@ -97,7 +97,7 @@
          // 
          // numSalary
          // 
-         numSalary.Location = new System.Drawing.Point(79, 72);
+         numSalary.Location = new System.Drawing.Point(79, 70);
          numSalary.Maximum = new decimal(new int[] { 1000000, 0, 0, 0 });
          numSalary.Name = "numSalary";
          numSalary.Size = new System.Drawing.Size(233, 23);
@@ -105,7 +105,7 @@
          // 
          // txtName
          // 
-         txtName.Location = new System.Drawing.Point(52, 14);
+         txtName.Location = new System.Drawing.Point(52, 12);
          txtName.Name = "txtName";
          txtName.Size = new System.Drawing.Size(260, 23);
          txtName.TabIndex = 12;
@@ -113,7 +113,7 @@
          // label1
          // 
          label1.AutoSize = true;
-         label1.Location = new System.Drawing.Point(12, 17);
+         label1.Location = new System.Drawing.Point(12, 15);
          label1.Name = "label1";
          label1.Size = new System.Drawing.Size(34, 15);
          label1.TabIndex = 11;
@@ -121,7 +121,7 @@
          // 
          // dtpBirth
          // 
-         dtpBirth.Location = new System.Drawing.Point(111, 43);
+         dtpBirth.Location = new System.Drawing.Point(111, 41);
          dtpBirth.Name = "dtpBirth";
          dtpBirth.Size = new System.Drawing.Size(201, 23);
          dtpBirth.TabIndex = 10;
