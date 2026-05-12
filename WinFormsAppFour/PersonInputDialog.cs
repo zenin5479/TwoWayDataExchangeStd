@@ -29,7 +29,9 @@ namespace WinFormsAppFour
          {
             // Создание нового
             List<string> list = new List<string>();
-            for (var index = 0; index < txtSkills.Text.Split(new[] { ',' }, StringSplitOptions.RemoveEmptyEntries).Length; index++)
+            
+            
+            for (int index = 0; index < txtSkills.Text.Split(new[] { ',' }, StringSplitOptions.RemoveEmptyEntries).Length; index++)
             {
                string s = txtSkills.Text.Split(new[] { ',' }, StringSplitOptions.RemoveEmptyEntries)[index];
                list.Add(s.Trim());
