@@ -80,7 +80,8 @@ namespace WinFormsAppFour
          dgvPeople.Rows.Clear();
 
          // Перебираем всех людей из хранилища
-         for (int index = 0; index < GlobalStorage.AllPeople.Count; index++)
+         int index = 0; 
+         while (index < GlobalStorage.AllPeople.Count)
          {
             Person person = GlobalStorage.AllPeople[index];
             // Добавляем новую строку и заполняем ячейки по индексу или имени колонки
@@ -94,6 +95,7 @@ namespace WinFormsAppFour
             row.Cells[4].Value = string.Join(", ", person.Skills);
             // Сохраняем сам объект в Tag строки
             row.Tag = person;
+            index++;
          }
       }
 
