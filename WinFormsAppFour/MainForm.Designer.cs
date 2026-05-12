@@ -28,7 +28,7 @@
       /// </summary>
       private void InitializeComponent()
       {
-         System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+         System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
          panelTop = new System.Windows.Forms.Panel();
          btnAddPerson = new System.Windows.Forms.Button();
          btnDeleteSelected = new System.Windows.Forms.Button();
@@ -143,9 +143,9 @@
          // 
          // Column4
          // 
-         dataGridViewCellStyle8.Format = "C0";
-         dataGridViewCellStyle8.NullValue = null;
-         Column4.DefaultCellStyle = dataGridViewCellStyle8;
+         dataGridViewCellStyle1.Format = "C0";
+         dataGridViewCellStyle1.NullValue = null;
+         Column4.DefaultCellStyle = dataGridViewCellStyle1;
          Column4.HeaderText = "Salary";
          Column4.Name = "Column4";
          // 
@@ -165,7 +165,7 @@
          Controls.Add(panelTop);
          Name = "MainForm";
          StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-         Text = "Система обмена данными с консолью";
+         Text = "Система обмена данными с библиотекой классов";
          Load += FormFour_Load;
          panelTop.ResumeLayout(false);
          panelBottom.ResumeLayout(false);
