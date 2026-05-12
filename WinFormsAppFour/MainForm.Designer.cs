@@ -28,10 +28,9 @@
       /// </summary>
       private void InitializeComponent()
       {
-         System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+         System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
          panelTop = new System.Windows.Forms.Panel();
          btnAddPerson = new System.Windows.Forms.Button();
-         btnRunConsole = new System.Windows.Forms.Button();
          btnDeleteSelected = new System.Windows.Forms.Button();
          btnEditSelected = new System.Windows.Forms.Button();
          panelBottom = new System.Windows.Forms.Panel();
@@ -51,7 +50,6 @@
          // panelTop
          // 
          panelTop.Controls.Add(btnAddPerson);
-         panelTop.Controls.Add(btnRunConsole);
          panelTop.Controls.Add(btnDeleteSelected);
          panelTop.Controls.Add(btnEditSelected);
          panelTop.Location = new System.Drawing.Point(12, 168);
@@ -68,16 +66,6 @@
          btnAddPerson.Text = "➕ Добавить";
          btnAddPerson.UseVisualStyleBackColor = true;
          btnAddPerson.Click += btnAddPerson_Click;
-         // 
-         // btnRunConsole
-         // 
-         btnRunConsole.Location = new System.Drawing.Point(3, 3);
-         btnRunConsole.Name = "btnRunConsole";
-         btnRunConsole.Size = new System.Drawing.Size(135, 23);
-         btnRunConsole.TabIndex = 4;
-         btnRunConsole.Text = "▶ Запустить консоль";
-         btnRunConsole.UseVisualStyleBackColor = true;
-         btnRunConsole.Click += btnRunConsole_Click;
          // 
          // btnDeleteSelected
          // 
@@ -155,9 +143,9 @@
          // 
          // Column4
          // 
-         dataGridViewCellStyle3.Format = "C0";
-         dataGridViewCellStyle3.NullValue = null;
-         Column4.DefaultCellStyle = dataGridViewCellStyle3;
+         dataGridViewCellStyle4.Format = "C0";
+         dataGridViewCellStyle4.NullValue = null;
+         Column4.DefaultCellStyle = dataGridViewCellStyle4;
          Column4.HeaderText = "Salary";
          Column4.Name = "Column4";
          // 
@@ -192,7 +180,6 @@
       private System.Windows.Forms.Panel panelBottom;
       private System.Windows.Forms.DataGridView dgvPeople;
       private System.Windows.Forms.Button btnAddPerson;
-      private System.Windows.Forms.Button btnRunConsole;
       private System.Windows.Forms.Button btnDeleteSelected;
       private System.Windows.Forms.Button btnEditSelected;
       private System.Windows.Forms.Label lblTotalCount;
