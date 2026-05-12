@@ -34,7 +34,6 @@
          numSalary = new System.Windows.Forms.NumericUpDown();
          txtSkills = new System.Windows.Forms.TextBox();
          btnOk = new System.Windows.Forms.Button();
-         btnCancel = new System.Windows.Forms.Button();
          label2 = new System.Windows.Forms.Label();
          label3 = new System.Windows.Forms.Label();
          label4 = new System.Windows.Forms.Label();
@@ -90,15 +89,6 @@
          btnOk.UseVisualStyleBackColor = true;
          btnOk.Click += btnOk_Click;
          // 
-         // btnCancel
-         // 
-         btnCancel.Location = new System.Drawing.Point(93, 128);
-         btnCancel.Name = "btnCancel";
-         btnCancel.Size = new System.Drawing.Size(75, 23);
-         btnCancel.TabIndex = 6;
-         btnCancel.Text = "Отмена";
-         btnCancel.UseVisualStyleBackColor = true;
-         // 
          // label2
          // 
          label2.AutoSize = true;
@@ -134,7 +124,6 @@
          Controls.Add(label4);
          Controls.Add(label3);
          Controls.Add(label2);
-         Controls.Add(btnCancel);
          Controls.Add(btnOk);
          Controls.Add(txtSkills);
          Controls.Add(numSalary);
@@ -159,7 +148,6 @@
       private System.Windows.Forms.NumericUpDown numSalary;
       private System.Windows.Forms.TextBox txtSkills;
       private System.Windows.Forms.Button btnOk;
-      private System.Windows.Forms.Button btnCancel;
       private System.Windows.Forms.Label label2;
       private System.Windows.Forms.Label label3;
       private System.Windows.Forms.Label label4;
