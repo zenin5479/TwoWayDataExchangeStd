@@ -70,7 +70,6 @@ namespace WinFormsAppFour
             // Показываем сообщение от консоли
             if (!string.IsNullOrEmpty(GlobalStorage.LastConsoleOutput))
             {
-               lblConsoleMessage.Text = GlobalStorage.LastConsoleOutput;
                MessageBox.Show(GlobalStorage.LastConsoleOutput, @"Результат работы консоли",
                   MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
