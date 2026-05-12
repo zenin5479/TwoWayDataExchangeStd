@@ -1,7 +1,5 @@
 ﻿using ClassLibraryFour;
 using System;
-using System.Diagnostics;
-using System.IO;
 using System.Linq;
 using System.Windows.Forms;
 
@@ -31,7 +29,7 @@ namespace WinFormsAppFour
          }
       }
 
-     
+
       private void btnDeleteSelected_Click(object sender, EventArgs e)
       {
          if (dgvPeople.CurrentRow == null)
