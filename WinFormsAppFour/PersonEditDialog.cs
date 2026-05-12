@@ -54,18 +54,6 @@ namespace WinFormsAppFour
 
             CreatedPerson = _editPerson;
          }
-         else
-         {
-            // Создание нового
-            CreatedPerson = new Person
-            {
-               Name = txtName.Text,
-               BirthDate = dtpBirth.Value,
-               Salary = numSalary.Value,
-               Skills = txtSkills.Text.Split(new[] { ',' }, StringSplitOptions.RemoveEmptyEntries)
-                  .Select(s => s.Trim()).ToList()
-            };
-         }
 
          DialogResult = DialogResult.OK;
          Close();
