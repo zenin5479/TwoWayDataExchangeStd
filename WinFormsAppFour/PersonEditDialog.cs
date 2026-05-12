@@ -1,10 +1,77 @@
-﻿using ClassLibraryFour;
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Windows.Forms;
+using ClassLibraryFour;
 
 namespace WinFormsAppFour
 {
-   // PersonEditDialog можно удалить, используя PersonInputDialog с параметром
-   public class PersonEditDialog : PersonInputDialog
+   public partial class PersonEditDialog : Form
    {
-      public PersonEditDialog(Person person) : base(person) { }
+      public Person CreatedPerson { get; private set; }
+      private Person _editPerson;
+
+
+      public PersonEditDialog(Person editPerson = null)
+      {
+         InitializeComponent();
+
+         _editPerson = editPerson;
+
+         if (_editPerson != null)
+         {
+            Text = "Редактирование человека";
+            txtName.Text = _editPerson.Name;
+            dtpBirth.Value = _editPerson.BirthDate;
+            numSalary.Value = _editPerson.Salary;
+            txtSkills.Text = string.Join(", ", _editPerson.Skills);
+            btnOk.Text = "Сохранить";
+         }
+         else
+         {
+            Text = "Добавление человека";
+            btnOk.Text = "Добавить";
+         }
+      }
+
+      private void btnOk_Click(object sender, EventArgs e)
+      {
+         if (string.IsNullOrWhiteSpace(txtName.Text))
+         {
+            MessageBox.Show("Введите имя!", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            return;
+         }
+
+         if (_editPerson != null)
+         {
+            // Редактирование существующего
+            _editPerson.Name = txtName.Text;
+            _editPerson.BirthDate = dtpBirth.Value;
+            _editPerson.Salary = numSalary.Value;
+            _editPerson.Skills.Clear();
+            foreach (var skill in txtSkills.Text.Split(new[] { ',' }, StringSplitOptions.RemoveEmptyEntries))
+               _editPerson.Skills.Add(skill.Trim());
+            CreatedPerson = _editPerson;
+         }
+         else
+         {
+            // Создание нового
+            CreatedPerson = new Person
+            {
+               Name = txtName.Text,
+               BirthDate = dtpBirth.Value,
+               Salary = numSalary.Value,
+               Skills = txtSkills.Text.Split(new[] { ',' }, StringSplitOptions.RemoveEmptyEntries)
+                  .Select(s => s.Trim()).ToList()
+            };
+         }
+
+         DialogResult = DialogResult.OK;
+         Close();
+      }
    }
 }
