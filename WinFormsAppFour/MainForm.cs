@@ -46,7 +46,7 @@ namespace WinFormsAppFour
                // Обновляем строку в DataGrid
                RefreshDataGrid();
                // Обновляем статусную строку
-               UpdateStatus(); // если есть статусная строка
+               UpdateStatus();
             }
          }
       }
