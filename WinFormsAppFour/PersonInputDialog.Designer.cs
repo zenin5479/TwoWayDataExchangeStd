@@ -145,7 +145,7 @@
          MinimizeBox = false;
          Name = "PersonInputDialog";
          StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-         Text = "Редактирование человека";
+         Text = "Добавление человека";
          ((System.ComponentModel.ISupportInitialize)numSalary).EndInit();
          ResumeLayout(false);
          PerformLayout();
