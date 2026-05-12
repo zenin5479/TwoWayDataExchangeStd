@@ -1,20 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
+﻿using ClassLibraryFour;
+using System;
 using System.Windows.Forms;
-using ClassLibraryFour;
 
 namespace WinFormsAppFour
 {
    public partial class PersonEditDialog : Form
    {
-      public Person CreatedPerson { get; private set; }
       private Person _editPerson;
-
 
       public PersonEditDialog(Person editPerson = null)
       {
@@ -51,8 +43,6 @@ namespace WinFormsAppFour
                string skill = txtSkills.Text.Split(new[] { ',' }, StringSplitOptions.RemoveEmptyEntries)[index];
                _editPerson.Skills.Add(skill.Trim());
             }
-
-            CreatedPerson = _editPerson;
          }
 
          DialogResult = DialogResult.OK;
