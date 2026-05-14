@@ -25,13 +25,5 @@ namespace ClassLibraryFour
       {
          get { return AllPeople.Count; }
       }
-
-      // Сброс данных (для тестов)
-      public static void Reset()
-      {
-         AllPeople.Clear();
-         _nextId = 1;
-         LastConsoleOutput = null;
-      }
    }
 }
