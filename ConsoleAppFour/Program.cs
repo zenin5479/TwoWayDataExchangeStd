@@ -13,7 +13,6 @@ namespace ConsoleAppFour
          // Показываем существующих людей
          for (int index = 0; index < GlobalStorage.AllPeople.Count;)
          {
-            var person1 = GlobalStorage.AllPeople[index];
             Console.WriteLine("\nСуществующие люди:");
             int i = 0;
             while (i < GlobalStorage.AllPeople.Count)
@@ -22,8 +21,6 @@ namespace ConsoleAppFour
                Console.WriteLine("  {0}", person);
                i++;
             }
-
-
 
             break;
          }
