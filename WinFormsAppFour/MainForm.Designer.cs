@@ -33,9 +33,9 @@
          // 
          // ButtonCalculate
          // 
-         ButtonCalculate.Location = new System.Drawing.Point(176, 78);
+         ButtonCalculate.Location = new System.Drawing.Point(12, 12);
          ButtonCalculate.Name = "ButtonCalculate";
-         ButtonCalculate.Size = new System.Drawing.Size(75, 23);
+         ButtonCalculate.Size = new System.Drawing.Size(139, 48);
          ButtonCalculate.TabIndex = 0;
          ButtonCalculate.Text = "Calculate";
          ButtonCalculate.UseVisualStyleBackColor = true;
