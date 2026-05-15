@@ -8,7 +8,6 @@ namespace WinFormsAppFour
       public MainForm()
       {
          InitializeComponent();
-
       }
    }
 }
