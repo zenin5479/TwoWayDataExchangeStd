@@ -3,18 +3,6 @@ using System;
 
 namespace ConsoleAppFour
 {
-   public class CalculationRequest
-   {
-      public double[] Numbers { get; set; }
-      public string Operation { get; set; }
-   }
-
-   public class CalculationResponse
-   {
-      public double Result { get; set; }
-      public string Error { get; set; }
-   }
-
    class Program
    {
       static void Main(string[] args)
