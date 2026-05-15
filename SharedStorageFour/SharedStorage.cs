@@ -4,18 +4,6 @@ using Newtonsoft.Json;
 
 namespace SharedStorageFour
 {
-   public class CalculationRequest
-   {
-      public double[] Numbers { get; set; }
-      public string Operation { get; set; }
-   }
-
-   public class CalculationResponse
-   {
-      public double Result { get; set; }
-      public string Error { get; set; }
-   }
-
    public class StreamSharedStorage : IDisposable
    {
       private readonly Process _process;
