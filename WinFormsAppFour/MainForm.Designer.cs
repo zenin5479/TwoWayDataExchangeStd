@@ -28,13 +28,25 @@
       /// </summary>
       private void InitializeComponent()
       {
+         ButtonCalculate = new System.Windows.Forms.Button();
          SuspendLayout();
+         // 
+         // ButtonCalculate
+         // 
+         ButtonCalculate.Location = new System.Drawing.Point(176, 78);
+         ButtonCalculate.Name = "ButtonCalculate";
+         ButtonCalculate.Size = new System.Drawing.Size(75, 23);
+         ButtonCalculate.TabIndex = 0;
+         ButtonCalculate.Text = "Calculate";
+         ButtonCalculate.UseVisualStyleBackColor = true;
+         ButtonCalculate.Click += button1_Click;
          // 
          // MainForm
          // 
          AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
          AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
          ClientSize = new System.Drawing.Size(596, 241);
+         Controls.Add(ButtonCalculate);
          MaximizeBox = false;
          MinimizeBox = false;
          Name = "MainForm";
@@ -44,5 +56,7 @@
       }
 
       #endregion
+
+      private System.Windows.Forms.Button ButtonCalculate;
    }
 }
