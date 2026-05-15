@@ -28,20 +28,20 @@
       /// </summary>
       private void InitializeComponent()
       {
-         ButtonCalculate = new System.Windows.Forms.Button();
+         btnCalculate = new System.Windows.Forms.Button();
          txtNumbers = new System.Windows.Forms.TextBox();
          cmbOperation = new System.Windows.Forms.ComboBox();
          SuspendLayout();
          // 
-         // ButtonCalculate
+         // btnCalculate
          // 
-         ButtonCalculate.Location = new System.Drawing.Point(12, 12);
-         ButtonCalculate.Name = "ButtonCalculate";
-         ButtonCalculate.Size = new System.Drawing.Size(139, 48);
-         ButtonCalculate.TabIndex = 0;
-         ButtonCalculate.Text = "Calculate";
-         ButtonCalculate.UseVisualStyleBackColor = true;
-         ButtonCalculate.Click += button1_Click;
+         btnCalculate.Location = new System.Drawing.Point(12, 12);
+         btnCalculate.Name = "btnCalculate";
+         btnCalculate.Size = new System.Drawing.Size(139, 48);
+         btnCalculate.TabIndex = 0;
+         btnCalculate.Text = "Calculate";
+         btnCalculate.UseVisualStyleBackColor = true;
+         btnCalculate.Click += button1_Click;
          // 
          // txtNumbers
          // 
@@ -65,7 +65,7 @@
          ClientSize = new System.Drawing.Size(596, 241);
          Controls.Add(cmbOperation);
          Controls.Add(txtNumbers);
-         Controls.Add(ButtonCalculate);
+         Controls.Add(btnCalculate);
          MaximizeBox = false;
          MinimizeBox = false;
          Name = "MainForm";
@@ -77,7 +77,7 @@
 
       #endregion
 
-      private System.Windows.Forms.Button ButtonCalculate;
+      private System.Windows.Forms.Button btnCalculate;
       private System.Windows.Forms.TextBox txtNumbers;
       private System.Windows.Forms.ComboBox cmbOperation;
    }
