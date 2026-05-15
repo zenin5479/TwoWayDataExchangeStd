@@ -29,6 +29,8 @@
       private void InitializeComponent()
       {
          ButtonCalculate = new System.Windows.Forms.Button();
+         txtNumbers = new System.Windows.Forms.TextBox();
+         cmbOperation = new System.Windows.Forms.ComboBox();
          SuspendLayout();
          // 
          // ButtonCalculate
@@ -41,11 +43,28 @@
          ButtonCalculate.UseVisualStyleBackColor = true;
          ButtonCalculate.Click += button1_Click;
          // 
+         // txtNumbers
+         // 
+         txtNumbers.Location = new System.Drawing.Point(84, 113);
+         txtNumbers.Name = "txtNumbers";
+         txtNumbers.Size = new System.Drawing.Size(100, 23);
+         txtNumbers.TabIndex = 1;
+         // 
+         // cmbOperation
+         // 
+         cmbOperation.FormattingEnabled = true;
+         cmbOperation.Location = new System.Drawing.Point(305, 47);
+         cmbOperation.Name = "cmbOperation";
+         cmbOperation.Size = new System.Drawing.Size(121, 23);
+         cmbOperation.TabIndex = 2;
+         // 
          // MainForm
          // 
          AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
          AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
          ClientSize = new System.Drawing.Size(596, 241);
+         Controls.Add(cmbOperation);
+         Controls.Add(txtNumbers);
          Controls.Add(ButtonCalculate);
          MaximizeBox = false;
          MinimizeBox = false;
@@ -53,10 +72,13 @@
          StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
          Text = "Система обмена данными с библиотекой классов";
          ResumeLayout(false);
+         PerformLayout();
       }
 
       #endregion
 
       private System.Windows.Forms.Button ButtonCalculate;
+      private System.Windows.Forms.TextBox txtNumbers;
+      private System.Windows.Forms.ComboBox cmbOperation;
    }
 }
