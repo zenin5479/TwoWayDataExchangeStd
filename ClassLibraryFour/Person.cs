@@ -1,20 +1,65 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
+using System.Text.Json.Serialization;
 
 namespace ClassLibraryFour
 {
-   public class Person
+   public class CalculationRequest
    {
-      public int Id { get; set; }
-      public string Name { get; set; }
-      public DateTime BirthDate { get; set; }
-      public decimal Salary { get; set; }
-      public List<string> Skills { get; set; } = new List<string>();
+      public double[] Numbers { get; set; }
+      public string Operation { get; set; }
+   }
 
-      public override string ToString()
+   public class CalculationResponse
+   {
+      public double Result { get; set; }
+      public string Error { get; set; }
+   }
+
+   public class StreamSharedStorage : IDisposable
+   {
+      private readonly Process _process;
+
+      public StreamSharedStorage(string executablePath = "Calculator.exe")
       {
-         return string.Format("[{0}] {1} ({2:yyyy-MM-dd}) - ЗП: {3:C} - Навыки: {4}", Id, Name, BirthDate, Salary,
-            string.Join(", ", Skills));
+         _process = new Process();
+         _process.StartInfo.FileName = executablePath;
+         _process.StartInfo.UseShellExecute = false;
+         _process.StartInfo.RedirectStandardInput = true;
+         _process.StartInfo.RedirectStandardOutput = true;
+         _process.StartInfo.CreateNoWindow = true;
+         _process.Start();
+      }
+
+      public CalculationResponse SendRequest(CalculationRequest request)
+      {
+         if (_process == null || _process.HasExited)
+            throw new InvalidOperationException("Процесс не запущен или уже завершён");
+
+         // Сериализация запроса через Newtonsoft.Json
+         string requestJson = JsonConvert.SerializeObject(request);
+
+         // Передаём в stdin и закрываем
+         _process.StandardInput.Write(requestJson);
+         _process.StandardInput.Close();
+
+         // Читаем весь ответ
+         string responseJson = _process.StandardOutput.ReadToEnd();
+         _process.WaitForExit();
+
+         // Десериализация ответа
+         return JsonConvert.DeserializeObject<CalculationResponse>(responseJson);
+      }
+
+      public void Dispose()
+      {
+         if (_process != null && !_process.HasExited)
+         {
+            _process.Kill();
+            _process.WaitForExit();
+         }
+         _process?.Dispose();
       }
    }
 }
