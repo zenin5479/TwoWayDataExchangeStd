@@ -31,6 +31,8 @@
          btnCalculate = new System.Windows.Forms.Button();
          txtNumbers = new System.Windows.Forms.TextBox();
          cmbOperation = new System.Windows.Forms.ComboBox();
+         lblResult = new System.Windows.Forms.Label();
+         lblError = new System.Windows.Forms.Label();
          SuspendLayout();
          // 
          // btnCalculate
@@ -58,11 +60,31 @@
          cmbOperation.Size = new System.Drawing.Size(121, 23);
          cmbOperation.TabIndex = 2;
          // 
+         // lblResult
+         // 
+         lblResult.AutoSize = true;
+         lblResult.Location = new System.Drawing.Point(288, 103);
+         lblResult.Name = "lblResult";
+         lblResult.Size = new System.Drawing.Size(38, 15);
+         lblResult.TabIndex = 3;
+         lblResult.Text = "label1";
+         // 
+         // lblError
+         // 
+         lblError.AutoSize = true;
+         lblError.Location = new System.Drawing.Point(283, 151);
+         lblError.Name = "lblError";
+         lblError.Size = new System.Drawing.Size(38, 15);
+         lblError.TabIndex = 4;
+         lblError.Text = "label1";
+         // 
          // MainForm
          // 
          AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
          AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
          ClientSize = new System.Drawing.Size(596, 241);
+         Controls.Add(lblError);
+         Controls.Add(lblResult);
          Controls.Add(cmbOperation);
          Controls.Add(txtNumbers);
          Controls.Add(btnCalculate);
@@ -80,5 +102,7 @@
       private System.Windows.Forms.Button btnCalculate;
       private System.Windows.Forms.TextBox txtNumbers;
       private System.Windows.Forms.ComboBox cmbOperation;
+      private System.Windows.Forms.Label lblResult;
+      private System.Windows.Forms.Label lblError;
    }
 }
