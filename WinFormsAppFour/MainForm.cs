@@ -1,6 +1,4 @@
-﻿using ClassLibraryFour;
-using System;
-using System.Linq;
+﻿using System;
 using System.Windows.Forms;
 
 namespace WinFormsAppFour
@@ -10,8 +8,7 @@ namespace WinFormsAppFour
       public MainForm()
       {
          InitializeComponent();
-         RefreshDataGrid();
-         UpdateStatus();
+
       }
 
       private void btnAddPerson_Click(object sender, EventArgs e)

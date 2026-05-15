@@ -6,4 +6,10 @@
     <UseWindowsForms>true</UseWindowsForms>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Reference Include="SharedStorageFour">
+      <HintPath>..\SharedStorageFour\bin\Debug\netcoreapp3.1\SharedStorageFour.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
 </Project>
