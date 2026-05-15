@@ -65,7 +65,6 @@ namespace ConsoleAppFour
          Console.WriteLine("\nИТОГО: {0} человек в хранилище", GlobalStorage.TotalPeopleCount);
          Console.WriteLine("\nНажмите Enter для завершения...");
          Console.ReadLine();
-         //Console.ReadKey();
       }
    }
 }
