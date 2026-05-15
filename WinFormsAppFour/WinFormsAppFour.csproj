@@ -6,10 +6,4 @@
     <UseWindowsForms>true</UseWindowsForms>
   </PropertyGroup>
 
-  <ItemGroup>
-    <Reference Include="ClassLibraryFour">
-      <HintPath>..\ClassLibraryFour\bin\Debug\netcoreapp3.1\ClassLibraryFour.dll</HintPath>
-    </Reference>
-  </ItemGroup>
-
 </Project>

@@ -6,9 +6,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Reference Include="ClassLibraryFour">
-      <HintPath>..\ClassLibraryFour\bin\Debug\netcoreapp3.1\ClassLibraryFour.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\SharedStorageFour\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll</HintPath>
     </Reference>
   </ItemGroup>
 

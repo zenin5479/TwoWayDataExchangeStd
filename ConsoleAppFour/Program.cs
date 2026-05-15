@@ -1,69 +1,61 @@
-﻿using ClassLibraryFour;
-using System;
+﻿using System;
+using Newtonsoft.Json;
 
 namespace ConsoleAppFour
 {
-   internal class Program
+   public class CalculationRequest
    {
-      static void Main()
+      public double[] Numbers { get; set; }
+      public string Operation { get; set; }
+   }
+
+   public class CalculationResponse
+   {
+      public double Result { get; set; }
+      public string Error { get; set; }
+   }
+
+   class Program
+   {
+      static void Main(string[] args)
       {
-         Console.WriteLine("Консольный обработчик");
-         Console.WriteLine("Текущее количество людей в хранилище: {0}", GlobalStorage.TotalPeopleCount);
-
-         // Показываем существующих людей
-         for (int index = 0; index < GlobalStorage.AllPeople.Count;)
+         try
          {
-            Console.WriteLine("\nСуществующие люди:");
-            int i = 0;
-            while (i < GlobalStorage.AllPeople.Count)
-            {
-               Person person = GlobalStorage.AllPeople[i];
-               Console.WriteLine("  {0}", person);
-               i++;
-            }
-
-            break;
+            string inputJson = Console.In.ReadToEnd();
+            var request = JsonConvert.DeserializeObject<CalculationRequest>(inputJson);
+            var response = Calculate(request);
+            Console.WriteLine(JsonConvert.SerializeObject(response));
          }
-
-         // Выполняем операции над глобальными данными
-         Console.WriteLine("\nВыполняем операции");
-
-         // 1. Добавляем нового человека из консоли
-         Person newPerson = new Person
+         catch (Exception ex)
          {
-            Name = "Консольный пользователь",
-            BirthDate = new DateTime(1985, 5, 15),
-            Salary = 75000,
-            Skills = { "C#", "Консоль", "DLL-интеграция" },
-         };
-
-         GlobalStorage.AddPerson(newPerson);
-         Console.WriteLine("Добавлен: {0}", newPerson.Name);
-
-         // 2. Обновляем данные существующих (добавляем бонус к зарплате)
-         if (GlobalStorage.AllPeople.Count > 1)
-         {
-            int i = 0;
-            while (i < GlobalStorage.AllPeople.Count)
-            {
-               Person person = GlobalStorage.AllPeople[i];
-               if (person.Id != newPerson.Id)
-               {
-                  person.Salary += 5000;
-                  Console.WriteLine("{0} получил бонус +5000", person.Name);
-               }
-
-               i++;
-            }
+            var errorResponse = new CalculationResponse { Error = ex.Message };
+            Console.WriteLine(JsonConvert.SerializeObject(errorResponse));
          }
+      }
 
-         // 3. Записываем сообщение для WinForms
-         GlobalStorage.LastConsoleOutput = string.Format("Консоль завершила работу. Добавлен 1 человек, обновлено {0} человек(а). Всего: {1}",
-               GlobalStorage.AllPeople.Count - 1, GlobalStorage.TotalPeopleCount);
+      static CalculationResponse Calculate(CalculationRequest request)
+      {
+         if (request == null || request.Numbers == null || request.Numbers.Length == 0)
+            return new CalculationResponse { Error = "Некорректные входные данные" };
 
-         Console.WriteLine("\nИТОГО: {0} человек в хранилище", GlobalStorage.TotalPeopleCount);
-         Console.WriteLine("\nНажмите Enter для завершения...");
-         Console.ReadLine();
+         double result = 0;
+         switch (request.Operation?.ToLower())
+         {
+            case "sum":
+               foreach (var n in request.Numbers) result += n;
+               break;
+            case "multiply":
+               result = 1;
+               foreach (var n in request.Numbers) result *= n;
+               break;
+            case "average":
+               foreach (var n in request.Numbers) result += n;
+               result /= request.Numbers.Length;
+               break;
+            default:
+               return new CalculationResponse { Error = $"Неизвестная операция: {request.Operation}" };
+         }
+         return new CalculationResponse { Result = result };
       }
    }
 }
