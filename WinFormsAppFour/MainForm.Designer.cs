@@ -40,7 +40,6 @@
          Name = "MainForm";
          StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
          Text = "Система обмена данными с библиотекой классов";
-         Load += FormFour_Load;
          ResumeLayout(false);
       }
 
