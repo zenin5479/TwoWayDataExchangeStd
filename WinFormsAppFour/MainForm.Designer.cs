@@ -39,9 +39,9 @@
          // 
          // ButtonCalculate
          // 
-         ButtonCalculate.Location = new System.Drawing.Point(12, 115);
+         ButtonCalculate.Location = new System.Drawing.Point(12, 100);
          ButtonCalculate.Name = "ButtonCalculate";
-         ButtonCalculate.Size = new System.Drawing.Size(139, 48);
+         ButtonCalculate.Size = new System.Drawing.Size(139, 29);
          ButtonCalculate.TabIndex = 0;
          ButtonCalculate.Text = "Вычислить";
          ButtonCalculate.UseVisualStyleBackColor = true;
@@ -49,16 +49,16 @@
          // 
          // TextBoxNumbers
          // 
-         TextBoxNumbers.Location = new System.Drawing.Point(12, 12);
+         TextBoxNumbers.Location = new System.Drawing.Point(59, 12);
          TextBoxNumbers.Name = "TextBoxNumbers";
-         TextBoxNumbers.Size = new System.Drawing.Size(100, 23);
+         TextBoxNumbers.Size = new System.Drawing.Size(168, 23);
          TextBoxNumbers.TabIndex = 1;
          // 
          // ComboBoxOperation
          // 
          ComboBoxOperation.FormattingEnabled = true;
          ComboBoxOperation.Items.AddRange(new object[] { "Sum", "Multiply", "Average" });
-         ComboBoxOperation.Location = new System.Drawing.Point(12, 41);
+         ComboBoxOperation.Location = new System.Drawing.Point(76, 41);
          ComboBoxOperation.Name = "ComboBoxOperation";
          ComboBoxOperation.Size = new System.Drawing.Size(121, 23);
          ComboBoxOperation.TabIndex = 2;
@@ -66,7 +66,7 @@
          // LabelResult
          // 
          LabelResult.AutoSize = true;
-         LabelResult.Location = new System.Drawing.Point(12, 82);
+         LabelResult.Location = new System.Drawing.Point(12, 67);
          LabelResult.Name = "LabelResult";
          LabelResult.Size = new System.Drawing.Size(66, 15);
          LabelResult.TabIndex = 3;
@@ -75,7 +75,7 @@
          // LabelError
          // 
          LabelError.AutoSize = true;
-         LabelError.Location = new System.Drawing.Point(12, 97);
+         LabelError.Location = new System.Drawing.Point(12, 82);
          LabelError.Name = "LabelError";
          LabelError.Size = new System.Drawing.Size(59, 15);
          LabelError.TabIndex = 4;
@@ -84,7 +84,7 @@
          // LabelNumbers
          // 
          LabelNumbers.AutoSize = true;
-         LabelNumbers.Location = new System.Drawing.Point(442, 94);
+         LabelNumbers.Location = new System.Drawing.Point(12, 15);
          LabelNumbers.Name = "LabelNumbers";
          LabelNumbers.Size = new System.Drawing.Size(41, 15);
          LabelNumbers.TabIndex = 5;
@@ -93,7 +93,7 @@
          // LabelActions
          // 
          LabelActions.AutoSize = true;
-         LabelActions.Location = new System.Drawing.Point(421, 146);
+         LabelActions.Location = new System.Drawing.Point(12, 44);
          LabelActions.Name = "LabelActions";
          LabelActions.Size = new System.Drawing.Size(58, 15);
          LabelActions.TabIndex = 6;
