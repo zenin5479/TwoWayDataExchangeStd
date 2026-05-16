@@ -33,6 +33,8 @@
          cmbOperation = new System.Windows.Forms.ComboBox();
          lblResult = new System.Windows.Forms.Label();
          lblError = new System.Windows.Forms.Label();
+         LabelNumbers = new System.Windows.Forms.Label();
+         label2 = new System.Windows.Forms.Label();
          SuspendLayout();
          // 
          // btnCalculate
@@ -79,11 +81,31 @@
          lblError.TabIndex = 4;
          lblError.Text = "Ошибка: ";
          // 
+         // LabelNumbers
+         // 
+         LabelNumbers.AutoSize = true;
+         LabelNumbers.Location = new System.Drawing.Point(442, 94);
+         LabelNumbers.Name = "LabelNumbers";
+         LabelNumbers.Size = new System.Drawing.Size(41, 15);
+         LabelNumbers.TabIndex = 5;
+         LabelNumbers.Text = "Числа";
+         // 
+         // label2
+         // 
+         label2.AutoSize = true;
+         label2.Location = new System.Drawing.Point(421, 146);
+         label2.Name = "label2";
+         label2.Size = new System.Drawing.Size(58, 15);
+         label2.TabIndex = 6;
+         label2.Text = "Действия";
+         // 
          // MainForm
          // 
          AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
          AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
          ClientSize = new System.Drawing.Size(596, 241);
+         Controls.Add(label2);
+         Controls.Add(LabelNumbers);
          Controls.Add(lblError);
          Controls.Add(lblResult);
          Controls.Add(cmbOperation);
@@ -105,5 +127,7 @@
       private System.Windows.Forms.ComboBox cmbOperation;
       private System.Windows.Forms.Label lblResult;
       private System.Windows.Forms.Label lblError;
+      private System.Windows.Forms.Label LabelNumbers;
+      private System.Windows.Forms.Label label2;
    }
 }
