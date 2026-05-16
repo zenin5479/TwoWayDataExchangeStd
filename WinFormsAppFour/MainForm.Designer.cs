@@ -31,7 +31,7 @@
          btnCalculate = new System.Windows.Forms.Button();
          TextBoxNumbers = new System.Windows.Forms.TextBox();
          ComboBoxOperation = new System.Windows.Forms.ComboBox();
-         lblResult = new System.Windows.Forms.Label();
+         LabelResult = new System.Windows.Forms.Label();
          lblError = new System.Windows.Forms.Label();
          LabelNumbers = new System.Windows.Forms.Label();
          LabelActions = new System.Windows.Forms.Label();
@@ -63,14 +63,14 @@
          ComboBoxOperation.Size = new System.Drawing.Size(121, 23);
          ComboBoxOperation.TabIndex = 2;
          // 
-         // lblResult
+         // LabelResult
          // 
-         lblResult.AutoSize = true;
-         lblResult.Location = new System.Drawing.Point(12, 82);
-         lblResult.Name = "lblResult";
-         lblResult.Size = new System.Drawing.Size(66, 15);
-         lblResult.TabIndex = 3;
-         lblResult.Text = "Результат: ";
+         LabelResult.AutoSize = true;
+         LabelResult.Location = new System.Drawing.Point(12, 82);
+         LabelResult.Name = "LabelResult";
+         LabelResult.Size = new System.Drawing.Size(66, 15);
+         LabelResult.TabIndex = 3;
+         LabelResult.Text = "Результат: ";
          // 
          // lblError
          // 
@@ -107,7 +107,7 @@
          Controls.Add(LabelActions);
          Controls.Add(LabelNumbers);
          Controls.Add(lblError);
-         Controls.Add(lblResult);
+         Controls.Add(LabelResult);
          Controls.Add(ComboBoxOperation);
          Controls.Add(TextBoxNumbers);
          Controls.Add(btnCalculate);
@@ -125,7 +125,7 @@
       private System.Windows.Forms.Button btnCalculate;
       private System.Windows.Forms.TextBox TextBoxNumbers;
       private System.Windows.Forms.ComboBox ComboBoxOperation;
-      private System.Windows.Forms.Label lblResult;
+      private System.Windows.Forms.Label LabelResult;
       private System.Windows.Forms.Label lblError;
       private System.Windows.Forms.Label LabelNumbers;
       private System.Windows.Forms.Label LabelActions;
