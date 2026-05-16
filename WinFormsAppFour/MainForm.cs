@@ -17,7 +17,7 @@ namespace WinFormsAppFour
          lblResult.Text = "";
          lblError.Text = "";
 
-         string[] parts = txtNumbers.Text.Split(new[] { ' ', ',', ';' }, StringSplitOptions.RemoveEmptyEntries);
+         string[] parts = TextBoxNumbers.Text.Split(new[] { ' ', ',', ';' }, StringSplitOptions.RemoveEmptyEntries);
          double[] numbers;
          try
          {
