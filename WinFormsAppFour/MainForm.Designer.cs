@@ -41,7 +41,7 @@
          // 
          ButtonCalculate.Location = new System.Drawing.Point(12, 100);
          ButtonCalculate.Name = "ButtonCalculate";
-         ButtonCalculate.Size = new System.Drawing.Size(139, 29);
+         ButtonCalculate.Size = new System.Drawing.Size(197, 30);
          ButtonCalculate.TabIndex = 0;
          ButtonCalculate.Text = "Вычислить";
          ButtonCalculate.UseVisualStyleBackColor = true;
@@ -51,7 +51,7 @@
          // 
          TextBoxNumbers.Location = new System.Drawing.Point(59, 12);
          TextBoxNumbers.Name = "TextBoxNumbers";
-         TextBoxNumbers.Size = new System.Drawing.Size(168, 23);
+         TextBoxNumbers.Size = new System.Drawing.Size(150, 23);
          TextBoxNumbers.TabIndex = 1;
          // 
          // ComboBoxOperation
@@ -60,7 +60,7 @@
          ComboBoxOperation.Items.AddRange(new object[] { "Sum", "Multiply", "Average" });
          ComboBoxOperation.Location = new System.Drawing.Point(76, 41);
          ComboBoxOperation.Name = "ComboBoxOperation";
-         ComboBoxOperation.Size = new System.Drawing.Size(121, 23);
+         ComboBoxOperation.Size = new System.Drawing.Size(133, 23);
          ComboBoxOperation.TabIndex = 2;
          // 
          // LabelResult
@@ -103,7 +103,7 @@
          // 
          AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
          AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-         ClientSize = new System.Drawing.Size(596, 241);
+         ClientSize = new System.Drawing.Size(221, 149);
          Controls.Add(LabelActions);
          Controls.Add(LabelNumbers);
          Controls.Add(LabelError);
