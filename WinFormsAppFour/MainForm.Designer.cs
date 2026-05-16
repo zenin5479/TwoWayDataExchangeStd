@@ -115,7 +115,7 @@
          MinimizeBox = false;
          Name = "MainForm";
          StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-         Text = "Система обмена данными с библиотекой классов";
+         Text = "Система обмена данными";
          ResumeLayout(false);
          PerformLayout();
       }
