@@ -41,7 +41,7 @@
          btnCalculate.Name = "btnCalculate";
          btnCalculate.Size = new System.Drawing.Size(139, 48);
          btnCalculate.TabIndex = 0;
-         btnCalculate.Text = "Calculate";
+         btnCalculate.Text = "Вычислить";
          btnCalculate.UseVisualStyleBackColor = true;
          btnCalculate.Click += button1_Click;
          // 
