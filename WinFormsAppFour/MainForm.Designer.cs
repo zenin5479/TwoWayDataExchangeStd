@@ -55,6 +55,7 @@
          // cmbOperation
          // 
          cmbOperation.FormattingEnabled = true;
+         cmbOperation.Items.AddRange(new object[] { "Sum", "Multiply", "Average" });
          cmbOperation.Location = new System.Drawing.Point(305, 47);
          cmbOperation.Name = "cmbOperation";
          cmbOperation.Size = new System.Drawing.Size(121, 23);
