@@ -9,7 +9,7 @@ namespace WinFormsAppFour
       public MainForm()
       {
          InitializeComponent();
-         cmbOperation.SelectedIndex = 0;
+         ComboBoxOperation.SelectedIndex = 0;
       }
 
       private void button1_Click(object sender, EventArgs e)
@@ -32,7 +32,7 @@ namespace WinFormsAppFour
          var request = new CalculationRequest
          {
             Numbers = numbers,
-            Operation = cmbOperation.SelectedItem.ToString()
+            Operation = ComboBoxOperation.SelectedItem.ToString()
          };
 
          try
