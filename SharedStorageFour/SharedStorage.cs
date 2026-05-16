@@ -25,19 +25,30 @@ namespace SharedStorageFour
          if (_process == null || _process.HasExited)
             throw new InvalidOperationException("Процесс не запущен или уже завершён");
 
-         // Сериализация запроса через Newtonsoft.Json
          string requestJson = JsonConvert.SerializeObject(request);
 
-         // Передаём в stdin и закрываем
+         // Передаём запрос
          _process.StandardInput.Write(requestJson);
          _process.StandardInput.Close();
 
-         // Читаем весь ответ
+         // Читаем ответ и ошибки
          string responseJson = _process.StandardOutput.ReadToEnd();
+         string errorText = _process.StandardError.ReadToEnd();
          _process.WaitForExit();
 
-         // Десериализация ответа
-         return JsonConvert.DeserializeObject<CalculationResponse>(responseJson);
+         // Если что-то попало в stderr – это скорее всего ошибка
+         if (!string.IsNullOrEmpty(errorText))
+            throw new Exception("Ошибка в консольном приложении: " + errorText);
+
+         if (_process.ExitCode != 0)
+            throw new Exception($"Процесс завершился с кодом {_process.ExitCode}");
+
+         // Парсим ответ
+         var response = JsonConvert.DeserializeObject<CalculationResponse>(responseJson);
+         if (response == null)
+            throw new Exception("Получен пустой или некорректный ответ от консольного приложения");
+
+         return response;
       }
 
       public void Dispose()
