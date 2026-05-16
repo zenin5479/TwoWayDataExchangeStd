@@ -14,7 +14,7 @@ namespace WinFormsAppFour
 
       private void button1_Click(object sender, EventArgs e)
       {
-         lblResult.Text = "";
+         LabelResult.Text = "";
          lblError.Text = "";
 
          string[] parts = TextBoxNumbers.Text.Split(new[] { ' ', ',', ';' }, StringSplitOptions.RemoveEmptyEntries);
@@ -44,7 +44,7 @@ namespace WinFormsAppFour
                if (!string.IsNullOrEmpty(response.Error))
                   lblError.Text = "Ошибка: " + response.Error;
                else
-                  lblResult.Text = "Результат: " + response.Result;
+                  LabelResult.Text = "Результат: " + response.Result;
             }
          }
          catch (Exception ex)
