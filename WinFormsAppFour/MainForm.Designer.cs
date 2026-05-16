@@ -37,7 +37,7 @@
          // 
          // btnCalculate
          // 
-         btnCalculate.Location = new System.Drawing.Point(12, 12);
+         btnCalculate.Location = new System.Drawing.Point(12, 115);
          btnCalculate.Name = "btnCalculate";
          btnCalculate.Size = new System.Drawing.Size(139, 48);
          btnCalculate.TabIndex = 0;
@@ -47,7 +47,7 @@
          // 
          // txtNumbers
          // 
-         txtNumbers.Location = new System.Drawing.Point(84, 113);
+         txtNumbers.Location = new System.Drawing.Point(12, 12);
          txtNumbers.Name = "txtNumbers";
          txtNumbers.Size = new System.Drawing.Size(100, 23);
          txtNumbers.TabIndex = 1;
@@ -56,7 +56,7 @@
          // 
          cmbOperation.FormattingEnabled = true;
          cmbOperation.Items.AddRange(new object[] { "Sum", "Multiply", "Average" });
-         cmbOperation.Location = new System.Drawing.Point(305, 47);
+         cmbOperation.Location = new System.Drawing.Point(12, 41);
          cmbOperation.Name = "cmbOperation";
          cmbOperation.Size = new System.Drawing.Size(121, 23);
          cmbOperation.TabIndex = 2;
@@ -64,7 +64,7 @@
          // lblResult
          // 
          lblResult.AutoSize = true;
-         lblResult.Location = new System.Drawing.Point(288, 103);
+         lblResult.Location = new System.Drawing.Point(12, 82);
          lblResult.Name = "lblResult";
          lblResult.Size = new System.Drawing.Size(38, 15);
          lblResult.TabIndex = 3;
@@ -73,7 +73,7 @@
          // lblError
          // 
          lblError.AutoSize = true;
-         lblError.Location = new System.Drawing.Point(283, 151);
+         lblError.Location = new System.Drawing.Point(12, 97);
          lblError.Name = "lblError";
          lblError.Size = new System.Drawing.Size(38, 15);
          lblError.TabIndex = 4;
