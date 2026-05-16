@@ -30,7 +30,7 @@
       {
          btnCalculate = new System.Windows.Forms.Button();
          TextBoxNumbers = new System.Windows.Forms.TextBox();
-         cmbOperation = new System.Windows.Forms.ComboBox();
+         ComboBoxOperation = new System.Windows.Forms.ComboBox();
          lblResult = new System.Windows.Forms.Label();
          lblError = new System.Windows.Forms.Label();
          LabelNumbers = new System.Windows.Forms.Label();
@@ -54,14 +54,14 @@
          TextBoxNumbers.Size = new System.Drawing.Size(100, 23);
          TextBoxNumbers.TabIndex = 1;
          // 
-         // cmbOperation
+         // ComboBoxOperation
          // 
-         cmbOperation.FormattingEnabled = true;
-         cmbOperation.Items.AddRange(new object[] { "Sum", "Multiply", "Average" });
-         cmbOperation.Location = new System.Drawing.Point(12, 41);
-         cmbOperation.Name = "cmbOperation";
-         cmbOperation.Size = new System.Drawing.Size(121, 23);
-         cmbOperation.TabIndex = 2;
+         ComboBoxOperation.FormattingEnabled = true;
+         ComboBoxOperation.Items.AddRange(new object[] { "Sum", "Multiply", "Average" });
+         ComboBoxOperation.Location = new System.Drawing.Point(12, 41);
+         ComboBoxOperation.Name = "ComboBoxOperation";
+         ComboBoxOperation.Size = new System.Drawing.Size(121, 23);
+         ComboBoxOperation.TabIndex = 2;
          // 
          // lblResult
          // 
@@ -108,7 +108,7 @@
          Controls.Add(LabelNumbers);
          Controls.Add(lblError);
          Controls.Add(lblResult);
-         Controls.Add(cmbOperation);
+         Controls.Add(ComboBoxOperation);
          Controls.Add(TextBoxNumbers);
          Controls.Add(btnCalculate);
          MaximizeBox = false;
@@ -124,7 +124,7 @@
 
       private System.Windows.Forms.Button btnCalculate;
       private System.Windows.Forms.TextBox TextBoxNumbers;
-      private System.Windows.Forms.ComboBox cmbOperation;
+      private System.Windows.Forms.ComboBox ComboBoxOperation;
       private System.Windows.Forms.Label lblResult;
       private System.Windows.Forms.Label lblError;
       private System.Windows.Forms.Label LabelNumbers;
