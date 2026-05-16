@@ -9,7 +9,7 @@ namespace WinFormsAppFour
       public MainForm()
       {
          InitializeComponent();
-         cmbOperation.SelectedIndex = 0; // "Sum"
+         cmbOperation.SelectedIndex = 0;
       }
 
       private void button1_Click(object sender, EventArgs e)
