@@ -66,9 +66,9 @@
          lblResult.AutoSize = true;
          lblResult.Location = new System.Drawing.Point(12, 82);
          lblResult.Name = "lblResult";
-         lblResult.Size = new System.Drawing.Size(38, 15);
+         lblResult.Size = new System.Drawing.Size(63, 15);
          lblResult.TabIndex = 3;
-         lblResult.Text = "label1";
+         lblResult.Text = "Результат:";
          // 
          // lblError
          // 
