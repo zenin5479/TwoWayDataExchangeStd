@@ -29,7 +29,7 @@
       private void InitializeComponent()
       {
          btnCalculate = new System.Windows.Forms.Button();
-         txtNumbers = new System.Windows.Forms.TextBox();
+         TextBoxNumbers = new System.Windows.Forms.TextBox();
          cmbOperation = new System.Windows.Forms.ComboBox();
          lblResult = new System.Windows.Forms.Label();
          lblError = new System.Windows.Forms.Label();
@@ -47,12 +47,12 @@
          btnCalculate.UseVisualStyleBackColor = true;
          btnCalculate.Click += button1_Click;
          // 
-         // txtNumbers
+         // TextBoxNumbers
          // 
-         txtNumbers.Location = new System.Drawing.Point(12, 12);
-         txtNumbers.Name = "txtNumbers";
-         txtNumbers.Size = new System.Drawing.Size(100, 23);
-         txtNumbers.TabIndex = 1;
+         TextBoxNumbers.Location = new System.Drawing.Point(12, 12);
+         TextBoxNumbers.Name = "TextBoxNumbers";
+         TextBoxNumbers.Size = new System.Drawing.Size(100, 23);
+         TextBoxNumbers.TabIndex = 1;
          // 
          // cmbOperation
          // 
@@ -109,7 +109,7 @@
          Controls.Add(lblError);
          Controls.Add(lblResult);
          Controls.Add(cmbOperation);
-         Controls.Add(txtNumbers);
+         Controls.Add(TextBoxNumbers);
          Controls.Add(btnCalculate);
          MaximizeBox = false;
          MinimizeBox = false;
@@ -123,7 +123,7 @@
       #endregion
 
       private System.Windows.Forms.Button btnCalculate;
-      private System.Windows.Forms.TextBox txtNumbers;
+      private System.Windows.Forms.TextBox TextBoxNumbers;
       private System.Windows.Forms.ComboBox cmbOperation;
       private System.Windows.Forms.Label lblResult;
       private System.Windows.Forms.Label lblError;
