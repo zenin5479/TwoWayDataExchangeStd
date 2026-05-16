@@ -15,7 +15,7 @@ namespace WinFormsAppFour
       private void button1_Click(object sender, EventArgs e)
       {
          LabelResult.Text = "";
-         lblError.Text = "";
+         LabelError.Text = "";
 
          string[] parts = TextBoxNumbers.Text.Split(new[] { ' ', ',', ';' }, StringSplitOptions.RemoveEmptyEntries);
          double[] numbers;
@@ -25,7 +25,7 @@ namespace WinFormsAppFour
          }
          catch
          {
-            lblError.Text = "Ошибка: введите числа через пробел или запятую";
+            LabelError.Text = "Ошибка: введите числа через пробел или запятую";
             return;
          }
 
@@ -42,14 +42,14 @@ namespace WinFormsAppFour
                CalculationResponse response = storage.SendRequest(request);
 
                if (!string.IsNullOrEmpty(response.Error))
-                  lblError.Text = "Ошибка: " + response.Error;
+                  LabelError.Text = "Ошибка: " + response.Error;
                else
                   LabelResult.Text = "Результат: " + response.Result;
             }
          }
          catch (Exception ex)
          {
-            lblError.Text = "Ошибка запуска/обмена: " + ex.Message;
+            LabelError.Text = "Ошибка запуска/обмена: " + ex.Message;
          }
       }
    }

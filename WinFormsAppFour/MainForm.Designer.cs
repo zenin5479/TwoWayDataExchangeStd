@@ -32,7 +32,7 @@
          TextBoxNumbers = new System.Windows.Forms.TextBox();
          ComboBoxOperation = new System.Windows.Forms.ComboBox();
          LabelResult = new System.Windows.Forms.Label();
-         lblError = new System.Windows.Forms.Label();
+         LabelError = new System.Windows.Forms.Label();
          LabelNumbers = new System.Windows.Forms.Label();
          LabelActions = new System.Windows.Forms.Label();
          SuspendLayout();
@@ -72,14 +72,14 @@
          LabelResult.TabIndex = 3;
          LabelResult.Text = "Результат: ";
          // 
-         // lblError
+         // LabelError
          // 
-         lblError.AutoSize = true;
-         lblError.Location = new System.Drawing.Point(12, 97);
-         lblError.Name = "lblError";
-         lblError.Size = new System.Drawing.Size(59, 15);
-         lblError.TabIndex = 4;
-         lblError.Text = "Ошибка: ";
+         LabelError.AutoSize = true;
+         LabelError.Location = new System.Drawing.Point(12, 97);
+         LabelError.Name = "LabelError";
+         LabelError.Size = new System.Drawing.Size(59, 15);
+         LabelError.TabIndex = 4;
+         LabelError.Text = "Ошибка: ";
          // 
          // LabelNumbers
          // 
@@ -106,7 +106,7 @@
          ClientSize = new System.Drawing.Size(596, 241);
          Controls.Add(LabelActions);
          Controls.Add(LabelNumbers);
-         Controls.Add(lblError);
+         Controls.Add(LabelError);
          Controls.Add(LabelResult);
          Controls.Add(ComboBoxOperation);
          Controls.Add(TextBoxNumbers);
@@ -126,7 +126,7 @@
       private System.Windows.Forms.TextBox TextBoxNumbers;
       private System.Windows.Forms.ComboBox ComboBoxOperation;
       private System.Windows.Forms.Label LabelResult;
-      private System.Windows.Forms.Label lblError;
+      private System.Windows.Forms.Label LabelError;
       private System.Windows.Forms.Label LabelNumbers;
       private System.Windows.Forms.Label LabelActions;
    }
