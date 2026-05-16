@@ -15,6 +15,7 @@ namespace SharedStorageFour
          _process.StartInfo.UseShellExecute = false;
          _process.StartInfo.RedirectStandardInput = true;
          _process.StartInfo.RedirectStandardOutput = true;
+         _process.StartInfo.RedirectStandardError = true;   // <-- добавить!
          _process.StartInfo.CreateNoWindow = true;
          _process.Start();
       }
