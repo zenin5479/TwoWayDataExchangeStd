@@ -28,7 +28,7 @@
       /// </summary>
       private void InitializeComponent()
       {
-         btnCalculate = new System.Windows.Forms.Button();
+         ButtonCalculate = new System.Windows.Forms.Button();
          TextBoxNumbers = new System.Windows.Forms.TextBox();
          ComboBoxOperation = new System.Windows.Forms.ComboBox();
          LabelResult = new System.Windows.Forms.Label();
@@ -37,15 +37,15 @@
          LabelActions = new System.Windows.Forms.Label();
          SuspendLayout();
          // 
-         // btnCalculate
+         // ButtonCalculate
          // 
-         btnCalculate.Location = new System.Drawing.Point(12, 115);
-         btnCalculate.Name = "btnCalculate";
-         btnCalculate.Size = new System.Drawing.Size(139, 48);
-         btnCalculate.TabIndex = 0;
-         btnCalculate.Text = "Вычислить";
-         btnCalculate.UseVisualStyleBackColor = true;
-         btnCalculate.Click += button1_Click;
+         ButtonCalculate.Location = new System.Drawing.Point(12, 115);
+         ButtonCalculate.Name = "ButtonCalculate";
+         ButtonCalculate.Size = new System.Drawing.Size(139, 48);
+         ButtonCalculate.TabIndex = 0;
+         ButtonCalculate.Text = "Вычислить";
+         ButtonCalculate.UseVisualStyleBackColor = true;
+         ButtonCalculate.Click += button1_Click;
          // 
          // TextBoxNumbers
          // 
@@ -110,7 +110,7 @@
          Controls.Add(LabelResult);
          Controls.Add(ComboBoxOperation);
          Controls.Add(TextBoxNumbers);
-         Controls.Add(btnCalculate);
+         Controls.Add(ButtonCalculate);
          MaximizeBox = false;
          MinimizeBox = false;
          Name = "MainForm";
@@ -122,7 +122,7 @@
 
       #endregion
 
-      private System.Windows.Forms.Button btnCalculate;
+      private System.Windows.Forms.Button ButtonCalculate;
       private System.Windows.Forms.TextBox TextBoxNumbers;
       private System.Windows.Forms.ComboBox ComboBoxOperation;
       private System.Windows.Forms.Label LabelResult;
