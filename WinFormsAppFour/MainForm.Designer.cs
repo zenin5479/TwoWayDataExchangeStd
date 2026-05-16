@@ -75,9 +75,9 @@
          lblError.AutoSize = true;
          lblError.Location = new System.Drawing.Point(12, 97);
          lblError.Name = "lblError";
-         lblError.Size = new System.Drawing.Size(38, 15);
+         lblError.Size = new System.Drawing.Size(59, 15);
          lblError.TabIndex = 4;
-         lblError.Text = "label1";
+         lblError.Text = "Ошибка: ";
          // 
          // MainForm
          // 
