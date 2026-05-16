@@ -34,7 +34,7 @@
          lblResult = new System.Windows.Forms.Label();
          lblError = new System.Windows.Forms.Label();
          LabelNumbers = new System.Windows.Forms.Label();
-         label2 = new System.Windows.Forms.Label();
+         labelactions = new System.Windows.Forms.Label();
          SuspendLayout();
          // 
          // btnCalculate
@@ -90,21 +90,21 @@
          LabelNumbers.TabIndex = 5;
          LabelNumbers.Text = "Числа";
          // 
-         // label2
+         // labelactions
          // 
-         label2.AutoSize = true;
-         label2.Location = new System.Drawing.Point(421, 146);
-         label2.Name = "label2";
-         label2.Size = new System.Drawing.Size(58, 15);
-         label2.TabIndex = 6;
-         label2.Text = "Действия";
+         labelactions.AutoSize = true;
+         labelactions.Location = new System.Drawing.Point(421, 146);
+         labelactions.Name = "labelactions";
+         labelactions.Size = new System.Drawing.Size(58, 15);
+         labelactions.TabIndex = 6;
+         labelactions.Text = "Действия";
          // 
          // MainForm
          // 
          AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
          AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
          ClientSize = new System.Drawing.Size(596, 241);
-         Controls.Add(label2);
+         Controls.Add(labelactions);
          Controls.Add(LabelNumbers);
          Controls.Add(lblError);
          Controls.Add(lblResult);
@@ -128,6 +128,6 @@
       private System.Windows.Forms.Label lblResult;
       private System.Windows.Forms.Label lblError;
       private System.Windows.Forms.Label LabelNumbers;
-      private System.Windows.Forms.Label label2;
+      private System.Windows.Forms.Label labelactions;
    }
 }
